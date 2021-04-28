@@ -77,7 +77,7 @@ def generate_group_by_query(starting_entity):
         generate_group_by_query(modified_entity)
     """
 
-    dict_to_return = {"type": chosen_type, "relation" : chosen_relation, "instantiated_nnqt": instantiated_nnqt,
+    dict_to_return = {"type": chosen_type, "relation" : chosen_relation,"formulated_query":query ,"instantiated_nnqt": instantiated_nnqt,
                       "result" : temp_dict}
     return dict_to_return
 
