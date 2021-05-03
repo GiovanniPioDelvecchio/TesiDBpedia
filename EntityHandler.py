@@ -10,7 +10,7 @@ class Entity:
     relations_in_white_list = []
     type_list = []
 
-    def __init__(self, uri=FileHandler.get_uri_from_file('..\entities_new.txt')):
+    def __init__(self, uri=FileHandler.get_uri_from_file('files_to_add\entities_new.txt')):
 
         self.entity_URI = uri
         self.relations_list = self.__get_relations()
