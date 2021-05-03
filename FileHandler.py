@@ -54,21 +54,21 @@ def expand_entity_file(file_name):
             entities_file.write(str(entity_uris_results[i]) + "\n")
 
 
-def get_type_blacklist(file_name="../type_blacklist.txt"):
+def get_type_blacklist(file_name="files_to_add/type_blacklist.txt"):
     type_file = open(file_name, 'r', encoding="utf-8")
     types_read = type_file.read()
     types_list = types_read.split("\n")
     return types_list
 
 
-def get_relation_whitelist(file_name="../relations_new.txt"):
+def get_relation_whitelist(file_name="files_to_add/relations_new.txt"):
     relations_file = open(file_name, 'r', encoding="utf-8")
     relation_read = relations_file.read()
     relation_list = relation_read.split("\n")
     return relation_list
 
 
-def remove_relation_from_whitelist(relation_name, file_name="../relations_new.txt"):
+def remove_relation_from_whitelist(relation_name, file_name="files_to_add/relations_new.txt"):
     relations_file = open(file_name, 'r', encoding="utf-8")
     relation_read = relations_file.read()
     relation_list = relation_read.split("\n")
@@ -79,7 +79,7 @@ def remove_relation_from_whitelist(relation_name, file_name="../relations_new.tx
         relations_file.write(str(relation_list[i]) + "\n")
 
 
-def serialize_query_set(dict_to_serialize, file_name="../generated_queries.txt"):
+def serialize_query_set(dict_to_serialize, file_name="files_to_add/generated_queries.txt"):
     generated_file = open(file_name, 'w', encoding="utf-8")
     generated_file.write(json.dumps(dict_to_serialize, indent = 4, sort_keys = True))
 
