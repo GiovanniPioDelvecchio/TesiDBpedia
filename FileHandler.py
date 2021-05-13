@@ -74,6 +74,82 @@ def expand_entity_file(file_name):
         for i in range(temp_dict_len):
             entities_file.write(str(entity_uris_results[i]) + "\n")
 
+def write_type_list(file_name="files_to_add/type_whitelist.txt"):
+    """Funzione che si occupa della scrittura del file contenente tutti i tipi di entità ammessi, selezionati
+        in base alla gerarchia di tipi in DBpedia
+
+        Args:
+            file_name: file in cui vanno scritti tutti i tipi ammessi
+    """
+    query = """
+            select distinct ?Sub where {
+                {
+                    select distinct ?Type where 
+                    {
+                        ?Type rdfs:subClassOf dbo:Agent.
+                        ?SubType rdfs:subClassOf ?Type 
+                    }
+                GROUP BY ?Type
+                HAVING(COUNT(?SubType)>1)
+                }
+            ?Sub rdfs:subClassOf ?Type.
+            }
+            """
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+    sparql.setQuery(query)
+    temp_dict = sparql.query().convert()["results"]["bindings"]
+    temp_dict_len = len(temp_dict)
+    type_uris_results = [temp_dict[i]["Sub"]["value"] for i in range(0, temp_dict_len)]
+    type_file = open(file_name, 'w', encoding="utf-8")
+    
+    for i in range(temp_dict_len):
+        type_file.write(str(type_uris_results[i]) + "\n")
+
+def get_type_whitelist(file_name="files_to_add/type_whitelist.txt"):
+    """Si occupa di prendere da file la lista completa di tipi di entità da considerare.
+
+    Args:
+        file_name: file da cui prendere la lista di URI pari ai tipi di entità da considerare.
+    Returns:
+        types_list: lista di URI pari ai tipi di entità da considerare.
+    """
+    type_file = open(file_name, 'r', encoding="utf-8")
+    types_read = type_file.read()
+    types_list = types_read.split("\n")
+    return types_list
+
+def expand_entity_file_from_type_file(entity_file_name="files_to_add/entities_from_types.txt",
+                                      type_file_name="files_to_add/type_whitelist.txt"):
+
+    num_result_per_type = 10
+
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+
+    type_file = open(type_file_name, 'r', encoding="utf-8")
+    types_read = type_file.read()
+    types_list = types_read.split("\n")
+    entity_file = open(entity_file_name, 'w', encoding="utf-8")
+    for specific_type in types_list:
+        query = """
+                select distinct ?uri where {
+                    ?uri rdf:type <"""+specific_type+""">
+                }
+                LIMIT """+str(num_result_per_type)+"""
+                """
+        sparql.setQuery(query)
+        temp_dict = sparql.query().convert()["results"]["bindings"]
+        temp_dict_len = len(temp_dict)
+        entity_uris_results = [temp_dict[i]["uri"]["value"] for i in range(0, temp_dict_len)]
+        for entity in entity_uris_results:
+            entity_file.write(entity + "\n")
+
+
+
+
 
 def get_type_blacklist(file_name="files_to_add/type_blacklist.txt"):
     """Si occupa di prendere da file la lista completa di tipi di entità da escludere.
@@ -131,4 +207,4 @@ def serialize_query_set(dict_to_serialize, file_name="files_to_add/generated_que
     generated_file = open(file_name, 'w', encoding="utf-8")
     generated_file.write(json.dumps(dict_to_serialize, indent = 4, sort_keys = True))
 
-# expand_entity_file("../entities_new.txt")
+expand_entity_file_from_type_file()

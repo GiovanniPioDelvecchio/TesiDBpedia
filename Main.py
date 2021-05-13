@@ -11,7 +11,7 @@ import FileHandler
 #corretta che però ha result set vuoto
 dict_to_serialize = {}
 for i in range(0, 10):
-    my_entity = EntityHandler.Entity(FileHandler.get_uri_from_file('files_to_add\entities_new.txt'))#uri="http://dbpedia.org/resource/Duck_Hunt")
+    my_entity = EntityHandler.Entity(FileHandler.get_uri_from_file('files_to_add\entities_from_types.txt'))#uri="http://dbpedia.org/resource/Duck_Hunt")
     print("uri: " + my_entity.entity_URI)
     print("type list: " + str(my_entity.type_list))
     print("relations list: " + str(my_entity.relations_list))

@@ -56,9 +56,9 @@ def generate_group_by_query(starting_entity):
     """
     if len(starting_entity.relations_in_white_list) != 0:
         rand_relation_number = int(rng.random() * (len(starting_entity.relations_in_white_list)-1))
-        type_list_without_blacklisted = [x for x in starting_entity.type_list if x not in FileHandler.get_type_blacklist()]
-        rand_type_number = int(rng.random() * len(type_list_without_blacklisted))
-        chosen_type = type_list_without_blacklisted[rand_type_number]
+        type_list_with_whitelisted = [x for x in starting_entity.type_list if x in FileHandler.get_type_whitelist()]
+        rand_type_number = int(rng.random() * len(type_list_with_whitelisted))
+        chosen_type = type_list_with_whitelisted[rand_type_number]
         #print(chosen_type)
         chosen_relation = starting_entity.relations_in_white_list[rand_relation_number]
         #print(chosen_relation)
