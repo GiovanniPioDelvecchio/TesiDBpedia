@@ -48,12 +48,14 @@ class Entity:
         """Si occupa di avvalorare relations_list"""
         relation_name = "rel"
         query = """ SELECT DISTINCT ?""" + relation_name + """ WHERE {
-                        <""" + self.entity_URI + """> ?rel ?obj  FILTER(!isLiteral(?obj))}"""
+                        <""" + self.entity_URI + """> ?""" + relation_name + """ ?obj.
+                        filter(strstarts(str(?""" + relation_name + """), str(dbo:)))}""" #FILTER(!isLiteral(?obj))
         sparql = SPARQLWrapper("http://dbpedia.org/sparql")
         sparql.setReturnFormat(JSON)
         sparql.setQuery(query)
         temp_dict = sparql.query().convert()["results"]["bindings"]
         list_to_return = [temp_dict[i][relation_name]["value"] for i in range(0, len(temp_dict))]
+
         return list_to_return
 
     def __get_relations_from_white_list(self):
@@ -109,6 +111,55 @@ class Entity:
         temp_dict = sparql.query().convert()["results"]["bindings"]
         obj_list_to_return = [temp_dict[i][obj_name]["value"] for i in range(0, len(temp_dict))]
         return obj_list_to_return
+
+
+def sub_class_of(first_uri, second_uri):
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+
+    if first_uri != "http://www.w3.org/2002/07/owl#Thing":
+        query_ask = """ask where { <""" + first_uri + """> rdfs:subClassOf <""" + second_uri + """>.}"""
+
+        sparql.setQuery(query_ask)
+        answer = sparql.query().convert()["boolean"]
+        if (answer):
+            return answer
+        else:
+            query_upper_class = """select distinct ?uri where {<""" + first_uri + """> rdfs:subClassOf ?uri}"""
+            sparql.setQuery(query_upper_class)
+            upper_class = sparql.query().convert()["results"]["bindings"][0]["uri"]["value"]
+            return sub_class_of(upper_class, second_uri)
+    else:
+        return False
+
+
+def get_entities_of_type(type_uri):
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+    query = """select distinct ?uri where {?uri rdf:type <"""+type_uri+""">} LIMIT 10"""
+    sparql.setQuery(query)
+    temp_dict = sparql.query().convert()["results"]["bindings"]
+    temp_dict_len = len(temp_dict)
+    result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
+    return result_set
+
+
+def get_subclasses_of(type_uri):
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+    if type_uri.split(":")[0] == "dbo":
+        query = """select distinct ?uri where {?uri rdfs:subClassOf """+type_uri+"""}"""
+    else:
+        query = """select distinct ?uri where {?uri rdfs:subClassOf <"""+type_uri+""">}"""
+    sparql.setQuery(query)
+    temp_dict = sparql.query().convert()["results"]["bindings"]
+    temp_dict_len = len(temp_dict)
+    result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
+    return result_set
+
 
 
 

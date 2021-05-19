@@ -10,7 +10,7 @@ import FileHandler
 #"http://dbpedia.org/resource/Quasieulia_jaliscana", con la relazione "Kingdom" mostra invece un esempio di query
 #corretta che però ha result set vuoto
 dict_to_serialize = {}
-for i in range(0, 10):
+for i in range(0, 200):
     my_entity = EntityHandler.Entity(FileHandler.get_uri_from_file('files_to_add\entities_from_types.txt'))#uri="http://dbpedia.org/resource/Duck_Hunt")
     print("uri: " + my_entity.entity_URI)
     print("type list: " + str(my_entity.type_list))

@@ -86,8 +86,9 @@ def write_type_list(file_name="files_to_add/type_whitelist.txt"):
                 {
                     select distinct ?Type where 
                     {
-                        ?Type rdfs:subClassOf dbo:Agent.
-                        ?SubType rdfs:subClassOf ?Type 
+                        ?Athing rdfs:subClassOf owl:Thing.
+                        ?Type rdfs:subClassOf ?Athing.
+                        ?SubType rdfs:subClassOf ?Type.
                     }
                 GROUP BY ?Type
                 HAVING(COUNT(?SubType)>1)
@@ -134,6 +135,7 @@ def expand_entity_file_from_type_file(entity_file_name="files_to_add/entities_fr
     types_list = types_read.split("\n")
     entity_file = open(entity_file_name, 'w', encoding="utf-8")
     for specific_type in types_list:
+        print("Current type:" + specific_type)
         query = """
                 select distinct ?uri where {
                     ?uri rdf:type <"""+specific_type+""">
@@ -207,4 +209,9 @@ def serialize_query_set(dict_to_serialize, file_name="files_to_add/generated_que
     generated_file = open(file_name, 'w', encoding="utf-8")
     generated_file.write(json.dumps(dict_to_serialize, indent = 4, sort_keys = True))
 
-expand_entity_file_from_type_file()
+
+def acquire_query_templates_list(file_name="files_to_add/templates_new.txt"):
+    templates_file = open(file_name, "r", encoding="utf-8")
+    data = json.load(templates_file, strict=False)
+    return data
+
