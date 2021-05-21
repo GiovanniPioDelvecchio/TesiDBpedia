@@ -206,12 +206,30 @@ def serialize_query_set(dict_to_serialize, file_name="files_to_add/generated_que
         dict_to_serialize: dizionario da serializzare su file file_name.
         file_name: file su cui va serializzato dict_to_serialize con sintassi JSON.
     """
+    generated_file = open(file_name, 'a', encoding="utf-8")
+    generated_file.close()
+    generated_file = open(file_name, 'r', encoding="utf-8")
+    raw_data = generated_file.read()
+    #print(raw_data)
+    if raw_data == "":
+        data = []
+    else:
+        data = json.loads(raw_data, strict = "False")
+
+    data.append(dict_to_serialize)
+    #print(str(data))
+    generated_file.close()
     generated_file = open(file_name, 'w', encoding="utf-8")
-    generated_file.write(json.dumps(dict_to_serialize, indent = 4, sort_keys = True))
+    generated_file.write(json.dumps(data, indent = 4, sort_keys = True))
 
 
 def acquire_query_templates_list(file_name="files_to_add/templates_new.txt"):
     templates_file = open(file_name, "r", encoding="utf-8")
     data = json.load(templates_file, strict=False)
+    templates_file.close()
     return data
 
+
+"""serialize_query_set({"ammaccabanane":"sium"}, "files_to_add/ammaccabanane.txt")
+print("il primo è andato")
+serialize_query_set({"antonio":"siuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuum"}, "files_to_add/ammaccabanane.txt")"""

@@ -184,6 +184,12 @@ def try_to_print_query(dict_in_query, template_entry):
             len(template_entry["valid_types"].keys()) + len(template_entry["relation_constraints"].keys())):
         query = template_entry["template"] % dict_in_query
         print(query)
+        sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+        sparql.addExtraURITag("timeout", "30000")
+        sparql.setReturnFormat(JSON)
+        sparql.setQuery(query)
+        dict_to_ser = {"query": query, "result_set": sparql.query().convert()}
+        FileHandler.serialize_query_set(dict_to_ser, template_entry["save_name"])
         return True
     else:
         return False
