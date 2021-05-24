@@ -1,6 +1,7 @@
 [
 {
 	"save_name": "files_to_add/two_relations.json",
+
 	"template":"select distinct ?uri ?place ?date where {?uri a <%(first_type)s>.
 	?uri <%(first_rel)s> ?place.
 	?uri <%(second_rel)s> ?date
@@ -12,6 +13,7 @@
 	"is http://dbpedia.org/ontology/birthDate"}
 }, {
 	"save_name":"files_to_add/two_types.json",
+
 	"template":"select distinct ?uri ?otherUri where {?uri a <%(first_type)s>. 
 	?otherUri a <%(second_type)s>. 
 	?uri <%(rel_to_insert)s> ?otherUri.} LIMIT 100",
@@ -21,6 +23,7 @@
 	"relation_constraints":{"rel_to_insert":"is http://dbpedia.org/ontology/author"}
 }, {
 	"save_name":"files_to_add/filter_natural_places.json",
+
 	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. ?uri <%(rel_to_insert)s> ?obj FILTER(?obj>2000)} LIMIT 100",
 
 	"valid_types":{"type_to_insert":"dbo:NaturalPlace"},
@@ -28,6 +31,7 @@
 	"relation_constraints":{"rel_to_insert":"num"}
 }, {
 	"save_name":"files_to_add/simplest_template.json",
+	
 	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. 
 	?uri <%(rel_to_insert)s> ?obj} LIMIT 100",
 
