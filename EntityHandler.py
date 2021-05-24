@@ -27,10 +27,9 @@ class Entity:
 
     entity_URI = ""
     relations_list = []
-    relations_in_white_list = []
     type_list = []
 
-    def __init__(self, uri=FileHandler.get_uri_from_file('files_to_add\entities_new.txt')):
+    def __init__(self, uri):        #=FileHandler.get_uri_from_file('files_to_add\entities_new.txt')
         """Costruttore della classe Entity.
 
         Costruisce un oggetto di classe Entity partendo da un URI.
@@ -41,37 +40,21 @@ class Entity:
         """
         self.entity_URI = uri
         self.relations_list = self.__get_relations()
-        self.relations_in_white_list = self.__get_relations_from_white_list()
         self.type_list = self.__get_types()
 
     def __get_relations(self):
         """Si occupa di avvalorare relations_list"""
         relation_name = "rel"
         query = """ SELECT DISTINCT ?""" + relation_name + """ WHERE {
-                        <""" + self.entity_URI + """> ?rel ?obj  FILTER(!isLiteral(?obj))}"""
+                        <""" + self.entity_URI + """> ?""" + relation_name + """ ?obj.
+                        filter(strstarts(str(?""" + relation_name + """), str(dbo:)))}""" #FILTER(!isLiteral(?obj))
         sparql = SPARQLWrapper("http://dbpedia.org/sparql")
         sparql.setReturnFormat(JSON)
         sparql.setQuery(query)
         temp_dict = sparql.query().convert()["results"]["bindings"]
         list_to_return = [temp_dict[i][relation_name]["value"] for i in range(0, len(temp_dict))]
-        return list_to_return
 
-    def __get_relations_from_white_list(self):
-        """Si occupa di calcolare l'intersezione fra le relazioni della whitelist e la lista di relazioni
-        dell'entità. Tale intersezione viene considerata considerando prefisso http://dbpedia.org
-        e suffisso pari a uno dei suffissi presenti nella whitelist di relazioni
-        """
-        relations_in_white_list = FileHandler.get_relation_whitelist()
-        intersection = []
-        for single_native_relation in self.relations_list:
-            if single_native_relation.split("/")[2].startswith("dbpedia.org"):
-                rel_split = single_native_relation.split("/")
-                suffix = rel_split[len(rel_split) - 1]
-                for wl_rel in relations_in_white_list:
-                    if suffix in wl_rel:
-                        if single_native_relation not in intersection:
-                            intersection.append(single_native_relation)
-        return intersection
+        return list_to_return
 
     def __get_types(self):
         """Si occupa di avvalorare type_list"""
@@ -109,6 +92,78 @@ class Entity:
         temp_dict = sparql.query().convert()["results"]["bindings"]
         obj_list_to_return = [temp_dict[i][obj_name]["value"] for i in range(0, len(temp_dict))]
         return obj_list_to_return
+
+
+def sub_class_of(first_uri, second_uri):
+    """Restituisce True se first_uri è un discendente di second_uri nella gerarchia delle classi di DBpedia
+
+            Args:
+                fist_uri: uri di cui si vuole sapere se è discendente di second_uri
+                second_uri: uri di cui si vuole sapere se è antenato di first_uri
+            Returns:
+                True se first_uri è discendente di second_uri nella gerarchia delle classi di DBpedia,
+                False altrimenti
+    """
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+
+    if first_uri != "http://www.w3.org/2002/07/owl#Thing":
+        query_ask = """ask where { <""" + first_uri + """> rdfs:subClassOf <""" + second_uri + """>.}"""
+
+        sparql.setQuery(query_ask)
+        answer = sparql.query().convert()["boolean"]
+        if (answer):
+            return answer
+        else:
+            query_upper_class = """select distinct ?uri where {<""" + first_uri + """> rdfs:subClassOf ?uri}"""
+            sparql.setQuery(query_upper_class)
+            upper_class = sparql.query().convert()["results"]["bindings"][0]["uri"]["value"]
+            return sub_class_of(upper_class, second_uri)
+    else:
+        return False
+
+
+def get_entities_of_type(type_uri):
+    """Restituisce una lista di entità di tipo type_uri
+
+        Args:
+            type_uri: uri corrispondente al tipo di entità da restituire
+        Returns:
+            result_set: lista di entità di tipo type_uri
+    """
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+    query = """select distinct ?uri where {?uri rdf:type <"""+type_uri+""">} LIMIT 10"""
+    sparql.setQuery(query)
+    temp_dict = sparql.query().convert()["results"]["bindings"]
+    temp_dict_len = len(temp_dict)
+    result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
+    return result_set
+
+
+def get_subclasses_of(type_uri):
+    """Restituisce la lista di sottoclassi della classe type_uri
+
+        Args:
+            type_uri: uri corrispondente ad una classe di cui si vogliono conoscere le sottoclassi dirette
+        Returns:
+            result_set: lista di sottoclassi dirette di type_uri
+    """
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+    if type_uri.split(":")[0] == "dbo":
+        query = """select distinct ?uri where {?uri rdfs:subClassOf """+type_uri+"""}"""
+    else:
+        query = """select distinct ?uri where {?uri rdfs:subClassOf <"""+type_uri+""">}"""
+    sparql.setQuery(query)
+    temp_dict = sparql.query().convert()["results"]["bindings"]
+    temp_dict_len = len(temp_dict)
+    result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
+    return result_set
+
 
 
 
