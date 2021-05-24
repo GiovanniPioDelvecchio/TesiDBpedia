@@ -114,6 +114,15 @@ class Entity:
 
 
 def sub_class_of(first_uri, second_uri):
+    """Restituisce True se first_uri è un discendente di second_uri nella gerarchia delle classi di DBpedia
+
+            Args:
+                fist_uri: uri di cui si vuole sapere se è discendente di second_uri
+                second_uri: uri di cui si vuole sapere se è antenato di first_uri
+            Returns:
+                True se first_uri è discendente di second_uri nella gerarchia delle classi di DBpedia,
+                False altrimenti
+    """
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
     sparql.addExtraURITag("timeout", "30000")
     sparql.setReturnFormat(JSON)
@@ -135,6 +144,13 @@ def sub_class_of(first_uri, second_uri):
 
 
 def get_entities_of_type(type_uri):
+    """Restituisce una lista di entità di tipo type_uri
+
+        Args:
+            type_uri: uri corrispondente al tipo di entità da restituire
+        Returns:
+            result_set: lista di entità di tipo type_uri
+    """
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
     sparql.addExtraURITag("timeout", "30000")
     sparql.setReturnFormat(JSON)
@@ -147,6 +163,13 @@ def get_entities_of_type(type_uri):
 
 
 def get_subclasses_of(type_uri):
+    """Restituisce la lista di sottoclassi della classe type_uri
+
+        Args:
+            type_uri: uri corrispondente ad una classe di cui si vogliono conoscere le sottoclassi dirette
+        Returns:
+            result_set: lista di sottoclassi dirette di type_uri
+    """
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
     sparql.addExtraURITag("timeout", "30000")
     sparql.setReturnFormat(JSON)
