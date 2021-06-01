@@ -7,6 +7,9 @@
 	?uri <%(second_rel)s> ?date
 	Filter(?date<\"1960-05-23T10:20:13+05:30\"^^xsd:dateTime)} LIMIT 100",
 
+	"NNQT":"Which are the %(first_type)s born before the 23rd of May 1960, and what are their respective
+			birthplaces?",
+
 	"valid_types":{"first_type":"dbo:Artist"},
 
 	"relation_constraints":{"first_rel":"is http://dbpedia.org/ontology/birthPlace", "second_rel":
@@ -18,6 +21,8 @@
 	?otherUri a <%(second_type)s>. 
 	?uri <%(rel_to_insert)s> ?otherUri.} LIMIT 100",
 
+	"NNQT":"Which are the %(second_type)s who wrote a %(first_type)s?",
+
 	"valid_types":{"first_type":"dbo:WrittenWork", "second_type":"dbo:Artist"},
 
 	"relation_constraints":{"rel_to_insert":"is http://dbpedia.org/ontology/author"}
@@ -25,6 +30,8 @@
 	"save_name":"files_to_add/filter_natural_places.json",
 
 	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. ?uri <%(rel_to_insert)s> ?obj FILTER(?obj>2000)} LIMIT 100",
+
+	"NNQT":"Which are the %(type_to_insert)s that have a %(rel_to_insert)s greater than 2000?",
 
 	"valid_types":{"type_to_insert":"dbo:NaturalPlace"},
 
@@ -34,6 +41,8 @@
 	
 	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. 
 	?uri <%(rel_to_insert)s> ?obj} LIMIT 100",
+
+	"NNQT":"Which are the %(type_to_insert)s that %(rel_to_insert)s?",
 
 	"valid_types":{"type_to_insert":"dbo:Person"},
 

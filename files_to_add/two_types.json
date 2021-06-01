@@ -1,5 +1,6 @@
 [
     {
+        "NNQT_istance": "Which are the actor who wrote a book?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Book",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -53,6 +54,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the musicalartist who wrote a book?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Book",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -1076,6 +1078,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the comedian who wrote a book?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Book",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -1849,6 +1852,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the comicscreator who wrote a book?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Book",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -2872,6 +2876,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the fashiondesigner who wrote a book?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Book",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -2925,6 +2930,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the painter who wrote a book?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Book",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -2958,6 +2964,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the photographer who wrote a book?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Book",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -2991,6 +2998,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the actor who wrote a play?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Play",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -3044,6 +3052,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the musicalartist who wrote a play?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Play",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -3197,6 +3206,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the comedian who wrote a play?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Play",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -3350,6 +3360,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the comicscreator who wrote a play?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Play",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -3403,6 +3414,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the fashiondesigner who wrote a play?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Play",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -3425,6 +3437,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the painter who wrote a play?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Play",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -3447,6 +3460,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the photographer who wrote a play?",
         "istances": {
             "first_type": "http://dbpedia.org/ontology/Play",
             "rel_to_insert": "http://dbpedia.org/ontology/author",
