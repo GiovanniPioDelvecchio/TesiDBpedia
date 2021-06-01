@@ -1,5 +1,6 @@
 [
     {
+        "NNQT_istance": "Which are the comedian born before the 23rd of May 1960, and what are their respective\n\t\t\tbirthplaces?",
         "istances": {
             "first_rel": "http://dbpedia.org/ontology/birthPlace",
             "first_type": "http://dbpedia.org/ontology/Comedian",
@@ -1524,6 +1525,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the painter born before the 23rd of May 1960, and what are their respective\n\t\t\tbirthplaces?",
         "istances": {
             "first_rel": "http://dbpedia.org/ontology/birthPlace",
             "first_type": "http://dbpedia.org/ontology/Painter",

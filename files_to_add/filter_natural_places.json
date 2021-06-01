@@ -1,5 +1,6 @@
 [
     {
+        "NNQT_istance": "Which are the bodyofwater that have a mouthelevation greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/mouthElevation",
             "type_to_insert": "http://dbpedia.org/ontology/BodyOfWater"
@@ -621,6 +622,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the bodyofwater that have a length greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/length",
             "type_to_insert": "http://dbpedia.org/ontology/BodyOfWater"
@@ -1242,6 +1244,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the mountain that have a prominence greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/prominence",
             "type_to_insert": "http://dbpedia.org/ontology/Mountain"
@@ -1863,6 +1866,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the mountain that have a elevation greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/elevation",
             "type_to_insert": "http://dbpedia.org/ontology/Mountain"
@@ -2484,6 +2488,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the cave that have a length greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/length",
             "type_to_insert": "http://dbpedia.org/ontology/Cave"
@@ -3105,6 +3110,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the cave that have a depth greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/depth",
             "type_to_insert": "http://dbpedia.org/ontology/Cave"
@@ -3132,6 +3138,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the crater that have a diameter greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/diameter",
             "type_to_insert": "http://dbpedia.org/ontology/Crater"
@@ -3753,6 +3760,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the volcano that have a elevation greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/elevation",
             "type_to_insert": "http://dbpedia.org/ontology/Volcano"
@@ -4374,6 +4382,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the mountain that have a area greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/area",
             "type_to_insert": "http://dbpedia.org/ontology/Mountain"
@@ -4995,6 +5004,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the mountain that have a elevation greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/elevation",
             "type_to_insert": "http://dbpedia.org/ontology/Mountain"
@@ -5616,6 +5626,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the mountain that have a length greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/length",
             "type_to_insert": "http://dbpedia.org/ontology/Mountain"
@@ -6237,6 +6248,7 @@
         }
     },
     {
+        "NNQT_istance": "Which are the mountain that have a width greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/width",
             "type_to_insert": "http://dbpedia.org/ontology/Mountain"

@@ -152,19 +152,50 @@ def instantiate_single_query(entity_tuple, template_entry):
 
 
 def try_to_print_query(dict_in_query, template_entry):
+    """Si occupa di inserire sul file designato le istanze valide per il template scelto.
+        Args:
+            dict_in_query: dizionario avente per chiavi le variabili del template (relative a tipi e relazioni) e
+                per valori i corrispondenti valori da inserire all'interno della query template e della NNQT
+            template_entry: entry del dizionario contenente tutte le informazioni sul template corrente
+        return:
+            True se l'operazione è stata completata con successo, perché dict_in_query conteneva tutte le variabili
+            necessarie, con i valori validi, False altrimenti
+    """
     if len(dict_in_query.keys()) >= (
             len(template_entry["valid_types"].keys()) + len(template_entry["relation_constraints"].keys())):
         query = template_entry["template"] % dict_in_query
+        NNQT = istantiate_NNQT(dict_in_query, template_entry)
         print(query)
         sparql = SPARQLWrapper("http://dbpedia.org/sparql")
         sparql.addExtraURITag("timeout", "30000")
         sparql.setReturnFormat(JSON)
         sparql.setQuery(query)
-        dict_to_ser = {"istances":dict_in_query,"query": query, "result_set": sparql.query().convert()}
+        dict_to_ser = {"istances":dict_in_query,"query": query, "result_set": sparql.query().convert(),
+                       "NNQT_istance":NNQT}
         FileHandler.serialize_query_set(dict_to_ser, template_entry["save_name"])
         return True
     else:
         return False
+
+
+def istantiate_NNQT(dict_in_query, template_entry):
+    """Si occupa di effettuare l'istanza dell'NNQT presente in template_entry
+        Args:
+            dict_in_query: dizionario avente per chiavi le variabili del template (relative a tipi e relazioni) e
+                per valori i corrispondenti valori da inserire all'interno della NNQT
+        Returns:
+             to_return: istanza di NNQT contenente i valori di dict_in_query
+    """
+    to_return = ""
+    new_dict_to_use = {}
+    for current_variable in dict_in_query.keys():
+        uri_unsplitted = dict_in_query.get(current_variable)
+        uri_splitted = uri_unsplitted.split("/")
+        value_to_add = uri_splitted[len(uri_splitted)-1].lower()
+        new_dict_to_use.update({current_variable: value_to_add})
+    to_return = template_entry["NNQT"] % new_dict_to_use
+    #to_return = correct_sentence(to_return) sta dando problemi con java, urge trovare un correttore migliore
+    return to_return
 
 
 def find_relations_with_constraints(considered_entity, template_entry):
@@ -185,7 +216,7 @@ def find_relations_with_constraints(considered_entity, template_entry):
     dict_of_constraints = template_entry["relation_constraints"]
     for rel_variable in dict_of_constraints:
         valid_list = apply_constraint(considered_entity.relations_list, dict_of_constraints.get(rel_variable))
-        if(len(valid_list)!=0):
+        if len(valid_list) != 0:
             dict_to_return.update({rel_variable: valid_list})
     return dict_to_return
 
@@ -215,7 +246,7 @@ def map_dict_to_entities(dict_to_map):
                 dict_to_map: dizionario in cui vanno sostituiti i valori con le liste di entità
             Returns:
                 dict_to_return: dizionario contenente le stesse chiavi di dict_to_map e come valori liste di entità
-        """
+    """
     dict_to_return = {}
     for key in dict_to_map.keys():
         entity_list_to_add = []
