@@ -11,6 +11,30 @@ da non demandare ai singoli moduli l'accesso alle risorse esterne.
 """
 
 
+def serialize_query_set(dict_to_serialize, file_name="files_to_add/generated_queries.txt"):
+    """Si occupa di serializzare un dizionario all'interno del file file_name, utilizzando la sintassi JSON con
+    una certa spaziatura ed indentazione.
+    Args:
+        dict_to_serialize: dizionario da serializzare su file file_name.
+        file_name: file su cui va serializzato dict_to_serialize con sintassi JSON.
+    """
+    generated_file = open(file_name, 'a', encoding="utf-8")
+    generated_file.close()
+    generated_file = open(file_name, 'r', encoding="utf-8")
+    raw_data = generated_file.read()
+    #print(raw_data)
+    if raw_data == "":
+        data = []
+    else:
+        data = json.loads(raw_data, strict = "False")
+
+    data.append(dict_to_serialize)
+    to_serialize = data.copy()
+    generated_file.close()
+    generated_file = open(file_name, 'w', encoding="utf-8")
+    generated_file.write(json.dumps(to_serialize, indent = 4, sort_keys = True))
+    generated_file.close()
+
 def wipe_file_content(file_name):
     """Si occupa di eliminare tutto il contenuto di un file chiamato file_name
 
