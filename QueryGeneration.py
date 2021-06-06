@@ -4,7 +4,7 @@ import random as rng
 import language_tool_python
 import FileHandler
 import itertools
-
+from RelationsConstraints import apply_constraint
 
 def correct_sentence(text):
     """Applica le correzioni del correttore language_tool_python alla stringa text
@@ -42,32 +42,11 @@ def correct_sentence(text):
     return my_new_text
 
 
-def sparql_check_range(relation_uri, range_uri):
-    """Controlla se una particolare relazione relation_uri ha range range_uri
-
-            Args:
-                relation_uri: relazione di cui si vuole sapere se il range è proprio range_uri
-                range_uri: uri corrispondente ad un particolare tipo di entità, l'oggetto della relazione relation_uri
-                    deve essere di tipo range_uri
-            Returns:
-                outcome: booleano vero se range_uri è il range della relazione relation_uri, falso altrimenti
-
-    """
-    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-    sparql.addExtraURITag("timeout", "30000")
-    sparql.setReturnFormat(JSON)
-    # print(relation_uri)
-    if relation_uri.split(":")[0] == "dbo":
-        query = """ask where {""" + relation_uri + """ rdfs:range <""" + range_uri + """>}"""
-    else:
-        query = """ask where {<""" + relation_uri + """> rdfs:range <""" + range_uri + """>}"""
-    sparql.setQuery(query)
-    outcome = sparql.query().convert()["boolean"]
-    return outcome
+"""def sparql_check_range(relation_uri, range_uri):"""
 
 
-def apply_constraint(rel_list, constraint_value="num"):
-    """Data una lista di uri corrispondenti a delle relazioni, chiamata rel_list, restituisce una nuova lista
+"""def apply_constraint(rel_list, constraint_value="num"):
+    #Data una lista di uri corrispondenti a delle relazioni, chiamata rel_list, restituisce una nuova lista
     list_to_return contenente solo le relazioni di rel_list che rispettano un particolare vincolo specificato dalla
     stringa constraint_value
 
@@ -81,7 +60,7 @@ def apply_constraint(rel_list, constraint_value="num"):
                 Returns:
                     list_to_return: lista contenente solo le relazioni che rispettano il vincolo specificato da
                         contraint_value
-    """
+    #
     list_to_return = rel_list.copy()
     if constraint_value == "num":
         for rel in rel_list:
@@ -91,7 +70,7 @@ def apply_constraint(rel_list, constraint_value="num"):
         for rel in rel_list:
             if rel != constraint_value.split(" ")[1]:
                 list_to_return.remove(rel)
-    return list_to_return
+    return list_to_return"""
 
 
 def generate_queries():
@@ -165,12 +144,15 @@ def try_to_print_query(dict_in_query, template_entry):
             len(template_entry["valid_types"].keys()) + len(template_entry["relation_constraints"].keys())):
         query = template_entry["template"] % dict_in_query
         NNQT = istantiate_NNQT(dict_in_query, template_entry)
-        print(query)
         sparql = SPARQLWrapper("http://dbpedia.org/sparql")
         sparql.addExtraURITag("timeout", "30000")
         sparql.setReturnFormat(JSON)
         sparql.setQuery(query)
-        dict_to_ser = {"istances":dict_in_query,"query": query, "result_set": sparql.query().convert(),
+        result_set = sparql.query().convert()
+        if len(result_set["results"]["bindings"]) == 0:
+            return False
+        print(query)
+        dict_to_ser = {"istances":dict_in_query,"query": query, "result_set": result_set,
                        "NNQT_istance":NNQT}
         FileHandler.serialize_query_set(dict_to_ser, template_entry["save_name"])
         return True
@@ -251,9 +233,10 @@ def map_dict_to_entities(dict_to_map):
     for key in dict_to_map.keys():
         entity_list_to_add = []
         for current_type in dict_to_map.get(key):
-            uris = EntityHandler.get_entities_of_type(current_type)
-            if len(uris) != 0:
-                entity_list_to_add.append(uris[0])
+            uri = EntityHandler.get_entity_with_most_relations(current_type)
+            if uri != "":
+                entity_list_to_add.append(uri)      #se volessi scegliere un'entità diversa dal primo risultato,
+                                                    #dovrei modificare questo
         dict_to_return.update({key: entity_list_to_add})
     return dict_to_return
 

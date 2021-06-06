@@ -4382,12 +4382,12 @@
         }
     },
     {
-        "NNQT_istance": "Which are the mountain that have a area greater than 2000?",
+        "NNQT_istance": "Which are the mountainrange that have a area greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/area",
-            "type_to_insert": "http://dbpedia.org/ontology/Mountain"
+            "type_to_insert": "http://dbpedia.org/ontology/MountainRange"
         },
-        "query": "select distinct ?uri where {?uri a <http://dbpedia.org/ontology/Mountain>. ?uri <http://dbpedia.org/ontology/area> ?obj FILTER(?obj>2000)} LIMIT 100",
+        "query": "select distinct ?uri where {?uri a <http://dbpedia.org/ontology/MountainRange>. ?uri <http://dbpedia.org/ontology/area> ?obj FILTER(?obj>2000)} LIMIT 100",
         "result_set": {
             "head": {
                 "link": [],
@@ -4406,12 +4406,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lower_Morava_Valley"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Mahalangur_Himal"
                         }
                     },
@@ -4419,30 +4413,6 @@
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Cordillera_Central_(Colombia)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cordillera_Occidental_(Colombia)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cordillera_Oriental_(Colombia)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Upper_Palatine_Hills"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Upper_Svratka_Highlands"
                         }
                     },
                     {
@@ -4472,12 +4442,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Binbo\u011fa_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Bitterroot_Mountains"
                         }
                     },
@@ -4502,12 +4466,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Black_Mountain,_Slovakia"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Black_Pine_Mountains"
                         }
                     },
@@ -4515,18 +4473,6 @@
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Blue_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Blue_Wing_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Bodhamalai"
                         }
                     },
                     {
@@ -4550,31 +4496,13 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Boundary_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Boundary_Ranges"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Boura_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Bow_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Delaware_Mountains"
                         }
                     },
                     {
@@ -4604,18 +4532,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Goat_Range_(Kananaskis)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Goda_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Gore_Range"
                         }
                     },
@@ -4623,24 +4539,6 @@
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Gowlland_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kettle_River_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Khibiny_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kisilyakh-Tas"
                         }
                     },
                     {
@@ -4676,12 +4574,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Princess_Caroline-Mathilde_Alps"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Pueblo_Mountains"
                         }
                     },
@@ -4689,12 +4581,6 @@
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Queen_Alexandra_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Queen_Louise_Land"
                         }
                     },
                     {
@@ -4712,18 +4598,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Aitana"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Alavaimalai"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Albion_Mountains"
                         }
                     },
@@ -4736,37 +4610,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Alsek_Ranges"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Catskill_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cayoosh_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Centennial_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Central_Panay_Mountain_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cerro_Colorado_Mountains"
                         }
                     },
                     {
@@ -4779,24 +4623,6 @@
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Cheam_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cheja_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Chelan_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Nikanassin_Range"
                         }
                     },
                     {
@@ -4826,25 +4652,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Franklin_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Front_Ranges"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Williams_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Peak_Range"
                         }
                     },
                     {
@@ -4862,12 +4670,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Bait_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Balkan_Mountains"
                         }
                     },
@@ -4875,30 +4677,6 @@
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Bare_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Bare_Top_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Battle_Mountains,_Nevada"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Livorno_Hills"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Long_Mynd"
                         }
                     },
                     {
@@ -4928,30 +4706,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cape_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Caraballo_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Card\u00f3_Massif"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Caren_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Cariboo_Mountains"
                         }
                     },
@@ -4964,37 +4718,283 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Chiltern_Hills"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Chismore_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Christmas_Mountains_(Texas)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Clear_Range"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Clearwater_Mountains"
+                            "value": "http://dbpedia.org/resource/Coast_Mountains"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Coast_Mountains"
+                            "value": "http://dbpedia.org/resource/Garibaldi_Ranges"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gladenbach_Uplands"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bedded_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Berchtesgaden_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kalatungan_Mountain_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Karmutzen_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lemhi_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Zambales_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Misty_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Saint_Elias_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lillooet_Ranges"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Skagit_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Slieve_Mish_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Smoky_Mountains_(Idaho)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/South_Downs"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Spanish_Peaks"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Spessart"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Dragoon_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Eastern_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Franconian_Jura"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Haihte_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Harz"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/House_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Huachuca_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Hueco_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Interior_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Jacques_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Javo\u0159ice_Highlands_(Moravia)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/San_Bernardino_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/San_Gabriel_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sangre_de_Cristo_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sangre_de_Cristo_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Santa_Ana_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sawback_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sawtooth_Range_(Idaho)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Schweizerland"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Aralar_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Atna_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Atsutla_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Omineca_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pacific_Ranges"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rhodope_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rh\u00f6n_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rila"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Torngat_Mountains"
                         }
                     }
                 ],
@@ -5004,12 +5004,12 @@
         }
     },
     {
-        "NNQT_istance": "Which are the mountain that have a elevation greater than 2000?",
+        "NNQT_istance": "Which are the mountainrange that have a elevation greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/elevation",
-            "type_to_insert": "http://dbpedia.org/ontology/Mountain"
+            "type_to_insert": "http://dbpedia.org/ontology/MountainRange"
         },
-        "query": "select distinct ?uri where {?uri a <http://dbpedia.org/ontology/Mountain>. ?uri <http://dbpedia.org/ontology/elevation> ?obj FILTER(?obj>2000)} LIMIT 100",
+        "query": "select distinct ?uri where {?uri a <http://dbpedia.org/ontology/MountainRange>. ?uri <http://dbpedia.org/ontology/elevation> ?obj FILTER(?obj>2000)} LIMIT 100",
         "result_set": {
             "head": {
                 "link": [],
@@ -5022,25 +5022,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lover's_Leap_(Tahoe,_California)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Lower_Tauern"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lower_Titus_Peak"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luahna_Peak"
                         }
                     },
                     {
@@ -5052,115 +5034,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lucerne_Peak"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lucifer_Peak"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ludwigsh\u00f6he_(mountain)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luera_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Lugano_Prealps"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luibiskogel"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luisin"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lujmani"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lukma_Punta"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luliqucha"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luna_Peak_(British_Columbia)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luna_Peak_(Washington)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lunag_Ri"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lunar_Crater_volcanic_field"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lunette_Peak"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lunkho_e_Dosare"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lunpo_Gangri"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lunq'u"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luntu_Luntuni"
                         }
                     },
                     {
@@ -5172,199 +5046,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lupanga"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lupghar_Sar"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luru_Mayu"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Lushai_Hills"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luxsar"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luychu_Urqu"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luychujasa"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lychnis_Mountain"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lygkos"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lynx_Mountain"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lyskamm"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/L\u00e4ngfluh"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/L\u00e4rchwand"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/L\u00f6cherkogel"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/L\u00f6ffelhorn"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/L\u00fcschgrat"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/M'Goun"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mabolasi_Mountain"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mac_Peak"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mach'ayniyuq"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machapuchare"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machaq_Marka"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machaqa_Marka_(Cochabamba)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machay"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Macho_Ritti"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machoi_Peak"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machu_Apachita"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machu_Kuntur_Sinqa"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machu_Kunturi"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machu_Qichqa"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machu_Such'i_Qhuchi"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Machu_Tanka_Tanka"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Macizo_de_la_Maladeta"
                         }
                     },
                     {
@@ -5376,79 +5058,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mad_Wolf_Mountain"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Madison_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Madom_Gr\u00f6ss"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Madom_da_Sgi\u00f3f"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Madone_(Locarno)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Madone_di_C\u00e0medo"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Madonino"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Madrisa"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mae_West_Peaks"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mafadi"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mafinga_Central"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mafinga_Hills"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maganik"
                         }
                     },
                     {
@@ -5460,91 +5070,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Magerrain"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maggies_Peaks"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Magic_Mountain_(Washington)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Magli\u0107_(mountain)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mahadev_Peak"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Mahalangur_Himal"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mahnkopf"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mahogany_Hills"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mahogany_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mahoney_Butte"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Mahtotopa_Mountain"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maiden_Peak_(Oregon)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maidenform_Peak"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maiella"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maiktoli"
                         }
                     },
                     {
@@ -5556,67 +5082,541 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maja_Harapit"
+                            "value": "http://dbpedia.org/resource/Cordillera_Central_(Colombia)"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maja_Jezerc\u00eb"
+                            "value": "http://dbpedia.org/resource/Cordillera_Vilcanota"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maja_e_Kollat\u00ebs"
+                            "value": "http://dbpedia.org/resource/Uinta_Mountains"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maja_e_K\u00ebndrevic\u00ebs"
+                            "value": "http://dbpedia.org/resource/Uri_Alps"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maja_e_Papingut"
+                            "value": "http://dbpedia.org/resource/Vancouver_Island_Ranges"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maja_e_That\u00eb"
+                            "value": "http://dbpedia.org/resource/Vanoise_massif"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maja_e_zez\u00eb"
+                            "value": "http://dbpedia.org/resource/Venediger_Group"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Maja_e_\u00c7ik\u00ebs"
+                            "value": "http://dbpedia.org/resource/Venetian_Prealps"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Majadita"
+                            "value": "http://dbpedia.org/resource/Vercors_Massif"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Majinghorn"
+                            "value": "http://dbpedia.org/resource/Vermilion_Range_(Alberta)"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Majuba_Mountains"
+                            "value": "http://dbpedia.org/resource/Verwall_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Mission_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bismarck_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bitterroot_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bitterroot_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Black_Hills"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Black_Pine_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Black_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Blue_Mountains_(Jamaica)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Blue_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Blue_Ridge_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Boise_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Borg_Massif"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bosche_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Boulder_Mountains_(Idaho)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Boundary_Ranges"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bow_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Delta_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Desatoya_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Dickson_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Dinaric_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Dolomites"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Glarus_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gore_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Graian_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Grapevine_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gravelly_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Great_Dividing_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Great_Smoky_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Great_Western_Divide"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Greater_Caucasus"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gros_Ventre_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Guadalupe_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Khangai_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Khentii_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Khokh_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Khun_Tan_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kiso_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kispiox_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kitanglad_Mountain_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kitzb\u00fchel_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Klamath_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kopaonik"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Korab"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kreuzeck_group"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ksour_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Princess_Margaret_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Prokletije"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Provence_Alps_and_Prealps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pueblo_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Puwaq_Hanka_mountain_range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pyrenees"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Qionglai_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Queen_Alexandra_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Queen_Elizabeth_Ranges"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Queen_Maud_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Quinlan_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rabbit_Ears_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Radstadt_Tauern"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Raft_River_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rainbow_Range_(Rocky_Mountains)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Saint-Gotthard_Massif"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ethiopian_Highlands"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Akaishi_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Al_Hajar_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Alaska_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Albion_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Albula_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Aleutian_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Allg\u00e4u_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cathedral_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Caucasus_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Centennial_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Central_Eastern_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Central_Mountain_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cerbat_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chablais_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Challenger_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chatkal_Range"
                         }
                     }
                 ],
@@ -5626,12 +5626,12 @@
         }
     },
     {
-        "NNQT_istance": "Which are the mountain that have a length greater than 2000?",
+        "NNQT_istance": "Which are the mountainrange that have a length greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/length",
-            "type_to_insert": "http://dbpedia.org/ontology/Mountain"
+            "type_to_insert": "http://dbpedia.org/ontology/MountainRange"
         },
-        "query": "select distinct ?uri where {?uri a <http://dbpedia.org/ontology/Mountain>. ?uri <http://dbpedia.org/ontology/length> ?obj FILTER(?obj>2000)} LIMIT 100",
+        "query": "select distinct ?uri where {?uri a <http://dbpedia.org/ontology/MountainRange>. ?uri <http://dbpedia.org/ontology/length> ?obj FILTER(?obj>2000)} LIMIT 100",
         "result_set": {
             "head": {
                 "link": [],
@@ -5650,31 +5650,13 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lower_Morava_Valley"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Luang_Prabang_Range"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luera_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Lyngen_Alps"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/L\u00f6wenstein_Hills"
                         }
                     },
                     {
@@ -5728,18 +5710,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Makrynoros"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cascade-Sierra_province"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Cordillera_Central_(Colombia)"
                         }
                     },
@@ -5752,97 +5722,13 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cordillera_Occidental_(Colombia)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cordillera_Oriental_(Colombia)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ukvushvuynen_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ulakhan-Chistay_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ulakhan-Sis_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ulan-Burgas"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Uly_Balkan"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Upper_Palatine_Hills"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Upper_Svratka_Highlands"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Ural_Mountains"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ust-Vilyuy_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Valley_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Vanj_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Vercors_Massif"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Verkhoyansk_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Nimba_Range"
                         }
                     },
                     {
@@ -5866,25 +5752,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Black_Hills_(Greenlee_County)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Black_Hills_(Yavapai_County)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Black_Mountains_(Arizona)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Black_Mountains_(Utah)"
                         }
                     },
                     {
@@ -5896,37 +5764,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Blauberge"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Blouberg_(range)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Blue_Mountain_(Pennsylvania)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Blue_Ridge_Mountain,_Pennsylvania"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Blue_Wing_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Bodhamalai"
                         }
                     },
                     {
@@ -5944,18 +5782,6 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Borgtinderne"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Borkoldoy_Too"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Bosche_Range"
                         }
                     },
@@ -5968,31 +5794,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Boura_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Bow_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Brabazon_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Bradshaw_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Braeburn_Range"
                         }
                     },
                     {
@@ -6004,43 +5806,13 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Delamar_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Delaware_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Delta_Mountains"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dena"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dervent_Heights"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Diablo_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dientes_de_Navarino"
                         }
                     },
                     {
@@ -6058,49 +5830,13 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Doi_Nang_Non"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dome_Rock_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Gleichberge"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Goda_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Goffle_Hill"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Gore_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Granite_Wash_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Graz_Highlands"
                         }
                     },
                     {
@@ -6130,61 +5866,13 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Gregory_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Gronau_Nunataks"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Growler_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Guadalupe_Mountains"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Guadalupe_Mountains_(Hidalgo_County)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Guaniguanico"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Khao_Khiao_Massif"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kharaulakh_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Khentei-Daur_Highlands"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Khentei_Range"
                         }
                     },
                     {
@@ -6202,19 +5890,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kisilyakh_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Kiso_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kitakami_Mountains"
                         }
                     },
                     {
@@ -6232,13 +5908,337 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kitoy_Range"
+                            "value": "http://dbpedia.org/resource/Klamath_Mountains"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Klamath_Mountains"
+                            "value": "http://dbpedia.org/resource/Kong\u014d_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pueblo_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pyrenees"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Queen_Alexandra_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Quinlan_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Raft_River_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Saint-Gotthard_Massif"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Akaishi_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Albion_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Aleutian_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cathedral_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Catskill_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Caucasus_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Central_Oregon_Coast_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chatkal_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chersky_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chic-Choc_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Nightcap_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Nipe-Sagua-Baracoa"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/North_Palatine_Uplands"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Northern_Oregon_Coast_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Nyenchen_Tanglha_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Vilcabamba_mountain_range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Virunga_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Balkan_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ball_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Livingston_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lost_River_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/North_Cascades"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Canadian_Rockies"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cantabrian_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cape_Breton_Highlands"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cardamom_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cariboo_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Carpathian_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Carson_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cascade_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chigmit_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chilean_Coast_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chugach_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Coast_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gladenbach_Uplands"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Baumberge"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bavarian_Prealps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Belledonne"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Berchtesgaden_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Berkshires"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Big_Hatchet_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kakshaal_Too"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kananaskis_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Karatau_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Karawanks"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kaweka_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lemhi_Range"
                         }
                     }
                 ],
@@ -6248,12 +6248,12 @@
         }
     },
     {
-        "NNQT_istance": "Which are the mountain that have a width greater than 2000?",
+        "NNQT_istance": "Which are the mountainrange that have a width greater than 2000?",
         "istances": {
             "rel_to_insert": "http://dbpedia.org/ontology/width",
-            "type_to_insert": "http://dbpedia.org/ontology/Mountain"
+            "type_to_insert": "http://dbpedia.org/ontology/MountainRange"
         },
-        "query": "select distinct ?uri where {?uri a <http://dbpedia.org/ontology/Mountain>. ?uri <http://dbpedia.org/ontology/width> ?obj FILTER(?obj>2000)} LIMIT 100",
+        "query": "select distinct ?uri where {?uri a <http://dbpedia.org/ontology/MountainRange>. ?uri <http://dbpedia.org/ontology/width> ?obj FILTER(?obj>2000)} LIMIT 100",
         "result_set": {
             "head": {
                 "link": [],
@@ -6273,12 +6273,6 @@
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Luang_Prabang_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Luera_Mountains"
                         }
                     },
                     {
@@ -6308,43 +6302,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Makrynoros"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cascade-Sierra_province"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ukvushvuynen_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ulan-Burgas"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Ural_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ust-Vilyuy_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Vanj_Range"
                         }
                     },
                     {
@@ -6368,25 +6326,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Black_Hills_(Greenlee_County)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Black_Hills_(Yavapai_County)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Black_Mountains_(Arizona)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Black_Mountains_(Utah)"
                         }
                     },
                     {
@@ -6398,37 +6338,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Blouberg_(range)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Blue_Wing_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Bodhamalai"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Boise_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Borgtinderne"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Borkoldoy_Too"
                         }
                     },
                     {
@@ -6446,37 +6356,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Boura_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Bow_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Delamar_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Delaware_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dena"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dervent_Heights"
                         }
                     },
                     {
@@ -6494,31 +6374,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Doi_Nang_Non"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dome_Rock_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Goda_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Gore_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Granite_Wash_Mountains"
                         }
                     },
                     {
@@ -6530,43 +6386,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Gronau_Nunataks"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Growler_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Guadalupe_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Guadalupe_Mountains_(Hidalgo_County)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Khao_Khiao_Massif"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Khentei-Daur_Highlands"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Khentei_Range"
                         }
                     },
                     {
@@ -6584,19 +6404,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kisilyakh_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Kiso_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kitakami_Mountains"
                         }
                     },
                     {
@@ -6614,49 +6422,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Knud_Rasmussen_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kodar_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kondakov_Plateau"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Kong\u014d_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Koryak_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kouebokkeveld_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Princess_Caroline-Mathilde_Alps"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Princess_Elizabeth_Alps"
                         }
                     },
                     {
@@ -6668,31 +6434,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Putorana_Plateau"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Pyramid_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Queen_Louise_Land"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Raft_River_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Aitana"
                         }
                     },
                     {
@@ -6704,37 +6446,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Alamo_Hueco_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Alavaimalai"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Alay_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Alazeya_Plateau"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Albion_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Aldan_Highlands"
                         }
                     },
                     {
@@ -6758,43 +6470,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cayoosh_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cedar_Mountain_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cedar_Mountains_(Tooele_County,_Utah)"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Central_Panay_Mountain_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cerro_Colorado_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Chatkal_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Chelan_Mountains"
                         }
                     },
                     {
@@ -6812,55 +6488,379 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Fish_Springs_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Florida_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Nightingale_Mountains"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Nikanassin_Range"
-                        }
-                    },
-                    {
-                        "uri": {
-                            "type": "uri",
                             "value": "http://dbpedia.org/resource/Nipe-Sagua-Baracoa"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Norlund_Alps"
+                            "value": "http://dbpedia.org/resource/Balkan_Mountains"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Nuba_Mountains"
+                            "value": "http://dbpedia.org/resource/Ball_Range"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ochoco_Mountains"
+                            "value": "http://dbpedia.org/resource/Livingston_Range"
                         }
                     },
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Chatyr-Tau"
+                            "value": "http://dbpedia.org/resource/Lost_River_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/North_Cascades"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Canadian_Rockies"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cantabrian_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cape_Breton_Highlands"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cardamom_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cariboo_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Carson_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Cascade_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chigmit_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Coast_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Belledonne"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Big_Hatchet_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kakshaal_Too"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kananaskis_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Karatau_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lemhi_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Tenasserim_Hills"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Y\u014dr\u014d_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Zabarwan_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Zambales_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/\u014cu_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Misty_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Monashee_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rushan_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Saint_Elias_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Salzburg_Slate_Alps"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Slate_Range_(Alberta)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Slieve_Mish_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Smoky_Mountains_(Idaho)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Soldier_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/South_Mountain_(Maryland_and_Pennsylvania)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Soutpansberg"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Dragoon_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/East_Bay_Hills_(Nova_Scotia)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gallieni_Massif"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/House_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Huachuca_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Hueco_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Imeon_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Inyo_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/San_Andres_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/San_Bernardino_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/San_Gabriel_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sangre_de_Cristo_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sangre_de_Cristo_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sankamphaeng_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Santa_Catalina_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Santa_Teresa_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sawback_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sawtooth_Range_(Idaho)"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Scandinavian_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Schweizerland"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Selkirk_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sentinel_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Andes"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Annamite_Range"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Apennine_Mountains"
+                        }
+                    },
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Oquirrh_Mountains"
                         }
                     }
                 ],

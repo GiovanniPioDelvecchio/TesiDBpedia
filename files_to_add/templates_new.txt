@@ -1,51 +1,52 @@
 [
 {
-	"save_name": "files_to_add/two_relations.json",
+	"save_name": "files_to_add/close_person_birth_date.json",
 
-	"template":"select distinct ?uri ?place ?date where {?uri a <%(first_type)s>.
-	?uri <%(first_rel)s> ?place.
-	?uri <%(second_rel)s> ?date
-	Filter(?date<\"1960-05-23T10:20:13+05:30\"^^xsd:dateTime)} LIMIT 100",
+	"template":"select distinct ?uri ?bd1 where {?uri a <%(first_type)s>. 
+	?uri <%(first_relation)s> ?obj.
+	?obj dbo:birthDate ?bd1.
+	FILTER(?bd1>(\"1960-02-12\"^^xsd:date))
+	}
+	ORDER BY DESC(?bd1)",
 
-	"NNQT":"Which are the %(first_type)s born before the 23rd of May 1960, and what are their respective
-			birthplaces?",
+	"NNQT":"Who are the %(first_relation)s of %(first_type)s born after the 12th of February 1960 and when were they born?",
 
-	"valid_types":{"first_type":"dbo:Artist"},
+	"valid_types":{"first_type":"dbo:Politician"},
 
-	"relation_constraints":{"first_rel":"is http://dbpedia.org/ontology/birthPlace", "second_rel":
-	"is http://dbpedia.org/ontology/birthDate"}
+	"relation_constraints":{"first_relation":"sameSettingAs"}
 }, {
-	"save_name":"files_to_add/two_types.json",
+	"save_name": "files_to_add/places_with_highest_values.json",
 
-	"template":"select distinct ?uri ?otherUri where {?uri a <%(first_type)s>. 
-	?otherUri a <%(second_type)s>. 
-	?uri <%(rel_to_insert)s> ?otherUri.} LIMIT 100",
+	"template":"SELECT ?area 
+	WHERE { 
+	?uri a <%(first_type)s>; <%(first_relation)s> ?rel.  ?uri <%(second_relation)s> ?area } ORDER BY DESC(?rel) LIMIT 1",
 
-	"NNQT":"Which are the %(second_type)s who wrote a %(first_type)s?",
+	"NNQT":"Which are the areas that contain the %(first_type)s with the highest %(first_relation)s",
 
-	"valid_types":{"first_type":"dbo:WrittenWork", "second_type":"dbo:Artist"},
+	"valid_types":{"first_type":"dbo:NaturalPlace"},
 
-	"relation_constraints":{"rel_to_insert":"is http://dbpedia.org/ontology/author"}
+	"relation_constraints":{"first_relation":"num", "second_relation":"hasLocation"}
 }, {
-	"save_name":"files_to_add/filter_natural_places.json",
+	"save_name": "files_to_add/count_places.json",
 
-	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. ?uri <%(rel_to_insert)s> ?obj FILTER(?obj>2000)} LIMIT 100",
+	"template":"SELECT COUNT(?uri) as ?places
+	WHERE {  ?uri a <%(first_type)s>. ?uri <%(first_rel)s> ?obj. FILTER ( ?obj > 300000 ) }",
 
-	"NNQT":"Which are the %(type_to_insert)s that have a %(rel_to_insert)s greater than 2000?",
+	"NNQT":"How many %(first_type)s contain more than 300000 units of %(first_rel)s",
 
-	"valid_types":{"type_to_insert":"dbo:NaturalPlace"},
+	"valid_types":{"first_type":"dbo:PopulatedPlace"},
 
-	"relation_constraints":{"rel_to_insert":"num"}
+	"relation_constraints":{"first_rel":"num"}
 }, {
-	"save_name":"files_to_add/simplest_template.json",
-	
-	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. 
-	?uri <%(rel_to_insert)s> ?obj} LIMIT 100",
+	"save_name": "files_to_add/containing_places.json",
 
-	"NNQT":"Which are the %(type_to_insert)s that %(rel_to_insert)s?",
+	"template":"SELECT ?uri COUNT(?obj)
+	WHERE {  ?obj a <%(first_type)s>. ?uri a <%(second_type)s>. ?obj <%(first_rel)s> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
 
-	"valid_types":{"type_to_insert":"dbo:Person"},
+	"NNQT":"Which are the %(second_type)s that contains more than 100 %(first_type)s",
 
-	"relation_constraints":{"rel_to_insert":"unique"}
+	"valid_types":{"first_type":"dbo:Place", "second_type":"dbo:PopulatedPlace"},
+
+	"relation_constraints":{"first_rel":"hasLocation"}
 }
 ]
