@@ -1,52 +1,28 @@
 [
 {
-	"save_name": "files_to_add/close_person_birth_date.json",
+	"save_name": "files_to_add/istances/known_publication.json",
 
-	"template":"select distinct ?uri ?bd1 where {?uri a <%(first_type)s>. 
-	?uri <%(first_relation)s> ?obj.
-	?obj dbo:birthDate ?bd1.
-	FILTER(?bd1>(\"1960-02-12\"^^xsd:date))
-	}
-	ORDER BY DESC(?bd1)",
+	"template":"SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <%(first_type)s>.
+	?auth a <%(second_type)s>.
+	?auth dbo:birthDate ?bDate.
+	FILTER(?bDate < \"1800-01-01\"^^xsd:date).
+	OPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
 
-	"NNQT":"Who are the %(first_relation)s of %(first_type)s born after the 12th of February 1960 and when were they born?",
+	"NNQT":"Which are the %(first_type)s that have a known publication date, written by a %(second_type)s born before 1800?",
 
-	"valid_types":{"first_type":"dbo:Politician"},
+	"valid_types":{"first_type":"dbo:WrittenWork", "second_type":"dbo:Person"},
 
-	"relation_constraints":{"first_relation":"sameSettingAs"}
+	"relation_constraints":{}
 }, {
-	"save_name": "files_to_add/places_with_highest_values.json",
+	"save_name": "files_to_add/istances/written_more_than_100.json",
 
-	"template":"SELECT ?area 
-	WHERE { 
-	?uri a <%(first_type)s>; <%(first_relation)s> ?rel.  ?uri <%(second_relation)s> ?area } ORDER BY DESC(?rel) LIMIT 1",
+	"template":"SELECT ?writer WHERE { 
+	SELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <%(first_type)s>. ?book dbo:author ?writer; rdf:type <%(second_type)s> } GROUP BY ?writer HAVING(COUNT(?book)>5) }",
 
-	"NNQT":"Which are the areas that contain the %(first_type)s with the highest %(first_relation)s",
+	"NNQT":"Which are the %(first_type)s that wrote more than 10 %(second_type)s",
 
-	"valid_types":{"first_type":"dbo:NaturalPlace"},
+	"valid_types":{"first_type":"dbo:Person", "second_type":"dbo:WrittenWork"},
 
-	"relation_constraints":{"first_relation":"num", "second_relation":"hasLocation"}
-}, {
-	"save_name": "files_to_add/count_places.json",
-
-	"template":"SELECT COUNT(?uri) as ?places
-	WHERE {  ?uri a <%(first_type)s>. ?uri <%(first_rel)s> ?obj. FILTER ( ?obj > 300000 ) }",
-
-	"NNQT":"How many %(first_type)s contain more than 300000 units of %(first_rel)s",
-
-	"valid_types":{"first_type":"dbo:PopulatedPlace"},
-
-	"relation_constraints":{"first_rel":"num"}
-}, {
-	"save_name": "files_to_add/containing_places.json",
-
-	"template":"SELECT ?uri COUNT(?obj)
-	WHERE {  ?obj a <%(first_type)s>. ?uri a <%(second_type)s>. ?obj <%(first_rel)s> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
-
-	"NNQT":"Which are the %(second_type)s that contains more than 100 %(first_type)s",
-
-	"valid_types":{"first_type":"dbo:Place", "second_type":"dbo:PopulatedPlace"},
-
-	"relation_constraints":{"first_rel":"hasLocation"}
+	"relation_constraints":{}
 }
 ]

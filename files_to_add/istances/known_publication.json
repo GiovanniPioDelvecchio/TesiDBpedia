@@ -1,0 +1,2326 @@
+[
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a militarypersons born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by a military person born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/MilitaryPerson"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/MilitaryPerson>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._1"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._11"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._12"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._13"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._15"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._16"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._17"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._21"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._22"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._23"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._24"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._25"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._26"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._27"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._28"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._29"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._30"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._31"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._32"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._33"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._34"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._35"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._36"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._6"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._65"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._7"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._8"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._80"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._82"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._83"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._84"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._9"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a artists born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by an artist born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Artist"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Artist>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Holy_Land,_Syria,_Idumea,_Arabia,_Egypt,_and_Nubia"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/An_Essay_on_the_Principle_of_Population"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Principles_of_Political_Economy_(Malthus_book)"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a philosophers born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by a philosopher born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Philosopher"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Philosopher>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/D'Alembert's_Dream"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Mystification_(Diderot)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rameau's_Nephew"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Letter_on_the_Blind"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Skeptic's_Walk"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Indiscreet_Jewels"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Jacques_the_Fatalist"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Encyclop\u00e9die"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Delphine_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Julie;_or,_The_New_Heloise"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Emile,_or_On_Education"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Foundations_of_the_Science_of_Knowledge"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Science_of_Education_(book)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/An_Essay_Concerning_Human_Understanding"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Of_the_Conduct_of_the_Understanding"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Two_Treatises_of_Government"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/An_Appeal_from_the_New_to_the_Old_Whigs"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_Atlantis"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Timeline_of_science_fiction"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_History_of_British_India"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Things_as_They_Are;_or,_The_Adventures_of_Caleb_Williams"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Justine_(de_Sade_novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Aline_and_Valcour"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Juliette_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_120_Days_of_Sodom"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rights_of_Man"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Theory_of_Moral_Sentiments"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a politicians born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by a politician born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Politician"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Politician>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Memories,_the_real_history_of_this_republic_since_the_year_1808"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Don_Juan_(poem)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Bride_of_Abydos"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Childe_Harold's_Pilgrimage"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_State_of_Innocence"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Albion_and_Albanius"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Religio_Laici"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Hind_and_the_Panther"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Autobiography_of_Benjamin_Franklin"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Adolphe"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/An_Appeal_from_the_New_to_the_Old_Whigs"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_Atlantis"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Timeline_of_science_fiction"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_History_of_the_Decline_and_Fall_of_the_Roman_Empire"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Castle_of_Otranto"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Salmagundi_(periodical)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/History_of_the_Indian_Tribes_of_North_America"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/On_the_Principles_of_Political_Economy_and_Taxation"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Horse-Shoe_Robinson"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Atala_(novella)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._1"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._10"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._11"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._12"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._13"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._14"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._15"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._16"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._17"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._18"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._19"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._2"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._20"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._21"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._22"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._23"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._24"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._25"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._26"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._27"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._28"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._29"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._3"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._30"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._31"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._32"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._33"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._34"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._35"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._36"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._37"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._38"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._39"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._4"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._40"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._5"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._6"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._65"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._7"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._8"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._80"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._82"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._83"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._84"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._9"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a writers born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by a writer born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Writer"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Writer>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Strange_Stories_from_a_Chinese_Studio"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Journey_to_Arzrum"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Prisoner_of_the_Caucasus_(poem)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Dubrovsky_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Eugene_Onegin"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Desmond_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ritson's_Northumberland_Garland_or_Newcastle_Nightingale_1809"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ritson's_Northern_Garlands_1810"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ritson's_North-Country_Chorister_1809"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ritson's_Yorkshire_Garland_1809"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ritson's_Bishopric_Garland_or_Durham_Minstrel_1792"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ourika"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Jewish_Letters"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Sorrows_of_Young_Werther"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_State_of_Innocence"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Green_Snake_and_the_Beautiful_Lily"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Albion_and_Albanius"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Religio_Laici"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Fanny_Hill"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Faust,_Part_One"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Faust,_Part_Two"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Italian_Journey"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Hind_and_the_Panther"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/De_historia_stirpium_commentarii_insignes"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/La_Galatea"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Private_Memoirs_and_Confessions_of_a_Justified_Sinner"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/El_Busc\u00f3n"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Summary_History_of_New-England"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_View_of_Religions"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/C\u00e9sar_Birotteau"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/S\u00e9raph\u00eeta"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Eug\u00e9nie_Grandet"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/La_Rabouilleuse"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ursule_Mirou\u00ebt"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Le_Contrat_de_mariage"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pierre_Grassou"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Prairie"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Last_of_the_Mohicans"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Precaution_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Pioneers_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Dictionary_of_the_English_Language"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Northanger_Abbey"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pamela;_or,_Virtue_Rewarded"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sense_and_Sensibility"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Mansfield_Park"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Clarissa"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sanditon"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pride_and_Prejudice"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Liberia;_or,_Mr._Peyton's_Experiments"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Castles_of_Athlin_and_Dunbayne"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gaston_de_Blondeville"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Mysteries_of_Udolpho"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Italian_(Radcliffe_novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Memoirs_Illustrating_the_History_of_Jacobinism"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Crimean_Sonnets"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ballads_and_Romances"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Peter_Schlemihl"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Sentimental_Journey_Through_France_and_Italy"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Life_and_Opinions_of_Tristram_Shandy,_Gentleman"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/On_the_Principles_of_Political_Economy_and_Taxation"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Stemmatografia"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Odiljenje_sigetsko"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Croatia_Rediviva"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Poems,_Chiefly_in_the_Scottish_Dialect_(Edinburgh_Edition)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Poems,_Chiefly_in_the_Scottish_Dialect_(London_Edition)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Poems,_Chiefly_in_the_Scottish_Dialect_(Second_Edinburgh_Edition)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Poems,_Chiefly_in_the_Scottish_Dialect"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Revolt_of_Islam"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Course_of_Time"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Castle_Dangerous"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Black_Dwarf_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Waverley_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Journal_of_Sir_Walter_Scott"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Legend_of_Montrose"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Heart_of_Midlothian"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rob_Roy_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Siege_of_Malta_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Henriade"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Old_Mortality"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Fortunes_of_Nigel"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bizarro_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ivanhoe"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Kenilworth_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Guy_Mannering"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Woodstock_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Count_Robert_of_Paris"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Monastery"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Quentin_Durward"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Fair_Maid_of_Perth"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Anne_of_Geierstein"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Saint_Ronan's_Well"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Peveril_of_the_Peak"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Antiquary"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Betrothed_(Scott_novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Talisman_(Scott_novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Les_Liaisons_dangereuses"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Charterhouse_of_Parma"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Red_and_the_Black"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Salmagundi_(periodical)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Tales_of_a_Traveller"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Mahomet_and_His_Successors"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Book_of_Wisdom_and_Lies"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_History_of_the_Life_and_Voyages_of_Christopher_Columbus"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Letters_of_Jonathan_Oldstyle,_Gent."
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Sketch_Book_of_Geoffrey_Crayon,_Gent."
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bracebridge_Hall"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gondibert"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Biblical_Researches_in_Palestine"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Joseph_Andrews"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/An_Apology_for_the_Life_of_Mrs._Shamela_Andrews"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_History_of_Tom_Jones,_a_Foundling"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Paradise_Regained"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Of_True_Religion"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Areopagitica"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Paradise_Lost"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Tale_of_a_Tub"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Gulliver's_Travels"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Battle_of_the_Books"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Castle_Rackrent"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Leonora_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Parent's_Assistant"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Patronage_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Vindication_of_the_Rights_of_Woman"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_French_Revolution:_A_History"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/On_Heroes,_Hero-Worship,_and_The_Heroic_in_History"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Characters_of_Shakespear's_Plays"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Judita"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Table-Talk"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Political_Essays"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sucesos_de_las_Islas_Filipinas"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pan_Tadeusz"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a clerics born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by a cleric born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Cleric"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Cleric>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Adventures_of_Mr._Nicholas_Wisdom"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pan_Podstoli"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_City_of_God"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Anatomy_of_Melancholy"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a artists born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by an artist born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Artist"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Artist>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Holy_Land,_Syria,_Idumea,_Arabia,_Egypt,_and_Nubia"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/An_Essay_on_the_Principle_of_Population"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Principles_of_Political_Economy_(Malthus_book)"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a nobles born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by a noble born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Noble"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Noble>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Manuscript_Found_in_Saragossa"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Countess_of_Pembroke's_Arcadia"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Justine_(de_Sade_novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Aline_and_Valcour"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Juliette_(novel)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_120_Days_of_Sodom"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a scientists born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by a scientist born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Scientist"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Scientist>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Geological_Evidences_of_the_Antiquity_of_Man"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Flora_Brasiliensis"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Grammaire_\u00e9gyptienne"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Encyclop\u00e9die"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Polygraphia_(book)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Steganographia"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/De_Morbis_Artificum_Diatriba"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/De_historia_stirpium_commentarii_insignes"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Trait\u00e9_\u00c9l\u00e9mentaire_de_Chimie"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Plantae_Asiaticae_Rariores"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Facial_Angles_(Camper)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Sidereus_Nuncius"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/A_Voyage_Round_the_World"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the books that have a known publication date, written by a politicians born before 1800?",
+        "correct_NNQT_istance": "Which are the books that have a known publication date, written by a politician born before 1800?",
+        "istances": {
+            "first_type": "http://dbpedia.org/ontology/Book",
+            "second_type": "http://dbpedia.org/ontology/Politician"
+        },
+        "query": "SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <http://dbpedia.org/ontology/Book>.\n\t?auth a <http://dbpedia.org/ontology/Politician>.\n\t?auth dbo:birthDate ?bDate.\n\tFILTER(?bDate < \"1800-01-01\"^^xsd:date).\n\tOPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "work"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Memories,_the_real_history_of_this_republic_since_the_year_1808"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Don_Juan_(poem)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Bride_of_Abydos"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Childe_Harold's_Pilgrimage"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_State_of_Innocence"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Albion_and_Albanius"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Religio_Laici"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Hind_and_the_Panther"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Autobiography_of_Benjamin_Franklin"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Adolphe"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/An_Appeal_from_the_New_to_the_Old_Whigs"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_Atlantis"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Timeline_of_science_fiction"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_History_of_the_Decline_and_Fall_of_the_Roman_Empire"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/The_Castle_of_Otranto"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Salmagundi_(periodical)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/History_of_the_Indian_Tribes_of_North_America"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/On_the_Principles_of_Political_Economy_and_Taxation"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Horse-Shoe_Robinson"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Atala_(novella)"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._1"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._10"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._11"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._12"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._13"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._14"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._15"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._16"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._17"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._18"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._19"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._2"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._20"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._21"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._22"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._23"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._24"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._25"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._26"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._27"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._28"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._29"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._3"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._30"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._31"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._32"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._33"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._34"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._35"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._36"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._37"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._38"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._39"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._4"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._40"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._5"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._6"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._65"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._7"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._8"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._80"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._82"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._83"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._84"
+                        }
+                    },
+                    {
+                        "work": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Federalist_No._9"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "NNQT_istance": "What is the last bodyofwaters in Germany for areaofcatchments?",
+        "correct_NNQT_istance": "What is the last bodyofwaters in Germany for areaofcatchments?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?uri WHERE  { ?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; <http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Germany>  }ORDER BY ASC(?elevation) LIMIT 1",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Immerather_Maar"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the last mountainranges in Germany for lengths?",
+        "correct_NNQT_istance": "What is the last mountain ranges in Germany for lengths?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/length",
+            "first_type": "http://dbpedia.org/ontology/MountainRange",
+            "second_rel": "http://dbpedia.org/ontology/country"
+        },
+        "query": "SELECT ?uri WHERE  { ?uri rdf:type <http://dbpedia.org/ontology/MountainRange>; <http://dbpedia.org/ontology/length> ?measure; <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany>  }ORDER BY ASC(?elevation) LIMIT 1",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Black_Forest"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    }
+]

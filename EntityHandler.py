@@ -47,7 +47,9 @@ class Entity:
         relation_name = "rel"
         query = """ SELECT DISTINCT ?""" + relation_name + """ WHERE {
                         <""" + self.entity_URI + """> ?""" + relation_name + """ ?obj.
-                        filter(strstarts(str(?""" + relation_name + """), str(dbo:)))}""" #FILTER(!isLiteral(?obj))
+                        filter(strstarts(str(?""" + relation_name + """), str(dbo:)))
+                        filter regex(?""" + relation_name + """, "^(?:(?!wiki).)*$", "i")
+                        }""" #FILTER(!isLiteral(?obj))
         sparql = SPARQLWrapper("http://dbpedia.org/sparql")
         sparql.setReturnFormat(JSON)
         sparql.setQuery(query)
