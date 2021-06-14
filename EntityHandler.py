@@ -47,7 +47,9 @@ class Entity:
         relation_name = "rel"
         query = """ SELECT DISTINCT ?""" + relation_name + """ WHERE {
                         <""" + self.entity_URI + """> ?""" + relation_name + """ ?obj.
-                        filter(strstarts(str(?""" + relation_name + """), str(dbo:)))}""" #FILTER(!isLiteral(?obj))
+                        filter(strstarts(str(?""" + relation_name + """), str(dbo:)))
+                        filter regex(?""" + relation_name + """, "^(?:(?!wiki).)*$", "i")
+                        }""" #FILTER(!isLiteral(?obj))
         sparql = SPARQLWrapper("http://dbpedia.org/sparql")
         sparql.setReturnFormat(JSON)
         sparql.setQuery(query)
@@ -142,6 +144,29 @@ def get_entities_of_type(type_uri):
     result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
     return result_set
 
+def get_entity_with_most_relations(type_uri):
+    """Restituisce l'entità di tipo type_uri con il maggior numero di relazioni associate
+
+        Args:
+            type_uri: uri corrispondente al tipo di entità da restituire
+        Returns:
+            result: "" se non è stata trovata alcuna entità di tipo type_uri, altrimenti è l'entità di tipo
+            type_uri con il maggior numero di relazioni associate
+    """
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+    query = """select distinct ?uri count(?rel) as ?numrel where {?uri rdf:type <"""+type_uri+""">.
+                ?uri ?rel ?obj.
+                } ORDER BY DESC(?numrel) LIMIT 1"""
+    sparql.setQuery(query)
+    temp_dict = sparql.query().convert()["results"]["bindings"]
+    temp_dict_len = len(temp_dict)
+    result = ""
+    if temp_dict_len > 0:
+        result = temp_dict[0]["uri"]["value"]
+    return result
+
 
 def get_subclasses_of(type_uri):
     """Restituisce la lista di sottoclassi della classe type_uri
@@ -163,7 +188,6 @@ def get_subclasses_of(type_uri):
     temp_dict_len = len(temp_dict)
     result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
     return result_set
-
 
 
 

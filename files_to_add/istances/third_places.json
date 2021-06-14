@@ -1,0 +1,92 @@
+[
+    {
+        "NNQT_istance": "What is the third bodyofwaters in Italy for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in Italy for areaofcatchments?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; <http://dbpedia.org/ontology/location> dbr:Italy  } ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lake_Idro"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the third mountains in Italy for elevations?",
+        "correct_NNQT_istance": "What is the third mountains in Italy for elevations?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/elevation",
+            "first_type": "http://dbpedia.org/ontology/Mountain",
+            "second_rel": "http://dbpedia.org/ontology/locatedInArea"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/elevation> ?measure; <http://dbpedia.org/ontology/locatedInArea> dbr:Italy  } ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Rocher_de_la_Tournette"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the third mountains in Italy for lengths?",
+        "correct_NNQT_istance": "What is the third mountains in Italy for lengths?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/length",
+            "first_type": "http://dbpedia.org/ontology/Mountain",
+            "second_rel": "http://dbpedia.org/ontology/country"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/length> ?measure; <http://dbpedia.org/ontology/country> dbr:Italy  } ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Dinaric_Alps"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    }
+]

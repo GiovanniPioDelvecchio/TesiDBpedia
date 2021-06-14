@@ -1,0 +1,152 @@
+[
+    {
+        "NNQT_istance": "Which are the areas that contain the bodyofwaters with the highest areaofcatchments",
+        "correct_NNQT_istance": "Which are the areas that contain the bodyofwaters with the highest areaofcatchments?",
+        "istances": {
+            "first_relation": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_relation": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?rel.  ?uri <http://dbpedia.org/ontology/location> ?area } ORDER BY DESC(?rel) LIMIT 1",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "area"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "area": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/North_America"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the areas that contain the craters with the highest diameters",
+        "correct_NNQT_istance": "Which are the areas that contain the craters with the highest diameters?",
+        "istances": {
+            "first_relation": "http://dbpedia.org/ontology/diameter",
+            "first_type": "http://dbpedia.org/ontology/Crater",
+            "second_relation": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Crater>; <http://dbpedia.org/ontology/diameter> ?rel.  ?uri <http://dbpedia.org/ontology/location> ?area } ORDER BY DESC(?rel) LIMIT 1",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "area"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "area": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Moon"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the areas that contain the volcanos with the highest elevations",
+        "correct_NNQT_istance": "Which are the areas that contain the volcanos with the highest elevations?",
+        "istances": {
+            "first_relation": "http://dbpedia.org/ontology/elevation",
+            "first_type": "http://dbpedia.org/ontology/Volcano",
+            "second_relation": "http://dbpedia.org/ontology/locatedInArea"
+        },
+        "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Volcano>; <http://dbpedia.org/ontology/elevation> ?rel.  ?uri <http://dbpedia.org/ontology/locatedInArea> ?area } ORDER BY DESC(?rel) LIMIT 1",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "area"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "area": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Argentina"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the areas that contain the mountainranges with the highest lengths",
+        "correct_NNQT_istance": "Which are the areas that contain the mountain ranges with the highest lengths?",
+        "istances": {
+            "first_relation": "http://dbpedia.org/ontology/length",
+            "first_type": "http://dbpedia.org/ontology/MountainRange",
+            "second_relation": "http://dbpedia.org/ontology/country"
+        },
+        "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/MountainRange>; <http://dbpedia.org/ontology/length> ?rel.  ?uri <http://dbpedia.org/ontology/country> ?area } ORDER BY DESC(?rel) LIMIT 1",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "area"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "area": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Venezuela"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the areas that contain the mountainranges with the highest lengths",
+        "correct_NNQT_istance": "Which are the areas that contain the mountain ranges with the highest lengths?",
+        "istances": {
+            "first_relation": "http://dbpedia.org/ontology/length",
+            "first_type": "http://dbpedia.org/ontology/MountainRange",
+            "second_relation": "http://dbpedia.org/ontology/state"
+        },
+        "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/MountainRange>; <http://dbpedia.org/ontology/length> ?rel.  ?uri <http://dbpedia.org/ontology/state> ?area } ORDER BY DESC(?rel) LIMIT 1",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "area"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "area": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Queensland"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    }
+]

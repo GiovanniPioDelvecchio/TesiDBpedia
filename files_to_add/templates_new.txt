@@ -1,51 +1,28 @@
 [
 {
-	"save_name": "files_to_add/two_relations.json",
+	"save_name": "files_to_add/istances/known_publication.json",
 
-	"template":"select distinct ?uri ?place ?date where {?uri a <%(first_type)s>.
-	?uri <%(first_rel)s> ?place.
-	?uri <%(second_rel)s> ?date
-	Filter(?date<\"1960-05-23T10:20:13+05:30\"^^xsd:dateTime)} LIMIT 100",
+	"template":"SELECT DISTINCT ?work WHERE { ?work dbo:author ?auth;   rdf:type <%(first_type)s>.
+	?auth a <%(second_type)s>.
+	?auth dbo:birthDate ?bDate.
+	FILTER(?bDate < \"1800-01-01\"^^xsd:date).
+	OPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
 
-	"NNQT":"Which are the %(first_type)s born before the 23rd of May 1960, and what are their respective
-			birthplaces?",
+	"NNQT":"Which are the %(first_type)s that have a known publication date, written by a %(second_type)s born before 1800?",
 
-	"valid_types":{"first_type":"dbo:Artist"},
+	"valid_types":{"first_type":"dbo:WrittenWork", "second_type":"dbo:Person"},
 
-	"relation_constraints":{"first_rel":"is http://dbpedia.org/ontology/birthPlace", "second_rel":
-	"is http://dbpedia.org/ontology/birthDate"}
+	"relation_constraints":{}
 }, {
-	"save_name":"files_to_add/two_types.json",
+	"save_name": "files_to_add/istances/written_more_than_100.json",
 
-	"template":"select distinct ?uri ?otherUri where {?uri a <%(first_type)s>. 
-	?otherUri a <%(second_type)s>. 
-	?uri <%(rel_to_insert)s> ?otherUri.} LIMIT 100",
+	"template":"SELECT ?writer WHERE { 
+	SELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <%(first_type)s>. ?book dbo:author ?writer; rdf:type <%(second_type)s> } GROUP BY ?writer HAVING(COUNT(?book)>5) }",
 
-	"NNQT":"Which are the %(second_type)s who wrote a %(first_type)s?",
+	"NNQT":"Which are the %(first_type)s that wrote more than 10 %(second_type)s",
 
-	"valid_types":{"first_type":"dbo:WrittenWork", "second_type":"dbo:Artist"},
+	"valid_types":{"first_type":"dbo:Person", "second_type":"dbo:WrittenWork"},
 
-	"relation_constraints":{"rel_to_insert":"is http://dbpedia.org/ontology/author"}
-}, {
-	"save_name":"files_to_add/filter_natural_places.json",
-
-	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. ?uri <%(rel_to_insert)s> ?obj FILTER(?obj>2000)} LIMIT 100",
-
-	"NNQT":"Which are the %(type_to_insert)s that have a %(rel_to_insert)s greater than 2000?",
-
-	"valid_types":{"type_to_insert":"dbo:NaturalPlace"},
-
-	"relation_constraints":{"rel_to_insert":"num"}
-}, {
-	"save_name":"files_to_add/simplest_template.json",
-	
-	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. 
-	?uri <%(rel_to_insert)s> ?obj} LIMIT 100",
-
-	"NNQT":"Which are the %(type_to_insert)s that %(rel_to_insert)s?",
-
-	"valid_types":{"type_to_insert":"dbo:Person"},
-
-	"relation_constraints":{"rel_to_insert":"unique"}
+	"relation_constraints":{}
 }
 ]
