@@ -5,6 +5,7 @@ import FileHandler
 import itertools
 from RelationsConstraints import apply_constraint
 from gingerit.gingerit import GingerIt
+import ConstantsHandler
 
 
 def correct_sentence(text):
@@ -66,24 +67,38 @@ def instantiate_single_query(entity_tuple, template_entry):
             chosen_type = type_list_with_whitelisted[rand_type_number]
             dict_in_query.update({current_type_variable: chosen_type})
             # tratto le relazioni
-            relations_found = find_relations_with_constraints(considered_entity, template_entry)
+            relations_found = find_relations_with_constraints(considered_entity, template_entry) #occorre fare
+            #una funzione simile anche per singole entità e per le costanti, ottenere il prodotto cartesiano
+            #fra le liste non vuote e tentare di generare una query per ogni combinazione trovata
+            single_entities_found = find_single_entities(template_entry)
+            constants_found = find_constants_values(template_entry)
+
+            complete_dict_to_istantiate = {}
+            complete_dict_to_istantiate.update(relations_found)
+            complete_dict_to_istantiate.update(single_entities_found)
+            complete_dict_to_istantiate.update(constants_found)
+
+            list_of_lists = []
+            for var_to_use in complete_dict_to_istantiate:
+                for list_to_consider in complete_dict_to_istantiate.get(var_to_use).keys():
+                    list_of_lists.append(complete_dict_to_istantiate.get(var_to_use).get(list_to_consider))
+
             for relation_variable in relations_found.keys():
                 for correct_relation in relations_found.get(relation_variable):
                     dict_in_query.update({relation_variable: correct_relation})
                     if try_to_print_query(dict_in_query, template_entry):
                         just_printed_flag = True
 
-            single_entities_dict = template_entry["single_entities"]
+            """single_entities_dict = template_entry["single_entities"]
             for single_entity in single_entities_dict.keys():
                 print(single_entity)
                 all_entities_of_type = EntityHandler.get_entities_of_type(
                     EntityHandler.get_true_uri(single_entities_dict.get(single_entity)))
-                print(all_entities_of_type)
                 for entity_to_insert_in_query in all_entities_of_type:
                     dict_in_query.update({single_entity: entity_to_insert_in_query})
                     print(dict_in_query)
                     if try_to_print_query(dict_in_query, template_entry):
-                        just_printed_flag = True
+                        just_printed_flag = True"""
 
             if not just_printed_flag:
                 try_to_print_query(dict_in_query, template_entry)
@@ -165,6 +180,27 @@ def find_relations_with_constraints(considered_entity, template_entry):
         valid_list = apply_constraint(considered_entity.relations_list, dict_of_constraints.get(rel_variable))
         if len(valid_list) != 0:
             dict_to_return.update({rel_variable: valid_list})
+    return dict_to_return
+
+
+def find_single_entities(template_entry):
+    dict_to_return = {}
+    single_entities_dict = template_entry["single_entities"]
+    for entity_variable in single_entities_dict.keys():
+        valid_list = EntityHandler.get_entities_of_type(
+                    EntityHandler.get_true_uri(single_entities_dict.get(entity_variable)))
+        if len(valid_list) != 0:
+            dict_to_return.update({entity_variable:valid_list})
+    return dict_to_return
+
+
+def find_constants_values(template_entry):
+    dict_to_return = {}
+    constant_dict = template_entry["constants"]
+    for constant_variable in constant_dict.keys():
+        valid_list = ConstantsHandler.get_list_of_values_given_range_increment(constant_dict.get(constant_variable))
+        if len(valid_list) != 0:
+            dict_to_return.update({constant_variable: valid_list})
     return dict_to_return
 
 
