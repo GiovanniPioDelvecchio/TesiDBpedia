@@ -1,7 +1,6 @@
 import EntityHandler
 from SPARQLWrapper import SPARQLWrapper, JSON
 import random as rng
-import language_tool_python
 import FileHandler
 import itertools
 from RelationsConstraints import apply_constraint
@@ -10,7 +9,6 @@ from gingerit.gingerit import GingerIt
 
 def correct_sentence(text):
     """Applica le correzioni del correttore gingerit alla stringa text
-
         Args:
             text: stringa da correggere
         Returns:
@@ -19,37 +17,6 @@ def correct_sentence(text):
     parser = GingerIt()
     my_new_text = parser.parse(text)["result"]
     return my_new_text
-
-
-"""def sparql_check_range(relation_uri, range_uri):"""
-
-
-"""def apply_constraint(rel_list, constraint_value="num"):
-    #Data una lista di uri corrispondenti a delle relazioni, chiamata rel_list, restituisce una nuova lista
-    list_to_return contenente solo le relazioni di rel_list che rispettano un particolare vincolo specificato dalla
-    stringa constraint_value
-
-                Args:
-                    rel_list: lista di cui si vuole conoscere quali sono le relazioni che rispettano il vincolo
-                        espresso da constraint_value
-                    constraint_value: stringa corrispondente ad un particolare vincolo su una relazione sparql,
-                        i controlli sui vincoli fin ora possibili sono:
-                        -"num", controlla se il range delle relazioni è "http://www.w3.org/2001/XMLSchema#double"
-                        -"is _uri_", controlla se una relazione ha proprio uri pari ad _uri_
-                Returns:
-                    list_to_return: lista contenente solo le relazioni che rispettano il vincolo specificato da
-                        contraint_value
-    #
-    list_to_return = rel_list.copy()
-    if constraint_value == "num":
-        for rel in rel_list:
-            if not sparql_check_range(rel, "http://www.w3.org/2001/XMLSchema#double"):
-                list_to_return.remove(rel)
-    if constraint_value.split(" ")[0] == "is":
-        for rel in rel_list:
-            if rel != constraint_value.split(" ")[1]:
-                list_to_return.remove(rel)
-    return list_to_return"""
 
 
 def generate_queries():
@@ -80,7 +47,6 @@ def generate_queries():
 def instantiate_single_query(entity_tuple, template_entry):
     """Si occuopa di generare le istanze di query valide per una particolare tupla di entità di tipo valido rispetto
     al template specificato.
-
                 Args:
                     entity_tuple: dizionario avente per chiavi i nomi delle variabili di tipo e come valori le
                         entità valide associate;
@@ -89,6 +55,7 @@ def instantiate_single_query(entity_tuple, template_entry):
     """
     dict_in_query = {}
     just_printed_flag = False
+    #tratto i tipi
     for current_type_variable in entity_tuple.keys():
         considered_entity = EntityHandler.Entity(entity_tuple.get(current_type_variable))
         type_list_with_whitelisted = [x for x in considered_entity.type_list
@@ -98,6 +65,7 @@ def instantiate_single_query(entity_tuple, template_entry):
             rand_type_number = int(rng.random() * len(type_list_with_whitelisted))
             chosen_type = type_list_with_whitelisted[rand_type_number]
             dict_in_query.update({current_type_variable: chosen_type})
+            # tratto le relazioni
             relations_found = find_relations_with_constraints(considered_entity, template_entry)
             for relation_variable in relations_found.keys():
                 for correct_relation in relations_found.get(relation_variable):
@@ -105,8 +73,22 @@ def instantiate_single_query(entity_tuple, template_entry):
                     if try_to_print_query(dict_in_query, template_entry):
                         just_printed_flag = True
 
+            single_entities_dict = template_entry["single_entities"]
+            for single_entity in single_entities_dict.keys():
+                print(single_entity)
+                all_entities_of_type = EntityHandler.get_entities_of_type(
+                    EntityHandler.get_true_uri(single_entities_dict.get(single_entity)))
+                print(all_entities_of_type)
+                for entity_to_insert_in_query in all_entities_of_type:
+                    dict_in_query.update({single_entity: entity_to_insert_in_query})
+                    print(dict_in_query)
+                    if try_to_print_query(dict_in_query, template_entry):
+                        just_printed_flag = True
+
             if not just_printed_flag:
                 try_to_print_query(dict_in_query, template_entry)
+
+
 
 
 def try_to_print_query(dict_in_query, template_entry):
@@ -121,7 +103,8 @@ def try_to_print_query(dict_in_query, template_entry):
     """
     #print(dict_in_query)
     if len(dict_in_query.keys()) >= (
-            len(template_entry["valid_types"].keys()) + len(template_entry["relation_constraints"].keys())):
+            len(template_entry["valid_types"].keys()) + len(template_entry["relation_constraints"].keys())
+                                                      + len(template_entry["single_entities"])):
         #print("here")
         query = template_entry["template"] % dict_in_query
         NNQT = istantiate_NNQT(dict_in_query, template_entry)
@@ -167,7 +150,6 @@ def find_relations_with_constraints(considered_entity, template_entry):
     """Data una particolare entità considered_entity, restituisce un dizionario avvalorato con chiavi pari
     alle variabili relative alle relazioni del template template_entry e valori pari alle relazioni
     di considered_entity che rispettano i vincoli stabiliti nel template per quelle particolari variabili.
-
         Args:
             considered_entity: entità da considerare per poter ritrovare le relazioni che soddisfino i vincoli
             specificati in template_entry sulle variabili relative alle relazioni
@@ -189,7 +171,6 @@ def find_relations_with_constraints(considered_entity, template_entry):
 def map_dict_to_subclasses(dict_to_map):
     """Sostituisce tutti i valori di dict_to_map con le sottoclassi dei valori, restituendo un nuovo dizionario
     e lasciando dict_to_map invariato
-
         Args:
             dict_to_map: dizionario in cui vanno sostituiti i valori con le liste di sottotipi di quei valori
         Returns:
@@ -206,7 +187,6 @@ def map_dict_to_entities(dict_to_map):
     """dict_to_map è un dizionario che ha come chiavi delle stringhe e come valori delle liste di tipi di DBpedia.
     Questa funzione restituisce un nuovo dizionario dict_to_return, avente stesse chiavi di dict_to_map e come
     valori liste di entità di tipo corrispondente ai tipi specificati nei valori di dict_to_map
-
             Args:
                 dict_to_map: dizionario in cui vanno sostituiti i valori con le liste di entità
             Returns:
@@ -232,7 +212,6 @@ def map_valid_types_to_entities(dict_to_map):
 def map_dict_keys_tuple(keys, some_tuple):
     """Genera un dizionario dict_to_return che ha gli i-esimi valori di keys e some_tuple come chiavi e valori,
     rispettivamente
-
         Args:
             keys: lista di chiavi da inserire nel dizionario
             some_tuple: lista di entità, l'i-esimo valore di some_tuple sarà il valore per l'i-esima chiave di keys
@@ -247,6 +226,3 @@ def map_dict_keys_tuple(keys, some_tuple):
         dict_to_return.update({key: some_tuple[i]})
         i += 1
     return dict_to_return
-
-
-

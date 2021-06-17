@@ -1,13 +1,14 @@
 [
     {
-        "NNQT_istance": "What is the third bodyofwaters in Italy for areaofcatchments?",
-        "correct_NNQT_istance": "What is the third bodyofwaters in Italy for areaofcatchments?",
+        "NNQT_istance": "What is the third bodyofwaters in united_statess for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in united_statess for areaofcatchments?",
         "istances": {
             "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/United_States",
             "first_type": "http://dbpedia.org/ontology/BodyOfWater",
             "second_rel": "http://dbpedia.org/ontology/location"
         },
-        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; <http://dbpedia.org/ontology/location> dbr:Italy  } ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/United_States>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
         "result_set": {
             "head": {
                 "link": [],
@@ -20,7 +21,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lake_Idro"
+                            "value": "http://dbpedia.org/resource/Fort_Peck_Lake"
                         }
                     }
                 ],
@@ -30,14 +31,15 @@
         }
     },
     {
-        "NNQT_istance": "What is the third mountains in Italy for elevations?",
-        "correct_NNQT_istance": "What is the third mountains in Italy for elevations?",
+        "NNQT_istance": "What is the third bodyofwaters in north_americas for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in north_americas for areaofcatchments?",
         "istances": {
-            "first_rel": "http://dbpedia.org/ontology/elevation",
-            "first_type": "http://dbpedia.org/ontology/Mountain",
-            "second_rel": "http://dbpedia.org/ontology/locatedInArea"
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/North_America",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
         },
-        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/elevation> ?measure; <http://dbpedia.org/ontology/locatedInArea> dbr:Italy  } ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/North_America>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
         "result_set": {
             "head": {
                 "link": [],
@@ -50,7 +52,7 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Rocher_de_la_Tournette"
+                            "value": "http://dbpedia.org/resource/Lake_Ontario"
                         }
                     }
                 ],
@@ -60,14 +62,15 @@
         }
     },
     {
-        "NNQT_istance": "What is the third mountains in Italy for lengths?",
-        "correct_NNQT_istance": "What is the third mountains in Italy for lengths?",
+        "NNQT_istance": "What is the third bodyofwaters in australias for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in Australias for areaofcatchments?",
         "istances": {
-            "first_rel": "http://dbpedia.org/ontology/length",
-            "first_type": "http://dbpedia.org/ontology/Mountain",
-            "second_rel": "http://dbpedia.org/ontology/country"
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/Australia",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
         },
-        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/length> ?measure; <http://dbpedia.org/ontology/country> dbr:Italy  } ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Australia>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
         "result_set": {
             "head": {
                 "link": [],
@@ -80,7 +83,193 @@
                     {
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dinaric_Alps"
+                            "value": "http://dbpedia.org/resource/Terrigal_Lagoon"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the third bodyofwaters in austrias for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in Austrias for areaofcatchments?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/Austria",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Austria>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Wangenitzsee"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the third bodyofwaters in canadas for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in Canadas for areaofcatchments?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/Canada",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Canada>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lake_Champlain"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the third bodyofwaters in canton_of_fribourgs for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in canton_of_fribourgs for areaofcatchments?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/Canton_of_Fribourg",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Canton_of_Fribourg>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lac_de_Lessoc"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the third bodyofwaters in chinas for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in chinas for areaofcatchments?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/China",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/China>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bangda_Lake"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the third bodyofwaters in germanys for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in Germanys for areaofcatchments?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/Germany",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Germany>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Immerather_Maar"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "What is the third bodyofwaters in russias for areaofcatchments?",
+        "correct_NNQT_istance": "What is the third bodyofwaters in Russias for areaofcatchments?",
+        "istances": {
+            "first_rel": "http://dbpedia.org/ontology/areaOfCatchment",
+            "first_single_entity": "http://dbpedia.org/resource/Russia",
+            "first_type": "http://dbpedia.org/ontology/BodyOfWater",
+            "second_rel": "http://dbpedia.org/ontology/location"
+        },
+        "query": "SELECT ?uri WHERE  { \n\t?uri rdf:type <http://dbpedia.org/ontology/BodyOfWater>; <http://dbpedia.org/ontology/areaOfCatchment> ?measure; \n\t<http://dbpedia.org/ontology/location> <http://dbpedia.org/resource/Russia>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Lake_Peipus"
                         }
                     }
                 ],
