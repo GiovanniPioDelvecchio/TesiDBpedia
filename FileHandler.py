@@ -3,6 +3,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 import string
 import random as rng
 import json
+import os
 
 """Package che si occupa di gestire i files utilizzati all'interno del progetto
 
@@ -71,3 +72,18 @@ def wipe_template_output_files(template_dir="files_to_add/templates_new.txt"):
     for single_template in template_list:
         wipe_file_content(single_template["save_name"])
 
+
+def acquire_file_name_number_queries(path_name="files_to_add/istances/"):
+    """Si occupa di acquisire la lista di dizionari contenenti le query istanza e mostrare a video quante se ne hanno
+    per ogni file
+
+            Args:
+                path_name: nome del percorso all'interno del quale si trovano i files con le istanze di query, di cui
+                        si vuole sapere quante ce ne sono per ogni file.
+    """
+    dir_list = os.listdir(path_name)
+    for current_dir in dir_list:
+        queries_file = open(path_name + current_dir, "r", encoding="utf-8")
+        data = json.load(queries_file, strict=False)
+        queries_file.close()
+        print(current_dir + " has " + str(len(data)) + " queries")
