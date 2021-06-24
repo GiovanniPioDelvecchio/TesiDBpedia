@@ -1,55 +1,25 @@
 import EntityHandler
 from SPARQLWrapper import SPARQLWrapper, JSON
 import random as rng
-import language_tool_python
 import FileHandler
 import itertools
 from RelationsConstraints import apply_constraint
 from gingerit.gingerit import GingerIt
+import ConstantsHandler
+import time
 
 
 def correct_sentence(text):
     """Applica le correzioni del correttore gingerit alla stringa text
-
         Args:
             text: stringa da correggere
         Returns:
              my_new_text: stringa corretta
     """
+    text = text.replace("\n", " ").replace("\t", "").replace("  ", " ").replace("  ", " ")
     parser = GingerIt()
     my_new_text = parser.parse(text)["result"]
     return my_new_text
-
-
-"""def sparql_check_range(relation_uri, range_uri):"""
-
-
-"""def apply_constraint(rel_list, constraint_value="num"):
-    #Data una lista di uri corrispondenti a delle relazioni, chiamata rel_list, restituisce una nuova lista
-    list_to_return contenente solo le relazioni di rel_list che rispettano un particolare vincolo specificato dalla
-    stringa constraint_value
-
-                Args:
-                    rel_list: lista di cui si vuole conoscere quali sono le relazioni che rispettano il vincolo
-                        espresso da constraint_value
-                    constraint_value: stringa corrispondente ad un particolare vincolo su una relazione sparql,
-                        i controlli sui vincoli fin ora possibili sono:
-                        -"num", controlla se il range delle relazioni è "http://www.w3.org/2001/XMLSchema#double"
-                        -"is _uri_", controlla se una relazione ha proprio uri pari ad _uri_
-                Returns:
-                    list_to_return: lista contenente solo le relazioni che rispettano il vincolo specificato da
-                        contraint_value
-    #
-    list_to_return = rel_list.copy()
-    if constraint_value == "num":
-        for rel in rel_list:
-            if not sparql_check_range(rel, "http://www.w3.org/2001/XMLSchema#double"):
-                list_to_return.remove(rel)
-    if constraint_value.split(" ")[0] == "is":
-        for rel in rel_list:
-            if rel != constraint_value.split(" ")[1]:
-                list_to_return.remove(rel)
-    return list_to_return"""
 
 
 def generate_queries():
@@ -73,14 +43,13 @@ def generate_queries():
             list_of_lists.append(type_variables_dict.get(key))
         for entity_tuple in itertools.product(*list_of_lists):
             dict_to_instantiate = map_dict_keys_tuple(type_variables_dict.keys(), entity_tuple)
-            #print("voglio istanziare: " + str(dict_to_instantiate))
+            # print("voglio istanziare: " + str(dict_to_instantiate))
             instantiate_single_query(dict_to_instantiate, template_entry)
 
 
 def instantiate_single_query(entity_tuple, template_entry):
     """Si occuopa di generare le istanze di query valide per una particolare tupla di entità di tipo valido rispetto
     al template specificato.
-
                 Args:
                     entity_tuple: dizionario avente per chiavi i nomi delle variabili di tipo e come valori le
                         entità valide associate;
@@ -89,6 +58,7 @@ def instantiate_single_query(entity_tuple, template_entry):
     """
     dict_in_query = {}
     just_printed_flag = False
+    # tratto i tipi
     for current_type_variable in entity_tuple.keys():
         considered_entity = EntityHandler.Entity(entity_tuple.get(current_type_variable))
         type_list_with_whitelisted = [x for x in considered_entity.type_list
@@ -98,15 +68,41 @@ def instantiate_single_query(entity_tuple, template_entry):
             rand_type_number = int(rng.random() * len(type_list_with_whitelisted))
             chosen_type = type_list_with_whitelisted[rand_type_number]
             dict_in_query.update({current_type_variable: chosen_type})
-            relations_found = find_relations_with_constraints(considered_entity, template_entry)
-            for relation_variable in relations_found.keys():
-                for correct_relation in relations_found.get(relation_variable):
-                    dict_in_query.update({relation_variable: correct_relation})
-                    if try_to_print_query(dict_in_query, template_entry):
-                        just_printed_flag = True
+            # tratto le relazioni
+            relations_found = find_relations_with_constraints(considered_entity, template_entry)  # occorre fare
+            # una funzione simile anche per singole entità e per le costanti, ottenere il prodotto cartesiano
+            # fra le liste non vuote e tentare di generare una query per ogni combinazione trovata
+            single_entities_found = find_single_entities(template_entry)
+            constants_found = find_constants_values(template_entry)
 
-            if not just_printed_flag:
+            complete_dict_to_istantiate = {}
+            complete_dict_to_istantiate.update(relations_found)
+            complete_dict_to_istantiate.update(single_entities_found)
+            complete_dict_to_istantiate.update(constants_found)
+
+            list_of_lists = []
+            for var_to_use in complete_dict_to_istantiate.keys():
+                list_of_lists.append(complete_dict_to_istantiate.get(var_to_use))
+
+            combinations = []
+            for tuple_to_consider in itertools.product(*list_of_lists):
+                combinations.append(tuple_to_consider)
+
+            list_of_dicts = []
+            for current_combination in combinations:
+                temp_dict = {}
+                i = 0
+                for var_to_consider in complete_dict_to_istantiate.keys():
+                    if len(complete_dict_to_istantiate.get(var_to_consider)) > 0:
+                        temp_dict.update({var_to_consider: current_combination[i]})
+                        i += 1
+                list_of_dicts.append(temp_dict)
+
+            for current_dict in list_of_dicts:
+                dict_in_query.update(current_dict)
+                print(dict_in_query)
                 try_to_print_query(dict_in_query, template_entry)
+
 
 
 def try_to_print_query(dict_in_query, template_entry):
@@ -119,28 +115,54 @@ def try_to_print_query(dict_in_query, template_entry):
             True se l'operazione è stata completata con successo, perché dict_in_query conteneva tutte le variabili
             necessarie, con i valori validi, False altrimenti
     """
-    #print(dict_in_query)
-    if len(dict_in_query.keys()) >= (
-            len(template_entry["valid_types"].keys()) + len(template_entry["relation_constraints"].keys())):
-        #print("here")
-        query = template_entry["template"] % dict_in_query
-        NNQT = istantiate_NNQT(dict_in_query, template_entry)
-        sparql = SPARQLWrapper("http://dbpedia.org/sparql")
-        sparql.addExtraURITag("timeout", "30000")
-        sparql.setReturnFormat(JSON)
-        sparql.setQuery(query)
-        result_set = sparql.query().convert()
-        if len(result_set["results"]["bindings"]) == 0:
+    # print(dict_in_query)
+    try:
+        if len(dict_in_query.keys()) >= (
+                len(template_entry["valid_types"].keys()) + len(template_entry["relation_constraints"].keys())
+                + len(template_entry["single_entities"])
+                + len(template_entry["constants"])):
+            # print("here")
+            query = template_entry["template"] % dict_in_query
+            NNQT = istantiate_NNQT(dict_in_query, template_entry)
+            sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+            sparql.addExtraURITag("timeout", "30000")
+            sparql.setReturnFormat(JSON)
+            sparql.setQuery(query)
+            result_set = sparql.query().convert()
+            if len(result_set["results"]["bindings"]) == 0:
+                print("empty result set")
+                return False
+            print(query)
+            # correzione NNQT
+            correct_NNQT = correct_sentence(NNQT)
+            dict_to_ser = {"istances": dict_in_query, "query": query, "result_set": result_set,
+                           "NNQT_istance": NNQT, "correct_NNQT_istance": correct_NNQT}
+            FileHandler.serialize_query_set(dict_to_ser, template_entry["save_name"])
+            return True
+        else:
             return False
-        print(query)
-        #correzione NNQT
-        correct_NNQT = correct_sentence(NNQT)
-        dict_to_ser = {"istances":dict_in_query,"query": query, "result_set": result_set,
-                       "NNQT_istance":NNQT, "correct_NNQT_istance":correct_NNQT}
-        FileHandler.serialize_query_set(dict_to_ser, template_entry["save_name"])
-        return True
-    else:
-        return False
+    except:
+        time.sleep(30)
+        print("sleeping")
+        try_to_print_query(dict_in_query, template_entry)
+
+
+def add_spaces_between_uppercase_letters(string_to_modify):
+    string_to_return = ""
+    i = 0
+    for charater in string_to_modify:
+        try:
+            int(charater)
+            string_to_return += charater
+        except:
+            if charater == charater.upper() and i != 0 \
+                    and charater != "-" and charater != "^" and charater != ":"\
+                    and charater != "\"":
+                string_to_return += " " + charater
+            else:
+                string_to_return += charater
+        i += 1
+    return string_to_return
 
 
 def istantiate_NNQT(dict_in_query, template_entry):
@@ -156,10 +178,11 @@ def istantiate_NNQT(dict_in_query, template_entry):
     for current_variable in dict_in_query.keys():
         uri_unsplitted = dict_in_query.get(current_variable)
         uri_splitted = uri_unsplitted.split("/")
-        value_to_add = uri_splitted[len(uri_splitted)-1].lower() + "s" #occorre usare il plurale
+        value_to_add = add_spaces_between_uppercase_letters(uri_splitted[len(uri_splitted) - 1]).replace(
+            "_", " ").replace("\"", "").replace("^^xsd:date", "").lower()
         new_dict_to_use.update({current_variable: value_to_add})
     to_return = template_entry["NNQT"] % new_dict_to_use
-    #to_return = correct_sentence(to_return) sta dando problemi con java, urge trovare un correttore migliore
+    # to_return = correct_sentence(to_return) sta dando problemi con java, urge trovare un correttore migliore
     return to_return
 
 
@@ -167,7 +190,6 @@ def find_relations_with_constraints(considered_entity, template_entry):
     """Data una particolare entità considered_entity, restituisce un dizionario avvalorato con chiavi pari
     alle variabili relative alle relazioni del template template_entry e valori pari alle relazioni
     di considered_entity che rispettano i vincoli stabiliti nel template per quelle particolari variabili.
-
         Args:
             considered_entity: entità da considerare per poter ritrovare le relazioni che soddisfino i vincoli
             specificati in template_entry sulle variabili relative alle relazioni
@@ -175,6 +197,7 @@ def find_relations_with_constraints(considered_entity, template_entry):
         Returns:
             dict_to_return: dizionario contenente chiavi pari ai nomi delle variabili corrispondenti alle relazioni
             in template_entry e valori pari alle relazioni di considered_entity che soddisfano i vincoli specificati
+            (in una lista)
     """
     dict_to_return = {}  # dizionario con chiavi = variabili corrispondenti alle relazioni e valori = liste di
     # relazioni che soddisfano i vincoli scelti
@@ -186,10 +209,31 @@ def find_relations_with_constraints(considered_entity, template_entry):
     return dict_to_return
 
 
+def find_single_entities(template_entry):
+    limit_single_entities = 1000
+    dict_to_return = {}
+    single_entities_dict = template_entry["single_entities"]
+    for entity_variable in single_entities_dict.keys():
+        valid_list = EntityHandler.get_entities_of_type_ordered_by_relations_number_with_limit(
+            EntityHandler.get_true_uri(single_entities_dict.get(entity_variable)), limit_single_entities)
+        if len(valid_list) != 0:
+            dict_to_return.update({entity_variable: valid_list})
+    return dict_to_return
+
+
+def find_constants_values(template_entry):
+    dict_to_return = {}
+    constant_dict = template_entry["constants"]
+    for constant_variable in constant_dict.keys():
+        valid_list = ConstantsHandler.get_list_of_values_given_range_increment(constant_dict.get(constant_variable))
+        if len(valid_list) != 0:
+            dict_to_return.update({constant_variable: valid_list})
+    return dict_to_return
+
+
 def map_dict_to_subclasses(dict_to_map):
     """Sostituisce tutti i valori di dict_to_map con le sottoclassi dei valori, restituendo un nuovo dizionario
     e lasciando dict_to_map invariato
-
         Args:
             dict_to_map: dizionario in cui vanno sostituiti i valori con le liste di sottotipi di quei valori
         Returns:
@@ -206,7 +250,6 @@ def map_dict_to_entities(dict_to_map):
     """dict_to_map è un dizionario che ha come chiavi delle stringhe e come valori delle liste di tipi di DBpedia.
     Questa funzione restituisce un nuovo dizionario dict_to_return, avente stesse chiavi di dict_to_map e come
     valori liste di entità di tipo corrispondente ai tipi specificati nei valori di dict_to_map
-
             Args:
                 dict_to_map: dizionario in cui vanno sostituiti i valori con le liste di entità
             Returns:
@@ -218,8 +261,8 @@ def map_dict_to_entities(dict_to_map):
         for current_type in dict_to_map.get(key):
             uri = EntityHandler.get_entity_with_most_relations(current_type)
             if uri != "":
-                entity_list_to_add.append(uri)      #se volessi scegliere un'entità diversa dal primo risultato,
-                                                    #dovrei modificare questo
+                entity_list_to_add.append(uri)  # se volessi scegliere un'entità diversa dal primo risultato,
+                # dovrei modificare questo
         dict_to_return.update({key: entity_list_to_add})
     return dict_to_return
 
@@ -232,7 +275,6 @@ def map_valid_types_to_entities(dict_to_map):
 def map_dict_keys_tuple(keys, some_tuple):
     """Genera un dizionario dict_to_return che ha gli i-esimi valori di keys e some_tuple come chiavi e valori,
     rispettivamente
-
         Args:
             keys: lista di chiavi da inserire nel dizionario
             some_tuple: lista di entità, l'i-esimo valore di some_tuple sarà il valore per l'i-esima chiave di keys
@@ -247,6 +289,3 @@ def map_dict_keys_tuple(keys, some_tuple):
         dict_to_return.update({key: some_tuple[i]})
         i += 1
     return dict_to_return
-
-
-

@@ -1,6 +1,6 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 import FileHandler
-
+import time
 
 """Package rappresentante una entità di DBpedia.
 
@@ -126,7 +126,7 @@ def sub_class_of(first_uri, second_uri):
         return False
 
 
-def get_entities_of_type(type_uri):
+def get_entities_of_type(type_uri, limit_value = None):
     """Restituisce una lista di entità di tipo type_uri
 
         Args:
@@ -137,7 +137,40 @@ def get_entities_of_type(type_uri):
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
     sparql.addExtraURITag("timeout", "30000")
     sparql.setReturnFormat(JSON)
-    query = """select distinct ?uri where {?uri rdf:type <"""+type_uri+""">} LIMIT 10"""
+    if limit_value == None:
+        query = """select distinct ?uri where {?uri rdf:type <"""+type_uri+""">} """
+    else:
+        query = """select distinct ?uri where {?uri rdf:type <""" + type_uri + """>} 
+        LIMIT """ + str(limit_value) + """ """
+    sparql.setQuery(query)
+    temp_dict = sparql.query().convert()["results"]["bindings"]
+    temp_dict_len = len(temp_dict)
+    result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
+    return result_set
+
+
+def get_entities_of_type_ordered_by_relations_number_with_limit(type_uri, limit_value = None):
+    """Restituisce una lista di entità di tipo type_uri ordinata per numero di relazioni
+
+        Args:
+            type_uri: uri corrispondente al tipo di entità da restituire
+        Returns:
+            result_set: lista di entità di tipo type_uri
+    """
+    sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+    sparql.addExtraURITag("timeout", "30000")
+    sparql.setReturnFormat(JSON)
+    if limit_value is None:
+        query = """select distinct ?uri where {select distinct ?uri count(?rel) as ?numrel where {
+                ?uri rdf:type <""" + type_uri + """>.
+                ?uri ?rel ?obj.
+                } ORDER BY DESC(?numrel)} """
+    else:
+        query = """select distinct ?uri where {select distinct ?uri count(?rel) as ?numrel where {
+                ?uri rdf:type <""" + type_uri + """>.
+                ?uri ?rel ?obj.
+                } ORDER BY DESC(?numrel)} 
+                LIMIT """ + str(limit_value) + """ """
     sparql.setQuery(query)
     temp_dict = sparql.query().convert()["results"]["bindings"]
     temp_dict_len = len(temp_dict)
@@ -176,18 +209,31 @@ def get_subclasses_of(type_uri):
         Returns:
             result_set: lista di sottoclassi dirette di type_uri
     """
+    try:
+        sparql = SPARQLWrapper("http://dbpedia.org/sparql")
+        sparql.addExtraURITag("timeout", "30000")
+        sparql.setReturnFormat(JSON)
+        if type_uri.split(":")[0] == "dbo":
+            query = """select distinct ?uri where {?uri rdfs:subClassOf """+type_uri+"""}"""
+        else:
+            query = """select distinct ?uri where {?uri rdfs:subClassOf <"""+type_uri+""">}"""
+        sparql.setQuery(query)
+        temp_dict = sparql.query().convert()["results"]["bindings"]
+        temp_dict_len = len(temp_dict)
+        result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
+        return result_set
+    except:
+        print("sleeping")
+        time.sleep(30)
+        get_subclasses_of(type_uri)
+
+def get_true_uri(uri_with_prefix):
     sparql = SPARQLWrapper("http://dbpedia.org/sparql")
     sparql.addExtraURITag("timeout", "30000")
     sparql.setReturnFormat(JSON)
-    if type_uri.split(":")[0] == "dbo":
-        query = """select distinct ?uri where {?uri rdfs:subClassOf """+type_uri+"""}"""
-    else:
-        query = """select distinct ?uri where {?uri rdfs:subClassOf <"""+type_uri+""">}"""
+    query = """select ?uri where {bind("""+uri_with_prefix+""" as ?uri)}"""
     sparql.setQuery(query)
-    temp_dict = sparql.query().convert()["results"]["bindings"]
-    temp_dict_len = len(temp_dict)
-    result_set = [temp_dict[i]["uri"]["value"] for i in range(temp_dict_len)]
-    return result_set
-
+    result = sparql.query().convert()["results"]["bindings"][0]["uri"]["value"]
+    return result
 
 
