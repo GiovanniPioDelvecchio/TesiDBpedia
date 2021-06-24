@@ -1,8 +1,9 @@
 [
     {
-        "NNQT_istance": "Which are the settlements that contains more than 100 architecturalstructures",
-        "correct_NNQT_istance": "Which are the settlements that contains more than 100 architectural structures?",
+        "NNQT_istance": "Which are the settlement that contains more than 100 architectural structure",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 100 architectural structures",
         "istances": {
+            "first_constant": "100",
             "first_rel": "http://dbpedia.org/ontology/location",
             "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
             "second_type": "http://dbpedia.org/ontology/Settlement"
@@ -1389,9 +1390,1112 @@
         }
     },
     {
-        "NNQT_istance": "Which are the countrys that contains more than 100 naturalplaces",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 natural places?",
+        "NNQT_istance": "Which are the settlement that contains more than 200 architectural structure",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 200 architectural structures",
         "istances": {
+            "first_constant": "200",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
+            "second_type": "http://dbpedia.org/ontology/Settlement"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ArchitecturalStructure>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>200)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "258"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Glasgow"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "381"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chicago"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "503"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Michigan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "219"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/San_Francisco"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "354"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Toronto"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "304"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Philadelphia"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "767"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ontario"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "286"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Virginia"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "913"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_City"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "311"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Detroit"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "246"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Liverpool"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "203"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Queensland"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "540"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_South_Wales"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1189"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_(state)"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "238"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Worcester,_Massachusetts"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "384"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Quebec"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "571"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Washington,_D.C."
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "231"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Tr\u00f8ndelag"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "635"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pennsylvania"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "558"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Copenhagen"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "203"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Nordland"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "244"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Western_Australia"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "597"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ohio"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "265"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Davenport,_Iowa"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "617"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Manhattan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "282"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Birmingham"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "262"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Alberta"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "863"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/London"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "664"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Portland,_Oregon"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "698"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Florida"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "243"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Victoria_(Australia)"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "203"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bristol"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "205"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Montreal"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "304"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Maharashtra"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "798"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/California"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "227"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Utah"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the settlement that contains more than 300 architectural structure",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 300 architectural structures",
+        "istances": {
+            "first_constant": "300",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
+            "second_type": "http://dbpedia.org/ontology/Settlement"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ArchitecturalStructure>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>300)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "381"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Chicago"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "503"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Michigan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "354"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Toronto"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "304"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Philadelphia"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "767"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ontario"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "913"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_City"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "311"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Detroit"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "540"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_South_Wales"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1189"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_(state)"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "384"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Quebec"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "571"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Washington,_D.C."
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "635"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pennsylvania"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "558"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Copenhagen"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "597"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ohio"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "617"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Manhattan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "863"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/London"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "664"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Portland,_Oregon"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "698"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Florida"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "304"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Maharashtra"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "798"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/California"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the settlement that contains more than 400 architectural structure",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 400 architectural structures",
+        "istances": {
+            "first_constant": "400",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
+            "second_type": "http://dbpedia.org/ontology/Settlement"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ArchitecturalStructure>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>400)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "503"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Michigan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "767"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ontario"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "913"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_City"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "540"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_South_Wales"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1189"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_(state)"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "571"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Washington,_D.C."
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "635"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pennsylvania"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "558"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Copenhagen"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "597"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ohio"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "617"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Manhattan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "863"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/London"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "664"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Portland,_Oregon"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "698"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Florida"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "798"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/California"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the settlement that contains more than 500 architectural structure",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 500 architectural structures",
+        "istances": {
+            "first_constant": "500",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
+            "second_type": "http://dbpedia.org/ontology/Settlement"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ArchitecturalStructure>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>500)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "503"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Michigan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "767"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ontario"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "913"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_City"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "540"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_South_Wales"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1189"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_(state)"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "571"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Washington,_D.C."
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "635"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Pennsylvania"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "558"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Copenhagen"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "597"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ohio"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "617"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Manhattan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "863"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/London"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "664"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Portland,_Oregon"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "698"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Florida"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "798"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/California"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the continent that contains more than 100 natural place",
+        "correct_NNQT_istance": "Which are the continent that contains more than 100 natural places",
+        "istances": {
+            "first_constant": "100",
+            "first_rel": "http://dbpedia.org/ontology/locatedInArea",
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Continent"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Continent>. ?obj <http://dbpedia.org/ontology/locatedInArea> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "238"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Antarctica"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the continent that contains more than 200 natural place",
+        "correct_NNQT_istance": "Which are the continent that contains more than 200 natural places",
+        "istances": {
+            "first_constant": "200",
+            "first_rel": "http://dbpedia.org/ontology/locatedInArea",
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Continent"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Continent>. ?obj <http://dbpedia.org/ontology/locatedInArea> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>200)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "238"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Antarctica"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the country that contains more than 100 natural place",
+        "correct_NNQT_istance": "Which are the country that contains more than 100 natural places?",
+        "istances": {
+            "first_constant": "100",
             "first_rel": "http://dbpedia.org/ontology/locatedInArea",
             "first_type": "http://dbpedia.org/ontology/NaturalPlace",
             "second_type": "http://dbpedia.org/ontology/Country"
@@ -1821,14 +2925,15 @@
         }
     },
     {
-        "NNQT_istance": "Which are the countrys that contains more than 100 naturalplaces",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 natural places?",
+        "NNQT_istance": "Which are the country that contains more than 200 natural place",
+        "correct_NNQT_istance": "Which are the country that contains more than 200 natural places?",
         "istances": {
+            "first_constant": "200",
             "first_rel": "http://dbpedia.org/ontology/locatedInArea",
             "first_type": "http://dbpedia.org/ontology/NaturalPlace",
             "second_type": "http://dbpedia.org/ontology/Country"
         },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/locatedInArea> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/locatedInArea> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>200)",
         "result_set": {
             "head": {
                 "link": [],
@@ -1839,17 +2944,6 @@
             },
             "results": {
                 "bindings": [
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "178"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Canton_of_Bern"
-                        }
-                    },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
@@ -1986,17 +3080,6 @@
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "108"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Pakistan"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
                             "value": "487"
                         },
                         "uri": {
@@ -2008,66 +3091,11 @@
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "106"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Hong_Kong"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "155"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Indonesia"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "165"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Serbia"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "143"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Republic_of_Ireland"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
                             "value": "280"
                         },
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Tyrol_(state)"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "172"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Russia"
                         }
                     },
                     {
@@ -2101,39 +3129,6 @@
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Italy"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "193"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Wales"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "143"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/South_Tyrol"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "158"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Saxony"
                         }
                     },
                     {
@@ -2212,38 +3207,229 @@
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Bolivia"
                         }
-                    },
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the country that contains more than 300 natural place",
+        "correct_NNQT_istance": "Which are the country that contains more than 300 natural places?",
+        "istances": {
+            "first_constant": "300",
+            "first_rel": "http://dbpedia.org/ontology/locatedInArea",
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Country"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/locatedInArea> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>300)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "162"
+                            "value": "759"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Chile"
+                            "value": "http://dbpedia.org/resource/British_Columbia"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "109"
+                            "value": "382"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/China"
+                            "value": "http://dbpedia.org/resource/British_Columbia_Interior"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "103"
+                            "value": "485"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Glacier_County,_Montana"
+                            "value": "http://dbpedia.org/resource/England"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "2002"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/United_States"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "431"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Graub\u00fcnden"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "405"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Japan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "643"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Norway"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1312"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Germany"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "412"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Valais"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "616"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Scotland"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "487"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Austria"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "874"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Italy"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "418"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/France"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1620"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Peru"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1402"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Switzerland"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "453"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Canada"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "518"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/South_Korea"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "914"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bolivia"
                         }
                     }
                 ],
@@ -2253,14 +3439,364 @@
         }
     },
     {
-        "NNQT_istance": "Which are the islands that contains more than 100 naturalplaces",
-        "correct_NNQT_istance": "Which are the islands that contains more than 100 natural places?",
+        "NNQT_istance": "Which are the country that contains more than 400 natural place",
+        "correct_NNQT_istance": "Which are the country that contains more than 400 natural places?",
         "istances": {
+            "first_constant": "400",
+            "first_rel": "http://dbpedia.org/ontology/locatedInArea",
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Country"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/locatedInArea> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>400)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "759"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/British_Columbia"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "485"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/England"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "2002"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/United_States"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "431"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Graub\u00fcnden"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "405"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Japan"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "643"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Norway"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1312"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Germany"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "412"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Valais"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "616"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Scotland"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "487"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Austria"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "874"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Italy"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "418"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/France"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1620"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Peru"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1402"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Switzerland"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "453"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Canada"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "518"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/South_Korea"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "914"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bolivia"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the country that contains more than 500 natural place",
+        "correct_NNQT_istance": "Which are the country that contains more than 500 natural places?",
+        "istances": {
+            "first_constant": "500",
+            "first_rel": "http://dbpedia.org/ontology/locatedInArea",
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Country"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/locatedInArea> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>500)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "759"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/British_Columbia"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "2002"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/United_States"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "643"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Norway"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1312"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Germany"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "616"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Scotland"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "874"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Italy"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1620"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Peru"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "1402"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Switzerland"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "518"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/South_Korea"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "914"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Bolivia"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the settlement that contains more than 100 natural place",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 100 natural places",
+        "istances": {
+            "first_constant": "100",
             "first_rel": "http://dbpedia.org/ontology/location",
             "first_type": "http://dbpedia.org/ontology/NaturalPlace",
-            "second_type": "http://dbpedia.org/ontology/Island"
+            "second_type": "http://dbpedia.org/ontology/Settlement"
         },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Island>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
         "result_set": {
             "head": {
                 "link": [],
@@ -2271,6 +3807,72 @@
             },
             "results": {
                 "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "107"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Nova_Scotia"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "526"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ontario"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "123"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ellsworth_Land"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "167"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Quebec"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "143"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Glacier_National_Park_(U.S.)"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "309"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_(state)"
+                        }
+                    },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
@@ -2286,262 +3888,55 @@
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
+                            "value": "107"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Tr\u00f8ndelag"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
                             "value": "128"
                         },
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Vancouver_Island"
                         }
-                    }
-                ],
-                "distinct": false,
-                "ordered": true
-            }
-        }
-    },
-    {
-        "NNQT_istance": "Which are the countrys that contains more than 100 historicplaces",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 historic places?",
-        "istances": {
-            "first_rel": "http://dbpedia.org/ontology/location",
-            "first_type": "http://dbpedia.org/ontology/HistoricPlace",
-            "second_type": "http://dbpedia.org/ontology/Country"
-        },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
-        "result_set": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "uri",
-                    "callret-1"
-                ]
-            },
-            "results": {
-                "bindings": [
+                    },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "312"
+                            "value": "122"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/United_States"
+                            "value": "http://dbpedia.org/resource/Herkimer_County,_New_York"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "410"
+                            "value": "183"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Spain"
+                            "value": "http://dbpedia.org/resource/Nordland"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "469"
+                            "value": "169"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Somerset"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "217"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Republic_of_Ireland"
-                        }
-                    }
-                ],
-                "distinct": false,
-                "ordered": true
-            }
-        }
-    },
-    {
-        "NNQT_istance": "Which are the countrys that contains more than 100 historicplaces",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 historic places?",
-        "istances": {
-            "first_rel": "http://dbpedia.org/ontology/location",
-            "first_type": "http://dbpedia.org/ontology/HistoricPlace",
-            "second_type": "http://dbpedia.org/ontology/Country"
-        },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
-        "result_set": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "uri",
-                    "callret-1"
-                ]
-            },
-            "results": {
-                "bindings": [
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "312"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/United_States"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "410"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Spain"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "469"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Somerset"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "217"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Republic_of_Ireland"
-                        }
-                    }
-                ],
-                "distinct": false,
-                "ordered": true
-            }
-        }
-    },
-    {
-        "NNQT_istance": "Which are the settlements that contains more than 100 historicplaces",
-        "correct_NNQT_istance": "Which are the settlements that contains more than 100 historic places?",
-        "istances": {
-            "first_rel": "http://dbpedia.org/ontology/location",
-            "first_type": "http://dbpedia.org/ontology/HistoricPlace",
-            "second_type": "http://dbpedia.org/ontology/Settlement"
-        },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
-        "result_set": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "uri",
-                    "callret-1"
-                ]
-            },
-            "results": {
-                "bindings": [
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "125"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Virginia"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "1712"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Queensland"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "1232"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/New_South_Wales"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "105"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/New_York_(state)"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "119"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Monmouthshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "308"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/City_of_Sydney"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "379"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Ohio"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "670"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Florida"
+                            "value": "http://dbpedia.org/resource/Alberta"
                         }
                     },
                     {
@@ -2552,29 +3947,18 @@
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Madrid"
+                            "value": "http://dbpedia.org/resource/Mecklenburgische_Seenplatte_(district)"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "108"
+                            "value": "235"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Hartford,_Connecticut"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "179"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Little_Rock,_Arkansas"
+                            "value": "http://dbpedia.org/resource/Mecklenburg-Vorpommern"
                         }
                     }
                 ],
@@ -2584,14 +3968,15 @@
         }
     },
     {
-        "NNQT_istance": "Which are the countrys that contains more than 100 protectedareas",
-        "correct_NNQT_istance": "Which are the countries that contains more than 100 protected areas",
+        "NNQT_istance": "Which are the settlement that contains more than 200 natural place",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 200 natural places",
         "istances": {
+            "first_constant": "200",
             "first_rel": "http://dbpedia.org/ontology/location",
-            "first_type": "http://dbpedia.org/ontology/ProtectedArea",
-            "second_type": "http://dbpedia.org/ontology/Country"
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Settlement"
         },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ProtectedArea>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>200)",
         "result_set": {
             "head": {
                 "link": [],
@@ -2606,40 +3991,188 @@
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "203"
+                            "value": "526"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/India"
+                            "value": "http://dbpedia.org/resource/Ontario"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "155"
+                            "value": "309"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/British_Columbia"
+                            "value": "http://dbpedia.org/resource/New_York_(state)"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "115"
+                            "value": "235"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/England"
+                            "value": "http://dbpedia.org/resource/Mecklenburg-Vorpommern"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the settlement that contains more than 300 natural place",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 300 natural places",
+        "istances": {
+            "first_constant": "300",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Settlement"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>300)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "526"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ontario"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "2325"
+                            "value": "309"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/New_York_(state)"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the settlement that contains more than 400 natural place",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 400 natural places",
+        "istances": {
+            "first_constant": "400",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Settlement"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>400)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "526"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ontario"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the settlement that contains more than 500 natural place",
+        "correct_NNQT_istance": "Which are the settlement that contains more than 500 natural places",
+        "istances": {
+            "first_constant": "500",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/NaturalPlace",
+            "second_type": "http://dbpedia.org/ontology/Settlement"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/NaturalPlace>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>500)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "526"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Ontario"
+                        }
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the country that contains more than 100 historic place",
+        "correct_NNQT_istance": "Which are the country that contains more than 100 historic places?",
+        "istances": {
+            "first_constant": "100",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/HistoricPlace",
+            "second_type": "http://dbpedia.org/ontology/Country"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "312"
                         },
                         "uri": {
                             "type": "uri",
@@ -2650,243 +4183,22 @@
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "280"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Japan"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "202"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/South_Africa"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "115"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Scotland"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "154"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Costa_Rica"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "110"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Thailand"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "427"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Canada"
-                        }
-                    }
-                ],
-                "distinct": false,
-                "ordered": true
-            }
-        }
-    },
-    {
-        "NNQT_istance": "Which are the countrys that contains more than 100 wineregions",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 wine regions?",
-        "istances": {
-            "first_rel": "http://dbpedia.org/ontology/location",
-            "first_type": "http://dbpedia.org/ontology/WineRegion",
-            "second_type": "http://dbpedia.org/ontology/Country"
-        },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/WineRegion>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
-        "result_set": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "uri",
-                    "callret-1"
-                ]
-            },
-            "results": {
-                "bindings": [
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "135"
+                            "value": "410"
                         },
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Spain"
                         }
-                    }
-                ],
-                "distinct": false,
-                "ordered": true
-            }
-        }
-    },
-    {
-        "NNQT_istance": "Which are the countrys that contains more than 100 gardens",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 gardens?",
-        "istances": {
-            "first_rel": "http://dbpedia.org/ontology/country",
-            "first_type": "http://dbpedia.org/ontology/Garden",
-            "second_type": "http://dbpedia.org/ontology/Country"
-        },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/Garden>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/country> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
-        "result_set": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "uri",
-                    "callret-1"
-                ]
-            },
-            "results": {
-                "bindings": [
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "321"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/United_States"
-                        }
-                    }
-                ],
-                "distinct": false,
-                "ordered": true
-            }
-        }
-    },
-    {
-        "NNQT_istance": "Which are the countrys that contains more than 100 gardens",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 gardens?",
-        "istances": {
-            "first_rel": "http://dbpedia.org/ontology/country",
-            "first_type": "http://dbpedia.org/ontology/Garden",
-            "second_type": "http://dbpedia.org/ontology/Country"
-        },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/Garden>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/country> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
-        "result_set": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "uri",
-                    "callret-1"
-                ]
-            },
-            "results": {
-                "bindings": [
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "321"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/United_States"
-                        }
-                    }
-                ],
-                "distinct": false,
-                "ordered": true
-            }
-        }
-    },
-    {
-        "NNQT_istance": "Which are the regions that contains more than 100 populatedplaces",
-        "correct_NNQT_istance": "Which are the regions that contain more than 100 populated places?",
-        "istances": {
-            "first_rel": "http://dbpedia.org/ontology/country",
-            "first_type": "http://dbpedia.org/ontology/PopulatedPlace",
-            "second_type": "http://dbpedia.org/ontology/Region"
-        },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/PopulatedPlace>. ?uri a <http://dbpedia.org/ontology/Region>. ?obj <http://dbpedia.org/ontology/country> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
-        "result_set": {
-            "head": {
-                "link": [],
-                "vars": [
-                    "uri",
-                    "callret-1"
-                ]
-            },
-            "results": {
-                "bindings": [
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "541"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Suffolk"
-                        }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "113"
+                            "value": "469"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cornwall"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "618"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Kent"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "368"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lancashire"
+                            "value": "http://dbpedia.org/resource/Somerset"
                         }
                     },
                     {
@@ -2897,20 +4209,35 @@
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Surrey"
+                            "value": "http://dbpedia.org/resource/Republic_of_Ireland"
                         }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "366"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Somerset"
-                        }
-                    },
+                    }
+                ],
+                "distinct": false,
+                "ordered": true
+            }
+        }
+    },
+    {
+        "NNQT_istance": "Which are the country that contains more than 200 historic place",
+        "correct_NNQT_istance": "Which are the country that contains more than 200 historic places?",
+        "istances": {
+            "first_constant": "200",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/HistoricPlace",
+            "second_type": "http://dbpedia.org/ontology/Country"
+        },
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>200)",
+        "result_set": {
+            "head": {
+                "link": [],
+                "vars": [
+                    "uri",
+                    "callret-1"
+                ]
+            },
+            "results": {
+                "bindings": [
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
@@ -2919,238 +4246,40 @@
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Worcestershire"
+                            "value": "http://dbpedia.org/resource/United_States"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "218"
+                            "value": "410"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Warwickshire"
+                            "value": "http://dbpedia.org/resource/Spain"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "155"
+                            "value": "469"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/East_Sussex"
+                            "value": "http://dbpedia.org/resource/Somerset"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "303"
+                            "value": "217"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cambridgeshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "754"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Cumbria"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "486"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Essex"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "120"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/County_Durham"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "478"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Derbyshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "875"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/North_Yorkshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "673"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Norfolk"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "331"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Dorset"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "335"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Northamptonshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "749"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Lincolnshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "661"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Hampshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "446"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Devon"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "327"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Nottinghamshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "292"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/West_Sussex"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "369"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Gloucestershire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "279"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Leicestershire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "349"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Staffordshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "223"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Hertfordshire"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "473"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Oxfordshire"
+                            "value": "http://dbpedia.org/resource/Republic_of_Ireland"
                         }
                     }
                 ],
@@ -3160,14 +4289,15 @@
         }
     },
     {
-        "NNQT_istance": "Which are the countrys that contains more than 100 siteofspecialscientificinterests",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 siteofspecialscientificinterests?",
+        "NNQT_istance": "Which are the country that contains more than 300 historic place",
+        "correct_NNQT_istance": "Which are the country that contains more than 300 historic places?",
         "istances": {
-            "first_rel": "http://dbpedia.org/ontology/areaOfSearch",
-            "first_type": "http://dbpedia.org/ontology/SiteOfSpecialScientificInterest",
+            "first_constant": "300",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/HistoricPlace",
             "second_type": "http://dbpedia.org/ontology/Country"
         },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/areaOfSearch> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>300)",
         "result_set": {
             "head": {
                 "link": [],
@@ -3182,44 +4312,33 @@
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "142"
+                            "value": "312"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Suffolk"
+                            "value": "http://dbpedia.org/resource/United_States"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "114"
+                            "value": "410"
+                        },
+                        "uri": {
+                            "type": "uri",
+                            "value": "http://dbpedia.org/resource/Spain"
+                        }
+                    },
+                    {
+                        "callret-1": {
+                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                            "type": "typed-literal",
+                            "value": "469"
                         },
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Somerset"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "157"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Norfolk"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "117"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Gloucestershire"
                         }
                     }
                 ],
@@ -3229,14 +4348,15 @@
         }
     },
     {
-        "NNQT_istance": "Which are the countrys that contains more than 100 siteofspecialscientificinterests",
-        "correct_NNQT_istance": "Which are the countries that contain more than 100 siteofspecialscientificinterests?",
+        "NNQT_istance": "Which are the country that contains more than 400 historic place",
+        "correct_NNQT_istance": "Which are the country that contains more than 400 historic places?",
         "istances": {
-            "first_rel": "http://dbpedia.org/ontology/areaOfSearch",
-            "first_type": "http://dbpedia.org/ontology/SiteOfSpecialScientificInterest",
+            "first_constant": "400",
+            "first_rel": "http://dbpedia.org/ontology/location",
+            "first_type": "http://dbpedia.org/ontology/HistoricPlace",
             "second_type": "http://dbpedia.org/ontology/Country"
         },
-        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/areaOfSearch> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+        "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>400)",
         "result_set": {
             "head": {
                 "link": [],
@@ -3251,44 +4371,22 @@
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "142"
+                            "value": "410"
                         },
                         "uri": {
                             "type": "uri",
-                            "value": "http://dbpedia.org/resource/Suffolk"
+                            "value": "http://dbpedia.org/resource/Spain"
                         }
                     },
                     {
                         "callret-1": {
                             "datatype": "http://www.w3.org/2001/XMLSchema#integer",
                             "type": "typed-literal",
-                            "value": "114"
+                            "value": "469"
                         },
                         "uri": {
                             "type": "uri",
                             "value": "http://dbpedia.org/resource/Somerset"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "157"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Norfolk"
-                        }
-                    },
-                    {
-                        "callret-1": {
-                            "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                            "type": "typed-literal",
-                            "value": "117"
-                        },
-                        "uri": {
-                            "type": "uri",
-                            "value": "http://dbpedia.org/resource/Gloucestershire"
                         }
                     }
                 ],

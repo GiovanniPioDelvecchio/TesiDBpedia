@@ -2,66 +2,74 @@
 {
 	"save_name": "files_to_add/istances/two_relations.json",
 
-	"template":"select distinct ?uri ?place ?date where {?uri a <%(first_type)s>.
+	"template":"select distinct ?uri ?place where {?uri a <%(first_type)s>.
 	?uri <%(first_rel)s> ?place.
 	?uri <%(second_rel)s> ?date
-	Filter(?date<\"1960-05-23T10:20:13+05:30\"^^xsd:dateTime)} LIMIT 100",
+	Filter(?date< %(first_date)s)}",
 
-	"NNQT":"Which are the %(first_type)s born before the 23rd of May 1960, and what are their respective
+	"NNQT":"Which are the %(first_type)s born before %(first_date)s, and what are their respective
 			birthplaces?",
 
 	"valid_types":{"first_type":"dbo:Artist"},
 
 	"relation_constraints":{"first_rel":"is http://dbpedia.org/ontology/birthPlace", "second_rel":
-	"is http://dbpedia.org/ontology/birthDate"}
+	"is http://dbpedia.org/ontology/birthDate"},
+
+	"single_entities": {},
+
+	"constants": {"first_date":"1960-01-01_1981-01-01_1-0-0"}
 }, {
 	"save_name":"files_to_add/istances/two_types.json",
 
-	"template":"select distinct ?uri ?otherUri where {?uri a <%(first_type)s>. 
+	"template":"select distinct ?otherUri where {select distinct count(?uri) as ?numbooks ?otherUri where {?uri a <%(first_type)s>. 
 	?otherUri a <%(second_type)s>. 
-	?uri <%(rel_to_insert)s> ?otherUri.} LIMIT 100",
+	?uri <%(rel_to_insert)s> ?otherUri.}
+	GROUP BY ?otherUri HAVING(count(?uri)>%(first_constant)s)}",
 
-	"NNQT":"Which are the %(second_type)s who wrote a %(first_type)s?",
+	"NNQT":"Which are the %(second_type)s who wrote more than %(first_constant)s %(first_type)s?",
 
 	"valid_types":{"first_type":"dbo:WrittenWork", "second_type":"dbo:Artist"},
 
-	"relation_constraints":{"rel_to_insert":"is http://dbpedia.org/ontology/author"}
+	"relation_constraints":{"rel_to_insert":"is http://dbpedia.org/ontology/author"},
+
+	"single_entities": {},
+
+	"constants": {"first_constant":"2_10_2"}
+
 }, {
 	"save_name":"files_to_add/istances/filter_natural_places.json",
 
-	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. ?uri <%(rel_to_insert)s> ?obj FILTER(?obj>2000)} LIMIT 100",
+	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. ?uri <%(rel_to_insert)s> ?obj FILTER(?obj>%(first_constant)s)} LIMIT %(second_constant)s",
 
-	"NNQT":"Which are the %(type_to_insert)s that have a %(rel_to_insert)s greater than 2000?",
+	"NNQT":"Which are the first %(second_constant)s %(type_to_insert)s that have a %(rel_to_insert)s greater than 
+	%(first_constant)s?",
 
 	"valid_types":{"type_to_insert":"dbo:NaturalPlace"},
 
-	"relation_constraints":{"rel_to_insert":"num"}
-}, {
-	"save_name":"files_to_add/istances/simplest_template.json",
-	
-	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. 
-	?uri <%(rel_to_insert)s> ?obj} LIMIT 100",
+	"relation_constraints":{"rel_to_insert":"num"},
 
-	"NNQT":"Which are the %(type_to_insert)s that %(rel_to_insert)s?",
+	"single_entities": {},
 
-	"valid_types":{"type_to_insert":"dbo:Person"},
-
-	"relation_constraints":{"rel_to_insert":"hasRole"}
+	"constants": {"first_constant":"5000_10000_1000", "second_constant":"100_300_100"}
 }, {
 	"save_name": "files_to_add/istances/close_person_birth_date.json",
 
 	"template":"select distinct ?uri ?bd1 where {?uri a <%(first_type)s>. 
 	?uri <%(first_relation)s> ?obj.
 	?obj dbo:birthDate ?bd1.
-	FILTER(?bd1>(\"1960-02-12\"^^xsd:date))
+	FILTER(?bd1>%(first_date)s)
 	}
 	ORDER BY DESC(?bd1)",
 
-	"NNQT":"Who are the %(first_relation)s of %(first_type)s born after the 12th of February 1960 and when were they born?",
+	"NNQT":"Who are the %(first_relation)s of %(first_type)s born after %(first_date)s and when were they born?",
 
 	"valid_types":{"first_type":"dbo:Politician"},
 
-	"relation_constraints":{"first_relation":"sameSettingAs"}
+	"relation_constraints":{"first_relation":"sameSettingAs"},
+
+	"single_entities": {},
+
+	"constants": {"first_date":"1960-01-01_1971-01-01_1-0-0"}
 }, {
 	"save_name": "files_to_add/istances/places_with_highest_values.json",
 
@@ -73,29 +81,41 @@
 
 	"valid_types":{"first_type":"dbo:NaturalPlace"},
 
-	"relation_constraints":{"first_relation":"num", "second_relation":"hasLocation"}
-}, {
+	"relation_constraints":{"first_relation":"num", "second_relation":"hasLocation"}, 
+
+	"single_entities": {},
+
+	"constants":{}
+}, { 
 	"save_name": "files_to_add/istances/count_places.json",
 
 	"template":"SELECT COUNT(?uri) as ?places
-	WHERE {  ?uri a <%(first_type)s>. ?uri <%(first_rel)s> ?obj. FILTER ( ?obj > 300000 ) }",
+	WHERE {  ?uri a <%(first_type)s>. ?uri <%(first_rel)s> ?obj. FILTER ( ?obj > %(first_constant)s ) }",
 
-	"NNQT":"How many %(first_type)s contain more than 300000 units of %(first_rel)s",
+	"NNQT":"How many %(first_type)s contain more than %(first_constant)s units of %(first_rel)s",
 
 	"valid_types":{"first_type":"dbo:PopulatedPlace"},
 
-	"relation_constraints":{"first_rel":"num"}
-}, {
+	"relation_constraints":{"first_rel":"num"},
+
+	"single_entities": {},
+
+	"constants":{"first_constant":"10000_50000_10000"}
+}, { 
 	"save_name": "files_to_add/istances/containing_places.json",
 
 	"template":"SELECT ?uri COUNT(?obj)
-	WHERE {  ?obj a <%(first_type)s>. ?uri a <%(second_type)s>. ?obj <%(first_rel)s> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+	WHERE {  ?obj a <%(first_type)s>. ?uri a <%(second_type)s>. ?obj <%(first_rel)s> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>%(first_constant)s)",
 
-	"NNQT":"Which are the %(second_type)s that contains more than 100 %(first_type)s",
+	"NNQT":"Which are the %(second_type)s that contains more than %(first_constant)s %(first_type)s",
 
 	"valid_types":{"first_type":"dbo:Place", "second_type":"dbo:PopulatedPlace"},
 
-	"relation_constraints":{"first_rel":"hasLocation"}
+	"relation_constraints":{"first_rel":"hasLocation"},
+
+	"single_entities": {},
+
+	"constants":{"first_constant":"100_500_100"}
 }, {
 	"save_name": "files_to_add/istances/average_measure.json",
 
@@ -103,33 +123,76 @@
 	?area rdf:type <%(first_type)s>. 
 	?uri rdf:type <%(second_type)s>. 
 	?uri  <%(first_rel)s> ?measure.   
-	?uri <%(second_rel)s> ?area .  }GROUP BY ?area HAVING( AVG(?measure)>4000)",
+	?uri <%(second_rel)s> ?area .  }GROUP BY ?area HAVING( AVG(?measure)>%(first_constant)s)",
 
-	"NNQT":"Which %(first_type)s contain %(second_type)s whith a mean %(first_rel)s greater than 4000?",
+	"NNQT":"Which %(first_type)s contain %(second_type)s whith a mean %(first_rel)s greater than %(first_constant)s?",
 
 	"valid_types":{"first_type":"dbo:PopulatedPlace", "second_type":"dbo:NaturalPlace"},
 
-	"relation_constraints":{"first_rel":"num", "second_rel":"hasLocation"}
+	"relation_constraints":{"first_rel":"num", "second_rel":"hasLocation"},
+
+	"single_entities": {},
+
+	"constants": {"first_constant":"1000_5000_1000"}
 }, {
 	"save_name": "files_to_add/istances/third_places.json",
 
 	"template":"SELECT ?uri WHERE  { 
-	?uri rdf:type <%(first_type)s>; <%(first_rel)s> ?measure; <%(second_rel)s> dbr:Italy  } ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+	?uri rdf:type <%(first_type)s>; <%(first_rel)s> ?measure; 
+	<%(second_rel)s> <%(first_single_entity)s>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
 
-	"NNQT":"What is the third %(first_type)s in Italy for %(first_rel)s?",
+	"NNQT":"What is the third %(first_type)s in %(first_single_entity)s for %(first_rel)s?",
 
 	"valid_types":{"first_type":"dbo:NaturalPlace"},
 
-	"relation_constraints":{"first_rel":"num", "second_rel":"hasLocation"}
+	"relation_constraints":{"first_rel":"num", "second_rel":"hasLocation"},
+
+	"single_entities": {"first_single_entity":"dbo:Country"},
+
+	"constants": {}
 }, {
 	"save_name": "files_to_add/istances/lowest_measure.json",
 
-	"template":"SELECT ?uri WHERE  { ?uri rdf:type <%(first_type)s>; <%(first_rel)s> ?measure; <%(second_rel)s> <http://dbpedia.org/resource/Germany>  }ORDER BY ASC(?elevation) LIMIT 1",
+	"template":"SELECT ?uri WHERE  { ?uri rdf:type <%(first_type)s>; <%(first_rel)s> ?measure; <%(second_rel)s> <%(first_single_entity)s>  }ORDER BY ASC(?measure) LIMIT 1",
 
-	"NNQT":"What is the last %(first_type)s in Germany for %(first_rel)s?",
+	"NNQT":"What is the last %(first_type)s in %(first_single_entity)s for %(first_rel)s?",
 
 	"valid_types":{"first_type":"dbo:NaturalPlace"},
 
-	"relation_constraints":{"first_rel":"num", "second_rel":"hasLocation"}
+	"relation_constraints":{"first_rel":"num", "second_rel":"hasLocation"},
+
+	"single_entities": {"first_single_entity":"dbo:Country"},
+
+	"constants": {}
+},  {
+	"save_name": "files_to_add/istances/known_publication.json",
+
+	"template":"SELECT DISTINCT ?work WHERE { ?work dbo:author <%(first_single_entity)s>;   rdf:type <%(first_type)s>.
+	OPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
+
+	"NNQT":"Which are the %(first_type)s that have a known publication date, written by %(first_single_entity)s?",
+
+	"valid_types":{"first_type":"dbo:WrittenWork"},
+
+	"relation_constraints":{},
+
+	"single_entities": {"first_single_entity":"dbo:Writer"},
+
+	"constants":{}
+}, {
+	"save_name": "files_to_add/istances/written_more_than_100.json",
+
+	"template":"SELECT ?writer WHERE { 
+	SELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <%(first_type)s>. ?book dbo:author ?writer; rdf:type <%(second_type)s> } GROUP BY ?writer HAVING(COUNT(?book)> %(first_constant)s) }",
+
+	"NNQT":"Which are the %(first_type)s that wrote more than %(first_constant)s %(second_type)s",
+
+	"valid_types":{"first_type":"dbo:Person", "second_type":"dbo:WrittenWork"},
+
+	"relation_constraints":{},
+
+	"single_entities": {},
+
+	"constants": {"first_constant":"5_50_5"}
 }
 ]

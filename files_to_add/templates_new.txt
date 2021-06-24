@@ -1,17 +1,33 @@
 [
-{
-	"save_name": "files_to_add/istances/third_places.json",
+ {
+	"save_name": "files_to_add/istances/known_publication.json",
 
-	"template":"SELECT ?uri WHERE  { 
-	?uri rdf:type <%(first_type)s>; <%(first_rel)s> ?measure; 
-	<%(second_rel)s> <%(first_single_entity)s>.} ORDER BY DESC(?measure) LIMIT 1 OFFSET 2",
+	"template":"SELECT DISTINCT ?work WHERE { ?work dbo:author <%(first_single_entity)s>;   rdf:type <%(first_type)s>.
+	OPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
 
-	"NNQT":"What is the third %(first_type)s in %(first_single_entity)s for %(first_rel)s?",
+	"NNQT":"Which are the %(first_type)s that have a known publication date, written by %(first_single_entity)s?",
 
-	"valid_types":{"first_type":"dbo:NaturalPlace"},
+	"valid_types":{"first_type":"dbo:WrittenWork"},
 
-	"single_entities": {"first_single_entity":"dbo:Country"},
+	"relation_constraints":{},
 
-	"relation_constraints":{"first_rel":"num", "second_rel":"hasLocation"}
+	"single_entities": {"first_single_entity":"dbo:Writer"},
+
+	"constants":{}
+}, {
+	"save_name": "files_to_add/istances/written_more_than_100.json",
+
+	"template":"SELECT ?writer WHERE { 
+	SELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <%(first_type)s>. ?book dbo:author ?writer; rdf:type <%(second_type)s> } GROUP BY ?writer HAVING(COUNT(?book)> %(first_constant)s) }",
+
+	"NNQT":"Which are the %(first_type)s that wrote more than %(first_constant)s %(second_type)s",
+
+	"valid_types":{"first_type":"dbo:Person", "second_type":"dbo:WrittenWork"},
+
+	"relation_constraints":{},
+
+	"single_entities": {},
+
+	"constants": {"first_constant":"5_50_5"}
 }
 ]
