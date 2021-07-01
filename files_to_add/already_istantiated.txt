@@ -1,6 +1,6 @@
 [
 {
-	"save_name": "files_to_add/istances/two_relations.json",
+	"save_name": "files_to_add/instances/two_relations.json",
 
 	"template":"select distinct ?uri ?place where {?uri a <%(first_type)s>.
 	?uri <%(first_rel)s> ?place.
@@ -19,7 +19,7 @@
 
 	"constants": {"first_date":"1960-01-01_1981-01-01_1-0-0"}
 }, {
-	"save_name":"files_to_add/istances/two_types.json",
+	"save_name":"files_to_add/instances/two_types.json",
 
 	"template":"select distinct ?otherUri where {select distinct count(?uri) as ?numbooks ?otherUri where {?uri a <%(first_type)s>. 
 	?otherUri a <%(second_type)s>. 
@@ -37,7 +37,7 @@
 	"constants": {"first_constant":"2_10_2"}
 
 }, {
-	"save_name":"files_to_add/istances/filter_natural_places.json",
+	"save_name":"files_to_add/instances/filter_natural_places.json",
 
 	"template":"select distinct ?uri where {?uri a <%(type_to_insert)s>. ?uri <%(rel_to_insert)s> ?obj FILTER(?obj>%(first_constant)s)} LIMIT %(second_constant)s",
 
@@ -52,7 +52,7 @@
 
 	"constants": {"first_constant":"5000_10000_1000", "second_constant":"100_300_100"}
 }, {
-	"save_name": "files_to_add/istances/close_person_birth_date.json",
+	"save_name": "files_to_add/instances/close_person_birth_date.json",
 
 	"template":"select distinct ?uri ?bd1 where {?uri a <%(first_type)s>. 
 	?uri <%(first_relation)s> ?obj.
@@ -71,7 +71,7 @@
 
 	"constants": {"first_date":"1960-01-01_1971-01-01_1-0-0"}
 }, {
-	"save_name": "files_to_add/istances/places_with_highest_values.json",
+	"save_name": "files_to_add/instances/places_with_highest_values.json",
 
 	"template":"SELECT ?area 
 	WHERE { 
@@ -87,7 +87,7 @@
 
 	"constants":{}
 }, { 
-	"save_name": "files_to_add/istances/count_places.json",
+	"save_name": "files_to_add/instances/count_places.json",
 
 	"template":"SELECT COUNT(?uri) as ?places
 	WHERE {  ?uri a <%(first_type)s>. ?uri <%(first_rel)s> ?obj. FILTER ( ?obj > %(first_constant)s ) }",
@@ -102,7 +102,7 @@
 
 	"constants":{"first_constant":"10000_50000_10000"}
 }, { 
-	"save_name": "files_to_add/istances/containing_places.json",
+	"save_name": "files_to_add/instances/containing_places.json",
 
 	"template":"SELECT ?uri COUNT(?obj)
 	WHERE {  ?obj a <%(first_type)s>. ?uri a <%(second_type)s>. ?obj <%(first_rel)s> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>%(first_constant)s)",
@@ -117,7 +117,7 @@
 
 	"constants":{"first_constant":"100_500_100"}
 }, {
-	"save_name": "files_to_add/istances/average_measure.json",
+	"save_name": "files_to_add/instances/average_measure.json",
 
 	"template":"SELECT ?area WHERE { 
 	?area rdf:type <%(first_type)s>. 
@@ -135,7 +135,7 @@
 
 	"constants": {"first_constant":"1000_5000_1000"}
 }, {
-	"save_name": "files_to_add/istances/third_places.json",
+	"save_name": "files_to_add/instances/third_places.json",
 
 	"template":"SELECT ?uri WHERE  { 
 	?uri rdf:type <%(first_type)s>; <%(first_rel)s> ?measure; 
@@ -151,7 +151,7 @@
 
 	"constants": {}
 }, {
-	"save_name": "files_to_add/istances/lowest_measure.json",
+	"save_name": "files_to_add/instances/lowest_measure.json",
 
 	"template":"SELECT ?uri WHERE  { ?uri rdf:type <%(first_type)s>; <%(first_rel)s> ?measure; <%(second_rel)s> <%(first_single_entity)s>  }ORDER BY ASC(?measure) LIMIT 1",
 
@@ -165,7 +165,7 @@
 
 	"constants": {}
 },  {
-	"save_name": "files_to_add/istances/known_publication.json",
+	"save_name": "files_to_add/instances/known_publication.json",
 
 	"template":"SELECT DISTINCT ?work WHERE { ?work dbo:author <%(first_single_entity)s>;   rdf:type <%(first_type)s>.
 	OPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
@@ -180,7 +180,7 @@
 
 	"constants":{}
 }, {
-	"save_name": "files_to_add/istances/written_more_than_100.json",
+	"save_name": "files_to_add/instances/written_more_than_100.json",
 
 	"template":"SELECT ?writer WHERE { 
 	SELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <%(first_type)s>. ?book dbo:author ?writer; rdf:type <%(second_type)s> } GROUP BY ?writer HAVING(COUNT(?book)> %(first_constant)s) }",
