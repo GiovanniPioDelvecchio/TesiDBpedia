@@ -1,0 +1,1284 @@
+{
+    "questions": [
+        {
+            "NNQT_istance": "How many continent contain more than 10000 units of area total",
+            "correct_NNQT_istance": "How many continents contain more than 10000 units of area total",
+            "id": 389,
+            "istances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Continent"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Continent>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "29"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many continent contain more than 20000 units of area total",
+            "correct_NNQT_istance": "How many continents contain more than 20000 units of area total",
+            "id": 390,
+            "istances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Continent"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Continent>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "29"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many continent contain more than 30000 units of area total",
+            "correct_NNQT_istance": "How many continents contain more than 30000 units of area total",
+            "id": 391,
+            "istances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Continent"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Continent>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "29"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many continent contain more than 40000 units of area total",
+            "correct_NNQT_istance": "How many continents contain more than 40000 units of area total",
+            "id": 392,
+            "istances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Continent"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Continent>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "29"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many continent contain more than 50000 units of area total",
+            "correct_NNQT_istance": "How many continents contain more than 50000 units of area total",
+            "id": 393,
+            "istances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Continent"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Continent>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "29"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 10000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 10000 units of area total",
+            "id": 394,
+            "istances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178972"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 20000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 20000 units of area total",
+            "id": 395,
+            "istances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178952"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 30000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 30000 units of area total",
+            "id": 396,
+            "istances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178936"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 40000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 40000 units of area total",
+            "id": 397,
+            "istances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178918"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 50000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 50000 units of area total",
+            "id": 398,
+            "istances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178889"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 10000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 10000 units of area total",
+            "id": 399,
+            "istances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178972"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 20000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 20000 units of area total",
+            "id": 400,
+            "istances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178952"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 30000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 30000 units of area total",
+            "id": 401,
+            "istances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178936"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 40000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 40000 units of area total",
+            "id": 402,
+            "istances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178918"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 50000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 50000 units of area total",
+            "id": 403,
+            "istances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178889"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 10000 units of population density",
+            "correct_NNQT_istance": "How many settlements contain more than 10000 units of population density",
+            "id": 404,
+            "istances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "453"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 20000 units of population density",
+            "correct_NNQT_istance": "How many settlements contain more than 20000 units of population density",
+            "id": 405,
+            "istances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "146"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 30000 units of population density",
+            "correct_NNQT_istance": "How many settlements contain more than 30000 units of population density",
+            "id": 406,
+            "istances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "61"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 40000 units of population density",
+            "correct_NNQT_istance": "How many settlements contain more than 40000 units of population density",
+            "id": 407,
+            "istances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "31"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 50000 units of population density",
+            "correct_NNQT_istance": "How many settlements contain more than 50000 units of population density",
+            "id": 408,
+            "istances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "21"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 10000 units of area",
+            "correct_NNQT_istance": "How many countries contain more than 10000 units of area",
+            "id": 409,
+            "istances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/area",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/area> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "684"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 20000 units of area",
+            "correct_NNQT_istance": "How many countries contain more than 20000 units of area",
+            "id": 410,
+            "istances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/area",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/area> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "682"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 30000 units of area",
+            "correct_NNQT_istance": "How many countries contain more than 30000 units of area",
+            "id": 411,
+            "istances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/area",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/area> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "682"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 40000 units of area",
+            "correct_NNQT_istance": "How many countries contain more than 40000 units of area",
+            "id": 412,
+            "istances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/area",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/area> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "680"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 50000 units of area",
+            "correct_NNQT_istance": "How many countries contain more than 50000 units of area",
+            "id": 413,
+            "istances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/area",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/area> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "679"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 10000 units of population density",
+            "correct_NNQT_istance": "How many countries contain more than 10000 units of population density",
+            "id": 414,
+            "istances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "8"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 20000 units of population density",
+            "correct_NNQT_istance": "How many countries contain more than 20000 units of population density",
+            "id": 415,
+            "istances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "5"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 30000 units of population density",
+            "correct_NNQT_istance": "How many countries contain more than 30000 units of population density",
+            "id": 416,
+            "istances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "5"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 40000 units of population density",
+            "correct_NNQT_istance": "How many countries contain more than 40000 units of population density",
+            "id": 417,
+            "istances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "5"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many country contain more than 50000 units of population density",
+            "correct_NNQT_istance": "How many countries contain more than 50000 units of population density",
+            "id": 418,
+            "istances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/populationDensity",
+                "first_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Country>. ?uri <http://dbpedia.org/ontology/populationDensity> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "5"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 10000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 10000 units of area total",
+            "id": 419,
+            "istances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178972"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 20000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 20000 units of area total",
+            "id": 420,
+            "istances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178952"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 30000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 30000 units of area total",
+            "id": 421,
+            "istances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178936"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 40000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 40000 units of area total",
+            "id": 422,
+            "istances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178918"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 50000 units of area total",
+            "correct_NNQT_istance": "How many settlements contain more than 50000 units of area total",
+            "id": 423,
+            "istances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "178889"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 10000 units of elevation",
+            "correct_NNQT_istance": "How many settlements contain more than 10000 units of elevation",
+            "id": 424,
+            "istances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/elevation",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/elevation> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "7"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 20000 units of elevation",
+            "correct_NNQT_istance": "How many settlements contain more than 20000 units of elevation",
+            "id": 425,
+            "istances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/elevation",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/elevation> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "5"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 30000 units of elevation",
+            "correct_NNQT_istance": "How many settlements contain more than 30000 units of elevation",
+            "id": 426,
+            "istances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/elevation",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/elevation> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "5"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 40000 units of elevation",
+            "correct_NNQT_istance": "How many settlements contain more than 40000 units of elevation",
+            "id": 427,
+            "istances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/elevation",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/elevation> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "5"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_istance": "How many settlement contain more than 50000 units of elevation",
+            "correct_NNQT_istance": "How many settlements contain more than 50000 units of elevation",
+            "id": 428,
+            "istances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/elevation",
+                "first_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/elevation> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "5"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        }
+    ]
+}
