@@ -1,6 +1,6 @@
 [
  {
-	"save_name": "files_to_add/istances/known_publication.json",
+	"save_name": "files_to_add/instances/known_publication.json",
 
 	"template":"SELECT DISTINCT ?work WHERE { ?work dbo:author <%(first_single_entity)s>;   rdf:type <%(first_type)s>.
 	OPTIONAL{{?work dbp:releaseDate ?date} UNION {?work dbo:publicationDate ?date} UNION {?work dbo:pubDate ?date}}   FILTER(Bound(?date))}",
@@ -15,7 +15,7 @@
 
 	"constants":{}
 }, {
-	"save_name": "files_to_add/istances/written_more_than_100.json",
+	"save_name": "files_to_add/instances/written_more_than_100.json",
 
 	"template":"SELECT ?writer WHERE { 
 	SELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <%(first_type)s>. ?book dbo:author ?writer; rdf:type <%(second_type)s> } GROUP BY ?writer HAVING(COUNT(?book)> %(first_constant)s) }",
