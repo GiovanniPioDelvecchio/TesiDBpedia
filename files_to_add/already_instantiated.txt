@@ -61,7 +61,7 @@
 	}
 	ORDER BY DESC(?bd1)",
 
-	"NNQT":"Who are the %(first_relation)s of %(first_type)s born after %(first_date)s and when were they born?",
+	"NNQT":"Who are the %(first_relation)s of %(first_type)s born after %(first_date)s and when were are they born?",
 
 	"valid_types":{"first_type":"dbo:Politician"},
 
@@ -107,7 +107,7 @@
 	"template":"SELECT ?uri COUNT(?obj)
 	WHERE {  ?obj a <%(first_type)s>. ?uri a <%(second_type)s>. ?obj <%(first_rel)s> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>%(first_constant)s)",
 
-	"NNQT":"Which are the %(second_type)s that contains more than %(first_constant)s %(first_type)s",
+	"NNQT":"Which are the %(second_type)s that contain more than %(first_constant)s %(first_type)s",
 
 	"valid_types":{"first_type":"dbo:Place", "second_type":"dbo:PopulatedPlace"},
 
