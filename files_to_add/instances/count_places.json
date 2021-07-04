@@ -1,10 +1,10 @@
 {
     "questions": [
         {
-            "NNQT_istance": "How many continent contain more than 10000 units of area total",
-            "correct_NNQT_istance": "How many continents contain more than 10000 units of area total",
-            "id": 389,
-            "istances": {
+            "NNQT_instance": "How many continent contain more than 10000 units of area total",
+            "correct_NNQT_instance": "How many continents contain more than 10000 units of area total",
+            "id": 430,
+            "instances": {
                 "first_constant": "10000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Continent"
@@ -33,10 +33,10 @@
             }
         },
         {
-            "NNQT_istance": "How many continent contain more than 20000 units of area total",
-            "correct_NNQT_istance": "How many continents contain more than 20000 units of area total",
-            "id": 390,
-            "istances": {
+            "NNQT_instance": "How many continent contain more than 20000 units of area total",
+            "correct_NNQT_instance": "How many continents contain more than 20000 units of area total",
+            "id": 431,
+            "instances": {
                 "first_constant": "20000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Continent"
@@ -65,10 +65,10 @@
             }
         },
         {
-            "NNQT_istance": "How many continent contain more than 30000 units of area total",
-            "correct_NNQT_istance": "How many continents contain more than 30000 units of area total",
-            "id": 391,
-            "istances": {
+            "NNQT_instance": "How many continent contain more than 30000 units of area total",
+            "correct_NNQT_instance": "How many continents contain more than 30000 units of area total",
+            "id": 432,
+            "instances": {
                 "first_constant": "30000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Continent"
@@ -97,10 +97,10 @@
             }
         },
         {
-            "NNQT_istance": "How many continent contain more than 40000 units of area total",
-            "correct_NNQT_istance": "How many continents contain more than 40000 units of area total",
-            "id": 392,
-            "istances": {
+            "NNQT_instance": "How many continent contain more than 40000 units of area total",
+            "correct_NNQT_instance": "How many continents contain more than 40000 units of area total",
+            "id": 433,
+            "instances": {
                 "first_constant": "40000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Continent"
@@ -129,10 +129,10 @@
             }
         },
         {
-            "NNQT_istance": "How many continent contain more than 50000 units of area total",
-            "correct_NNQT_istance": "How many continents contain more than 50000 units of area total",
-            "id": 393,
-            "istances": {
+            "NNQT_instance": "How many continent contain more than 50000 units of area total",
+            "correct_NNQT_instance": "How many continents contain more than 50000 units of area total",
+            "id": 434,
+            "instances": {
                 "first_constant": "50000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Continent"
@@ -161,10 +161,170 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 10000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 10000 units of area total",
-            "id": 394,
-            "istances": {
+            "NNQT_instance": "How many region contain more than 10000 units of area total",
+            "correct_NNQT_instance": "How many regions contain more than 10000 units of area total",
+            "id": 435,
+            "instances": {
+                "first_constant": "10000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Region"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Region>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 10000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "18459"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "How many region contain more than 20000 units of area total",
+            "correct_NNQT_instance": "How many regions contain more than 20000 units of area total",
+            "id": 436,
+            "instances": {
+                "first_constant": "20000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Region"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Region>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 20000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "18459"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "How many region contain more than 30000 units of area total",
+            "correct_NNQT_instance": "How many regions contain more than 30000 units of area total",
+            "id": 437,
+            "instances": {
+                "first_constant": "30000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Region"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Region>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 30000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "18459"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "How many region contain more than 40000 units of area total",
+            "correct_NNQT_instance": "How many regions contain more than 40000 units of area total",
+            "id": 438,
+            "instances": {
+                "first_constant": "40000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Region"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Region>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 40000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "18459"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "How many region contain more than 50000 units of area total",
+            "correct_NNQT_instance": "How many regions contain more than 50000 units of area total",
+            "id": 439,
+            "instances": {
+                "first_constant": "50000",
+                "first_rel": "http://dbpedia.org/ontology/areaTotal",
+                "first_type": "http://dbpedia.org/ontology/Region"
+            },
+            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Region>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 50000 ) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "places"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "places": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "18457"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "How many settlement contain more than 10000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 10000 units of area total",
+            "id": 440,
+            "instances": {
                 "first_constant": "10000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -193,10 +353,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 20000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 20000 units of area total",
-            "id": 395,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 20000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 20000 units of area total",
+            "id": 441,
+            "instances": {
                 "first_constant": "20000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -225,10 +385,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 30000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 30000 units of area total",
-            "id": 396,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 30000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 30000 units of area total",
+            "id": 442,
+            "instances": {
                 "first_constant": "30000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -257,10 +417,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 40000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 40000 units of area total",
-            "id": 397,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 40000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 40000 units of area total",
+            "id": 443,
+            "instances": {
                 "first_constant": "40000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -289,10 +449,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 50000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 50000 units of area total",
-            "id": 398,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 50000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 50000 units of area total",
+            "id": 444,
+            "instances": {
                 "first_constant": "50000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -321,170 +481,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 10000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 10000 units of area total",
-            "id": 399,
-            "istances": {
-                "first_constant": "10000",
-                "first_rel": "http://dbpedia.org/ontology/areaTotal",
-                "first_type": "http://dbpedia.org/ontology/Settlement"
-            },
-            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 10000 ) }",
-            "result_set": {
-                "head": {
-                    "link": [],
-                    "vars": [
-                        "places"
-                    ]
-                },
-                "results": {
-                    "bindings": [
-                        {
-                            "places": {
-                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                                "type": "typed-literal",
-                                "value": "178972"
-                            }
-                        }
-                    ],
-                    "distinct": false,
-                    "ordered": true
-                }
-            }
-        },
-        {
-            "NNQT_istance": "How many settlement contain more than 20000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 20000 units of area total",
-            "id": 400,
-            "istances": {
-                "first_constant": "20000",
-                "first_rel": "http://dbpedia.org/ontology/areaTotal",
-                "first_type": "http://dbpedia.org/ontology/Settlement"
-            },
-            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 20000 ) }",
-            "result_set": {
-                "head": {
-                    "link": [],
-                    "vars": [
-                        "places"
-                    ]
-                },
-                "results": {
-                    "bindings": [
-                        {
-                            "places": {
-                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                                "type": "typed-literal",
-                                "value": "178952"
-                            }
-                        }
-                    ],
-                    "distinct": false,
-                    "ordered": true
-                }
-            }
-        },
-        {
-            "NNQT_istance": "How many settlement contain more than 30000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 30000 units of area total",
-            "id": 401,
-            "istances": {
-                "first_constant": "30000",
-                "first_rel": "http://dbpedia.org/ontology/areaTotal",
-                "first_type": "http://dbpedia.org/ontology/Settlement"
-            },
-            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 30000 ) }",
-            "result_set": {
-                "head": {
-                    "link": [],
-                    "vars": [
-                        "places"
-                    ]
-                },
-                "results": {
-                    "bindings": [
-                        {
-                            "places": {
-                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                                "type": "typed-literal",
-                                "value": "178936"
-                            }
-                        }
-                    ],
-                    "distinct": false,
-                    "ordered": true
-                }
-            }
-        },
-        {
-            "NNQT_istance": "How many settlement contain more than 40000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 40000 units of area total",
-            "id": 402,
-            "istances": {
-                "first_constant": "40000",
-                "first_rel": "http://dbpedia.org/ontology/areaTotal",
-                "first_type": "http://dbpedia.org/ontology/Settlement"
-            },
-            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 40000 ) }",
-            "result_set": {
-                "head": {
-                    "link": [],
-                    "vars": [
-                        "places"
-                    ]
-                },
-                "results": {
-                    "bindings": [
-                        {
-                            "places": {
-                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                                "type": "typed-literal",
-                                "value": "178918"
-                            }
-                        }
-                    ],
-                    "distinct": false,
-                    "ordered": true
-                }
-            }
-        },
-        {
-            "NNQT_istance": "How many settlement contain more than 50000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 50000 units of area total",
-            "id": 403,
-            "istances": {
-                "first_constant": "50000",
-                "first_rel": "http://dbpedia.org/ontology/areaTotal",
-                "first_type": "http://dbpedia.org/ontology/Settlement"
-            },
-            "query": "SELECT COUNT(?uri) as ?places\n\tWHERE {  ?uri a <http://dbpedia.org/ontology/Settlement>. ?uri <http://dbpedia.org/ontology/areaTotal> ?obj. FILTER ( ?obj > 50000 ) }",
-            "result_set": {
-                "head": {
-                    "link": [],
-                    "vars": [
-                        "places"
-                    ]
-                },
-                "results": {
-                    "bindings": [
-                        {
-                            "places": {
-                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
-                                "type": "typed-literal",
-                                "value": "178889"
-                            }
-                        }
-                    ],
-                    "distinct": false,
-                    "ordered": true
-                }
-            }
-        },
-        {
-            "NNQT_istance": "How many settlement contain more than 10000 units of population density",
-            "correct_NNQT_istance": "How many settlements contain more than 10000 units of population density",
-            "id": 404,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 10000 units of population density",
+            "correct_NNQT_instance": "How many settlements contain more than 10000 units of population density",
+            "id": 445,
+            "instances": {
                 "first_constant": "10000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -513,10 +513,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 20000 units of population density",
-            "correct_NNQT_istance": "How many settlements contain more than 20000 units of population density",
-            "id": 405,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 20000 units of population density",
+            "correct_NNQT_instance": "How many settlements contain more than 20000 units of population density",
+            "id": 446,
+            "instances": {
                 "first_constant": "20000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -545,10 +545,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 30000 units of population density",
-            "correct_NNQT_istance": "How many settlements contain more than 30000 units of population density",
-            "id": 406,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 30000 units of population density",
+            "correct_NNQT_instance": "How many settlements contain more than 30000 units of population density",
+            "id": 447,
+            "instances": {
                 "first_constant": "30000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -577,10 +577,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 40000 units of population density",
-            "correct_NNQT_istance": "How many settlements contain more than 40000 units of population density",
-            "id": 407,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 40000 units of population density",
+            "correct_NNQT_instance": "How many settlements contain more than 40000 units of population density",
+            "id": 448,
+            "instances": {
                 "first_constant": "40000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -609,10 +609,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 50000 units of population density",
-            "correct_NNQT_istance": "How many settlements contain more than 50000 units of population density",
-            "id": 408,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 50000 units of population density",
+            "correct_NNQT_instance": "How many settlements contain more than 50000 units of population density",
+            "id": 449,
+            "instances": {
                 "first_constant": "50000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -641,10 +641,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 10000 units of area",
-            "correct_NNQT_istance": "How many countries contain more than 10000 units of area",
-            "id": 409,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 10000 units of area",
+            "correct_NNQT_instance": "How many countries contain more than 10000 units of area",
+            "id": 450,
+            "instances": {
                 "first_constant": "10000",
                 "first_rel": "http://dbpedia.org/ontology/area",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -673,10 +673,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 20000 units of area",
-            "correct_NNQT_istance": "How many countries contain more than 20000 units of area",
-            "id": 410,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 20000 units of area",
+            "correct_NNQT_instance": "How many countries contain more than 20000 units of area",
+            "id": 451,
+            "instances": {
                 "first_constant": "20000",
                 "first_rel": "http://dbpedia.org/ontology/area",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -705,10 +705,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 30000 units of area",
-            "correct_NNQT_istance": "How many countries contain more than 30000 units of area",
-            "id": 411,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 30000 units of area",
+            "correct_NNQT_instance": "How many countries contain more than 30000 units of area",
+            "id": 452,
+            "instances": {
                 "first_constant": "30000",
                 "first_rel": "http://dbpedia.org/ontology/area",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -737,10 +737,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 40000 units of area",
-            "correct_NNQT_istance": "How many countries contain more than 40000 units of area",
-            "id": 412,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 40000 units of area",
+            "correct_NNQT_instance": "How many countries contain more than 40000 units of area",
+            "id": 453,
+            "instances": {
                 "first_constant": "40000",
                 "first_rel": "http://dbpedia.org/ontology/area",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -769,10 +769,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 50000 units of area",
-            "correct_NNQT_istance": "How many countries contain more than 50000 units of area",
-            "id": 413,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 50000 units of area",
+            "correct_NNQT_instance": "How many countries contain more than 50000 units of area",
+            "id": 454,
+            "instances": {
                 "first_constant": "50000",
                 "first_rel": "http://dbpedia.org/ontology/area",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -801,10 +801,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 10000 units of population density",
-            "correct_NNQT_istance": "How many countries contain more than 10000 units of population density",
-            "id": 414,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 10000 units of population density",
+            "correct_NNQT_instance": "How many countries contain more than 10000 units of population density",
+            "id": 455,
+            "instances": {
                 "first_constant": "10000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -833,10 +833,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 20000 units of population density",
-            "correct_NNQT_istance": "How many countries contain more than 20000 units of population density",
-            "id": 415,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 20000 units of population density",
+            "correct_NNQT_instance": "How many countries contain more than 20000 units of population density",
+            "id": 456,
+            "instances": {
                 "first_constant": "20000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -865,10 +865,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 30000 units of population density",
-            "correct_NNQT_istance": "How many countries contain more than 30000 units of population density",
-            "id": 416,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 30000 units of population density",
+            "correct_NNQT_instance": "How many countries contain more than 30000 units of population density",
+            "id": 457,
+            "instances": {
                 "first_constant": "30000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -897,10 +897,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 40000 units of population density",
-            "correct_NNQT_istance": "How many countries contain more than 40000 units of population density",
-            "id": 417,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 40000 units of population density",
+            "correct_NNQT_instance": "How many countries contain more than 40000 units of population density",
+            "id": 458,
+            "instances": {
                 "first_constant": "40000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -929,10 +929,10 @@
             }
         },
         {
-            "NNQT_istance": "How many country contain more than 50000 units of population density",
-            "correct_NNQT_istance": "How many countries contain more than 50000 units of population density",
-            "id": 418,
-            "istances": {
+            "NNQT_instance": "How many country contain more than 50000 units of population density",
+            "correct_NNQT_instance": "How many countries contain more than 50000 units of population density",
+            "id": 459,
+            "instances": {
                 "first_constant": "50000",
                 "first_rel": "http://dbpedia.org/ontology/populationDensity",
                 "first_type": "http://dbpedia.org/ontology/Country"
@@ -961,10 +961,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 10000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 10000 units of area total",
-            "id": 419,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 10000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 10000 units of area total",
+            "id": 460,
+            "instances": {
                 "first_constant": "10000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -993,10 +993,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 20000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 20000 units of area total",
-            "id": 420,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 20000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 20000 units of area total",
+            "id": 461,
+            "instances": {
                 "first_constant": "20000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -1025,10 +1025,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 30000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 30000 units of area total",
-            "id": 421,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 30000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 30000 units of area total",
+            "id": 462,
+            "instances": {
                 "first_constant": "30000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -1057,10 +1057,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 40000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 40000 units of area total",
-            "id": 422,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 40000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 40000 units of area total",
+            "id": 463,
+            "instances": {
                 "first_constant": "40000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -1089,10 +1089,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 50000 units of area total",
-            "correct_NNQT_istance": "How many settlements contain more than 50000 units of area total",
-            "id": 423,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 50000 units of area total",
+            "correct_NNQT_instance": "How many settlements contain more than 50000 units of area total",
+            "id": 464,
+            "instances": {
                 "first_constant": "50000",
                 "first_rel": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -1121,10 +1121,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 10000 units of elevation",
-            "correct_NNQT_istance": "How many settlements contain more than 10000 units of elevation",
-            "id": 424,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 10000 units of elevation",
+            "correct_NNQT_instance": "How many settlements contain more than 10000 units of elevation",
+            "id": 465,
+            "instances": {
                 "first_constant": "10000",
                 "first_rel": "http://dbpedia.org/ontology/elevation",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -1153,10 +1153,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 20000 units of elevation",
-            "correct_NNQT_istance": "How many settlements contain more than 20000 units of elevation",
-            "id": 425,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 20000 units of elevation",
+            "correct_NNQT_instance": "How many settlements contain more than 20000 units of elevation",
+            "id": 466,
+            "instances": {
                 "first_constant": "20000",
                 "first_rel": "http://dbpedia.org/ontology/elevation",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -1185,10 +1185,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 30000 units of elevation",
-            "correct_NNQT_istance": "How many settlements contain more than 30000 units of elevation",
-            "id": 426,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 30000 units of elevation",
+            "correct_NNQT_instance": "How many settlements contain more than 30000 units of elevation",
+            "id": 467,
+            "instances": {
                 "first_constant": "30000",
                 "first_rel": "http://dbpedia.org/ontology/elevation",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -1217,10 +1217,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 40000 units of elevation",
-            "correct_NNQT_istance": "How many settlements contain more than 40000 units of elevation",
-            "id": 427,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 40000 units of elevation",
+            "correct_NNQT_instance": "How many settlements contain more than 40000 units of elevation",
+            "id": 468,
+            "instances": {
                 "first_constant": "40000",
                 "first_rel": "http://dbpedia.org/ontology/elevation",
                 "first_type": "http://dbpedia.org/ontology/Settlement"
@@ -1249,10 +1249,10 @@
             }
         },
         {
-            "NNQT_istance": "How many settlement contain more than 50000 units of elevation",
-            "correct_NNQT_istance": "How many settlements contain more than 50000 units of elevation",
-            "id": 428,
-            "istances": {
+            "NNQT_instance": "How many settlement contain more than 50000 units of elevation",
+            "correct_NNQT_instance": "How many settlements contain more than 50000 units of elevation",
+            "id": 469,
+            "instances": {
                 "first_constant": "50000",
                 "first_rel": "http://dbpedia.org/ontology/elevation",
                 "first_type": "http://dbpedia.org/ontology/Settlement"

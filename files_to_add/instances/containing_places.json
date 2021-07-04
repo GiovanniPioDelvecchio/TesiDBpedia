@@ -1,10 +1,10 @@
 {
     "questions": [
         {
-            "NNQT_istance": "Which are the settlement that contains more than 100 architectural structure",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 100 architectural structures",
-            "id": 368,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 100 architectural structure",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 100 architectural structures",
+            "id": 394,
+            "instances": {
                 "first_constant": "100",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
@@ -1392,10 +1392,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 200 architectural structure",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 200 architectural structures",
-            "id": 369,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 200 architectural structure",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 200 architectural structures",
+            "id": 395,
+            "instances": {
                 "first_constant": "200",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
@@ -1815,10 +1815,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 300 architectural structure",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 300 architectural structures",
-            "id": 370,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 300 architectural structure",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 300 architectural structures",
+            "id": 396,
+            "instances": {
                 "first_constant": "300",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
@@ -2062,10 +2062,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 400 architectural structure",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 400 architectural structures",
-            "id": 371,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 400 architectural structure",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 400 architectural structures",
+            "id": 397,
+            "instances": {
                 "first_constant": "400",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
@@ -2243,10 +2243,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 500 architectural structure",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 500 architectural structures",
-            "id": 372,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 500 architectural structure",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 500 architectural structures",
+            "id": 398,
+            "instances": {
                 "first_constant": "500",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/ArchitecturalStructure",
@@ -2424,10 +2424,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the continent that contains more than 100 natural place",
-            "correct_NNQT_istance": "Which are the continent that contains more than 100 natural places",
-            "id": 373,
-            "istances": {
+            "NNQT_instance": "Which are the continent that contain more than 100 natural place",
+            "correct_NNQT_instance": "Which are the continent that contain more than 100 natural places",
+            "id": 399,
+            "instances": {
                 "first_constant": "100",
                 "first_rel": "http://dbpedia.org/ontology/locatedInArea",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -2462,10 +2462,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the continent that contains more than 200 natural place",
-            "correct_NNQT_istance": "Which are the continent that contains more than 200 natural places",
-            "id": 374,
-            "istances": {
+            "NNQT_instance": "Which are the continent that contain more than 200 natural place",
+            "correct_NNQT_instance": "Which are the continent that contain more than 200 natural places",
+            "id": 400,
+            "instances": {
                 "first_constant": "200",
                 "first_rel": "http://dbpedia.org/ontology/locatedInArea",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -2500,10 +2500,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 100 natural place",
-            "correct_NNQT_istance": "Which are the country that contains more than 100 natural places?",
-            "id": 375,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 100 natural place",
+            "correct_NNQT_instance": "Which are the country that contains more than 100 natural places?",
+            "id": 401,
+            "instances": {
                 "first_constant": "100",
                 "first_rel": "http://dbpedia.org/ontology/locatedInArea",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -2934,10 +2934,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 200 natural place",
-            "correct_NNQT_istance": "Which are the country that contains more than 200 natural places?",
-            "id": 376,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 200 natural place",
+            "correct_NNQT_instance": "Which are the country that contains more than 200 natural places?",
+            "id": 402,
+            "instances": {
                 "first_constant": "200",
                 "first_rel": "http://dbpedia.org/ontology/locatedInArea",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -3225,10 +3225,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 300 natural place",
-            "correct_NNQT_istance": "Which are the country that contains more than 300 natural places?",
-            "id": 377,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 300 natural place",
+            "correct_NNQT_instance": "Which are the country that contains more than 300 natural places?",
+            "id": 403,
+            "instances": {
                 "first_constant": "300",
                 "first_rel": "http://dbpedia.org/ontology/locatedInArea",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -3450,10 +3450,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 400 natural place",
-            "correct_NNQT_istance": "Which are the country that contains more than 400 natural places?",
-            "id": 378,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 400 natural place",
+            "correct_NNQT_instance": "Which are the country that contains more than 400 natural places?",
+            "id": 404,
+            "instances": {
                 "first_constant": "400",
                 "first_rel": "http://dbpedia.org/ontology/locatedInArea",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -3664,10 +3664,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 500 natural place",
-            "correct_NNQT_istance": "Which are the country that contains more than 500 natural places?",
-            "id": 379,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 500 natural place",
+            "correct_NNQT_instance": "Which are the country that contains more than 500 natural places?",
+            "id": 405,
+            "instances": {
                 "first_constant": "500",
                 "first_rel": "http://dbpedia.org/ontology/locatedInArea",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -3801,10 +3801,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 100 natural place",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 100 natural places",
-            "id": 380,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 100 natural place",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 100 natural places",
+            "id": 406,
+            "instances": {
                 "first_constant": "100",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -3982,10 +3982,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 200 natural place",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 200 natural places",
-            "id": 381,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 200 natural place",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 200 natural places",
+            "id": 407,
+            "instances": {
                 "first_constant": "200",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -4042,10 +4042,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 300 natural place",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 300 natural places",
-            "id": 382,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 300 natural place",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 300 natural places",
+            "id": 408,
+            "instances": {
                 "first_constant": "300",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -4091,10 +4091,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 400 natural place",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 400 natural places",
-            "id": 383,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 400 natural place",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 400 natural places",
+            "id": 409,
+            "instances": {
                 "first_constant": "400",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -4129,10 +4129,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the settlement that contains more than 500 natural place",
-            "correct_NNQT_istance": "Which are the settlement that contains more than 500 natural places",
-            "id": 384,
-            "istances": {
+            "NNQT_instance": "Which are the settlement that contain more than 500 natural place",
+            "correct_NNQT_instance": "Which are the settlement that contain more than 500 natural places",
+            "id": 410,
+            "instances": {
                 "first_constant": "500",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/NaturalPlace",
@@ -4167,10 +4167,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 100 historic place",
-            "correct_NNQT_istance": "Which are the country that contains more than 100 historic places?",
-            "id": 385,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 100 historic place",
+            "correct_NNQT_instance": "Which are the country that contains more than 100 historic places?",
+            "id": 411,
+            "instances": {
                 "first_constant": "100",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/HistoricPlace",
@@ -4238,10 +4238,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 200 historic place",
-            "correct_NNQT_istance": "Which are the country that contains more than 200 historic places?",
-            "id": 386,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 200 historic place",
+            "correct_NNQT_instance": "Which are the country that contains more than 200 historic places?",
+            "id": 412,
+            "instances": {
                 "first_constant": "200",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/HistoricPlace",
@@ -4309,10 +4309,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 300 historic place",
-            "correct_NNQT_istance": "Which are the country that contains more than 300 historic places?",
-            "id": 387,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 300 historic place",
+            "correct_NNQT_instance": "Which are the country that contains more than 300 historic places?",
+            "id": 413,
+            "instances": {
                 "first_constant": "300",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/HistoricPlace",
@@ -4369,10 +4369,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the country that contains more than 400 historic place",
-            "correct_NNQT_istance": "Which are the country that contains more than 400 historic places?",
-            "id": 388,
-            "istances": {
+            "NNQT_instance": "Which are the country that contain more than 400 historic place",
+            "correct_NNQT_instance": "Which are the country that contains more than 400 historic places?",
+            "id": 414,
+            "instances": {
                 "first_constant": "400",
                 "first_rel": "http://dbpedia.org/ontology/location",
                 "first_type": "http://dbpedia.org/ontology/HistoricPlace",
@@ -4409,6 +4409,961 @@
                             "uri": {
                                 "type": "uri",
                                 "value": "http://dbpedia.org/resource/Somerset"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 100 historic place",
+            "correct_NNQT_instance": "Which are the country that contains more than 100 historic places?",
+            "id": 415,
+            "instances": {
+                "first_constant": "100",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/HistoricPlace",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "312"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "410"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Spain"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "469"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Somerset"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "217"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Republic_of_Ireland"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 200 historic place",
+            "correct_NNQT_instance": "Which are the country that contains more than 200 historic places?",
+            "id": 416,
+            "instances": {
+                "first_constant": "200",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/HistoricPlace",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>200)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "312"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "410"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Spain"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "469"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Somerset"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "217"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Republic_of_Ireland"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 300 historic place",
+            "correct_NNQT_instance": "Which are the country that contains more than 300 historic places?",
+            "id": 417,
+            "instances": {
+                "first_constant": "300",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/HistoricPlace",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>300)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "312"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "410"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Spain"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "469"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Somerset"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 400 historic place",
+            "correct_NNQT_instance": "Which are the country that contains more than 400 historic places?",
+            "id": 418,
+            "instances": {
+                "first_constant": "400",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/HistoricPlace",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/HistoricPlace>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>400)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "410"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Spain"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "469"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Somerset"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 100 protected area",
+            "correct_NNQT_instance": "Which are the country that contains more than 100 protected areas?",
+            "id": 419,
+            "instances": {
+                "first_constant": "100",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/ProtectedArea",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ProtectedArea>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "203"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/India"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "155"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/British_Columbia"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "115"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/England"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "2325"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "280"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Japan"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "202"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/South_Africa"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "115"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Scotland"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "154"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Costa_Rica"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "110"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Thailand"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "427"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Canada"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 200 protected area",
+            "correct_NNQT_instance": "Which are the country that contains more than 200 protected areas?",
+            "id": 420,
+            "instances": {
+                "first_constant": "200",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/ProtectedArea",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ProtectedArea>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>200)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "203"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/India"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "2325"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "280"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Japan"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "202"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/South_Africa"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "427"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Canada"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 300 protected area",
+            "correct_NNQT_instance": "Which are the country that contains more than 300 protected areas?",
+            "id": 421,
+            "instances": {
+                "first_constant": "300",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/ProtectedArea",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ProtectedArea>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>300)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "2325"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "427"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Canada"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 400 protected area",
+            "correct_NNQT_instance": "Which are the country that contains more than 400 protected areas?",
+            "id": 422,
+            "instances": {
+                "first_constant": "400",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/ProtectedArea",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ProtectedArea>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>400)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "2325"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "427"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Canada"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 500 protected area",
+            "correct_NNQT_instance": "Which are the country that contains more than 500 protected areas?",
+            "id": 423,
+            "instances": {
+                "first_constant": "500",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/ProtectedArea",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ProtectedArea>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>500)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "2325"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the settlement that contain more than 100 protected area",
+            "correct_NNQT_instance": "Which is the settlement that contains more than 100 protected areas?",
+            "id": 424,
+            "instances": {
+                "first_constant": "100",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/ProtectedArea",
+                "second_type": "http://dbpedia.org/ontology/Settlement"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/ProtectedArea>. ?uri a <http://dbpedia.org/ontology/Settlement>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "135"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Virginia"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "167"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Quebec"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "123"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Colorado"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "177"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Pennsylvania"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "116"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Florida"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "143"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Washington_(state)"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "105"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Wisconsin"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "140"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/California"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "125"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Missouri"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 100 wine region",
+            "correct_NNQT_instance": "Which are the country that contains more than 100 wine regions?",
+            "id": 425,
+            "instances": {
+                "first_constant": "100",
+                "first_rel": "http://dbpedia.org/ontology/location",
+                "first_type": "http://dbpedia.org/ontology/WineRegion",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/WineRegion>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/location> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "135"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Spain"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 100 garden",
+            "correct_NNQT_instance": "Which are the country that contains more than 100 gardens?",
+            "id": 426,
+            "instances": {
+                "first_constant": "100",
+                "first_rel": "http://dbpedia.org/ontology/country",
+                "first_type": "http://dbpedia.org/ontology/Garden",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/Garden>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/country> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "321"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 200 garden",
+            "correct_NNQT_instance": "Which are the country that contains more than 200 gardens?",
+            "id": 427,
+            "instances": {
+                "first_constant": "200",
+                "first_rel": "http://dbpedia.org/ontology/country",
+                "first_type": "http://dbpedia.org/ontology/Garden",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/Garden>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/country> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>200)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "321"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 300 garden",
+            "correct_NNQT_instance": "Which are the country that contains more than 300 gardens?",
+            "id": 428,
+            "instances": {
+                "first_constant": "300",
+                "first_rel": "http://dbpedia.org/ontology/country",
+                "first_type": "http://dbpedia.org/ontology/Garden",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/Garden>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/country> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>300)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "321"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/United_States"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the country that contain more than 100 site of special scientific interest",
+            "correct_NNQT_instance": "Which are the country that contains more than 100 sites of special scientific interest?",
+            "id": 429,
+            "instances": {
+                "first_constant": "100",
+                "first_rel": "http://dbpedia.org/ontology/areaOfSearch",
+                "first_type": "http://dbpedia.org/ontology/SiteOfSpecialScientificInterest",
+                "second_type": "http://dbpedia.org/ontology/Country"
+            },
+            "query": "SELECT ?uri COUNT(?obj)\n\tWHERE {  ?obj a <http://dbpedia.org/ontology/SiteOfSpecialScientificInterest>. ?uri a <http://dbpedia.org/ontology/Country>. ?obj <http://dbpedia.org/ontology/areaOfSearch> ?uri.} GROUP BY ?uri HAVING(COUNT(?obj)>100)",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "uri",
+                        "callret-1"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "142"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Suffolk"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "114"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Somerset"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "157"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Norfolk"
+                            }
+                        },
+                        {
+                            "callret-1": {
+                                "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                                "type": "typed-literal",
+                                "value": "117"
+                            },
+                            "uri": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Gloucestershire"
                             }
                         }
                     ],
