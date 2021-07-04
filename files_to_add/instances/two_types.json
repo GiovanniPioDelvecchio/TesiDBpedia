@@ -1,10 +1,10 @@
 {
     "questions": [
         {
-            "NNQT_istance": "Which are the musical artist who wrote more than 2 book?",
-            "correct_NNQT_istance": "Which is the musical artist who wrote more than 2 books?",
-            "id": 2766,
-            "istances": {
+            "NNQT_instance": "Which are the musical artist who wrote more than 2 book?",
+            "correct_NNQT_instance": "Which is the musical artist who wrote more than 2 books?",
+            "id": 2838,
+            "instances": {
                 "first_constant": "2",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -129,10 +129,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the musical artist who wrote more than 4 book?",
-            "correct_NNQT_istance": "Which is the musical artist who wrote more than 4 books?",
-            "id": 2767,
-            "istances": {
+            "NNQT_instance": "Which are the musical artist who wrote more than 4 book?",
+            "correct_NNQT_instance": "Which is the musical artist who wrote more than 4 books?",
+            "id": 2839,
+            "instances": {
                 "first_constant": "4",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -173,10 +173,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the musical artist who wrote more than 6 book?",
-            "correct_NNQT_istance": "Which is the musical artist who wrote more than 6 books?",
-            "id": 2768,
-            "istances": {
+            "NNQT_instance": "Which are the musical artist who wrote more than 6 book?",
+            "correct_NNQT_instance": "Which is the musical artist who wrote more than 6 books?",
+            "id": 2840,
+            "instances": {
                 "first_constant": "6",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -211,10 +211,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the musical artist who wrote more than 8 book?",
-            "correct_NNQT_istance": "Which is the musical artist who wrote more than 8 books?",
-            "id": 2769,
-            "istances": {
+            "NNQT_instance": "Which are the musical artist who wrote more than 8 book?",
+            "correct_NNQT_instance": "Which is the musical artist who wrote more than 8 books?",
+            "id": 2841,
+            "instances": {
                 "first_constant": "8",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -243,10 +243,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the musical artist who wrote more than 10 book?",
-            "correct_NNQT_istance": "Which is the musical artist who wrote more than 10 books?",
-            "id": 2770,
-            "istances": {
+            "NNQT_instance": "Which are the musical artist who wrote more than 10 book?",
+            "correct_NNQT_instance": "Which is the musical artist who wrote more than 10 books?",
+            "id": 2842,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -275,10 +275,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comedian who wrote more than 2 book?",
-            "correct_NNQT_istance": "Which is the comedian who wrote more than 2 books?",
-            "id": 2771,
-            "istances": {
+            "NNQT_instance": "Which are the comedian who wrote more than 2 book?",
+            "correct_NNQT_instance": "Which is the comedian who wrote more than 2 books?",
+            "id": 2843,
+            "instances": {
                 "first_constant": "2",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -349,10 +349,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comedian who wrote more than 4 book?",
-            "correct_NNQT_istance": "Which is the comedian who wrote more than 4 books?",
-            "id": 2772,
-            "istances": {
+            "NNQT_instance": "Which are the comedian who wrote more than 4 book?",
+            "correct_NNQT_instance": "Which is the comedian who wrote more than 4 books?",
+            "id": 2844,
+            "instances": {
                 "first_constant": "4",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -399,10 +399,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 2 book?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 2 books?",
-            "id": 2773,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 2 book?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 2 books?",
+            "id": 2845,
+            "instances": {
                 "first_constant": "2",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -533,10 +533,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 4 book?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 4 books?",
-            "id": 2774,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 4 book?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 4 books?",
+            "id": 2846,
+            "instances": {
                 "first_constant": "4",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -607,10 +607,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 6 book?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 6 books?",
-            "id": 2775,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 6 book?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 6 books?",
+            "id": 2847,
+            "instances": {
                 "first_constant": "6",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -663,10 +663,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 8 book?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 8 books?",
-            "id": 2776,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 8 book?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 8 books?",
+            "id": 2848,
+            "instances": {
                 "first_constant": "8",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -713,10 +713,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 10 book?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 10 books?",
-            "id": 2777,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 10 book?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 10 books?",
+            "id": 2849,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -745,10 +745,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the fashion designer who wrote more than 2 book?",
-            "correct_NNQT_istance": "Which is the fashion designer who wrote more than 2 books?",
-            "id": 2778,
-            "istances": {
+            "NNQT_instance": "Which are the fashion designer who wrote more than 2 book?",
+            "correct_NNQT_instance": "Which is the fashion designer who wrote more than 2 books?",
+            "id": 2850,
+            "instances": {
                 "first_constant": "2",
                 "first_type": "http://dbpedia.org/ontology/Book",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -777,10 +777,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 2 comic?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 2 comics?",
-            "id": 2779,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 2 comic?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 2 comics?",
+            "id": 2851,
+            "instances": {
                 "first_constant": "2",
                 "first_type": "http://dbpedia.org/ontology/Comic",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -1301,10 +1301,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 4 comic?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 4 comics?",
-            "id": 2780,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 4 comic?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 4 comics?",
+            "id": 2852,
+            "instances": {
                 "first_constant": "4",
                 "first_type": "http://dbpedia.org/ontology/Comic",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -1459,10 +1459,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 6 comic?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 6 comics?",
-            "id": 2781,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 6 comic?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 6 comics?",
+            "id": 2853,
+            "instances": {
                 "first_constant": "6",
                 "first_type": "http://dbpedia.org/ontology/Comic",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -1527,10 +1527,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 8 comic?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 8 comics?",
-            "id": 2782,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 8 comic?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 8 comics?",
+            "id": 2854,
+            "instances": {
                 "first_constant": "8",
                 "first_type": "http://dbpedia.org/ontology/Comic",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -1589,10 +1589,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comics creator who wrote more than 10 comic?",
-            "correct_NNQT_istance": "Which is the comics creator who wrote more than 10 comics?",
-            "id": 2783,
-            "istances": {
+            "NNQT_instance": "Which are the comics creator who wrote more than 10 comic?",
+            "correct_NNQT_instance": "Which is the comics creator who wrote more than 10 comics?",
+            "id": 2855,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Comic",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",
@@ -1621,10 +1621,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the comedian who wrote more than 2 play?",
-            "correct_NNQT_istance": "Which is the comedian who wrote more than 2 plays?",
-            "id": 2784,
-            "istances": {
+            "NNQT_instance": "Which are the comedian who wrote more than 2 play?",
+            "correct_NNQT_instance": "Which is the comedian who wrote more than 2 plays?",
+            "id": 2856,
+            "instances": {
                 "first_constant": "2",
                 "first_type": "http://dbpedia.org/ontology/Play",
                 "rel_to_insert": "http://dbpedia.org/ontology/author",

@@ -1,10 +1,10 @@
 {
     "questions": [
         {
-            "NNQT_istance": "Which are the military person that wrote more than 5 book",
-            "correct_NNQT_istance": "Which are the military person that wrote more than 5 books",
-            "id": 2785,
-            "istances": {
+            "NNQT_instance": "Which are the military person that wrote more than 5 book",
+            "correct_NNQT_instance": "Which are the military person that wrote more than 5 books",
+            "id": 2857,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/MilitaryPerson",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -32,10 +32,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the military person that wrote more than 10 book",
-            "correct_NNQT_istance": "Which are the military person that wrote more than 10 books",
-            "id": 2786,
-            "istances": {
+            "NNQT_instance": "Which are the military person that wrote more than 10 book",
+            "correct_NNQT_instance": "Which are the military person that wrote more than 10 books",
+            "id": 2858,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/MilitaryPerson",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -63,10 +63,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the military person that wrote more than 15 book",
-            "correct_NNQT_istance": "Which are the military person that wrote more than 15 books",
-            "id": 2787,
-            "istances": {
+            "NNQT_instance": "Which are the military person that wrote more than 15 book",
+            "correct_NNQT_instance": "Which are the military person that wrote more than 15 books",
+            "id": 2859,
+            "instances": {
                 "first_constant": "15",
                 "first_type": "http://dbpedia.org/ontology/MilitaryPerson",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -94,10 +94,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the military person that wrote more than 20 book",
-            "correct_NNQT_istance": "Which are the military person that wrote more than 20 books",
-            "id": 2788,
-            "istances": {
+            "NNQT_instance": "Which are the military person that wrote more than 20 book",
+            "correct_NNQT_instance": "Which are the military person that wrote more than 20 books",
+            "id": 2860,
+            "instances": {
                 "first_constant": "20",
                 "first_type": "http://dbpedia.org/ontology/MilitaryPerson",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -125,10 +125,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the military person that wrote more than 25 book",
-            "correct_NNQT_istance": "Which are the military person that wrote more than 25 books",
-            "id": 2789,
-            "istances": {
+            "NNQT_instance": "Which are the military person that wrote more than 25 book",
+            "correct_NNQT_instance": "Which are the military person that wrote more than 25 books",
+            "id": 2861,
+            "instances": {
                 "first_constant": "25",
                 "first_type": "http://dbpedia.org/ontology/MilitaryPerson",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -156,10 +156,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the military person that wrote more than 30 book",
-            "correct_NNQT_istance": "Which are the military person that wrote more than 30 books",
-            "id": 2790,
-            "istances": {
+            "NNQT_instance": "Which are the military person that wrote more than 30 book",
+            "correct_NNQT_instance": "Which are the military person that wrote more than 30 books",
+            "id": 2862,
+            "instances": {
                 "first_constant": "30",
                 "first_type": "http://dbpedia.org/ontology/MilitaryPerson",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -187,10 +187,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the military person that wrote more than 35 book",
-            "correct_NNQT_istance": "Which are the military person that wrote more than 35 books",
-            "id": 2791,
-            "istances": {
+            "NNQT_instance": "Which are the military person that wrote more than 35 book",
+            "correct_NNQT_instance": "Which are the military person that wrote more than 35 books",
+            "id": 2863,
+            "instances": {
                 "first_constant": "35",
                 "first_type": "http://dbpedia.org/ontology/MilitaryPerson",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -218,10 +218,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the artist that wrote more than 5 book",
-            "correct_NNQT_istance": "Which are the artist that wrote more than 5 books",
-            "id": 2792,
-            "istances": {
+            "NNQT_instance": "Which are the artist that wrote more than 5 book",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 5 books",
+            "id": 2864,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Artist",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -339,10 +339,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the artist that wrote more than 10 book",
-            "correct_NNQT_istance": "Which are the artist that wrote more than 10 books",
-            "id": 2793,
-            "istances": {
+            "NNQT_instance": "Which are the artist that wrote more than 10 book",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 10 books",
+            "id": 2865,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Artist",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -376,10 +376,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the artist that wrote more than 5 comic",
-            "correct_NNQT_istance": "Which are the artist that wrote more than 5 comics",
-            "id": 2794,
-            "istances": {
+            "NNQT_instance": "Which are the artist that wrote more than 5 comic",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 5 comics",
+            "id": 2866,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Artist",
                 "second_type": "http://dbpedia.org/ontology/Comic"
@@ -497,10 +497,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the artist that wrote more than 10 comic",
-            "correct_NNQT_istance": "Which are the artist that wrote more than 10 comics",
-            "id": 2795,
-            "istances": {
+            "NNQT_instance": "Which are the artist that wrote more than 10 comic",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 10 comics",
+            "id": 2867,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Artist",
                 "second_type": "http://dbpedia.org/ontology/Comic"
@@ -546,10 +546,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the artist that wrote more than 15 comic",
-            "correct_NNQT_istance": "Which are the artist that wrote more than 15 comics",
-            "id": 2796,
-            "istances": {
+            "NNQT_instance": "Which are the artist that wrote more than 15 comic",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 15 comics",
+            "id": 2868,
+            "instances": {
                 "first_constant": "15",
                 "first_type": "http://dbpedia.org/ontology/Artist",
                 "second_type": "http://dbpedia.org/ontology/Comic"
@@ -577,10 +577,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the philosopher that wrote more than 5 book",
-            "correct_NNQT_istance": "Which are the philosopher that wrote more than 5 books",
-            "id": 2797,
-            "istances": {
+            "NNQT_instance": "Which are the philosopher that wrote more than 5 book",
+            "correct_NNQT_instance": "Which are the philosopher that wrote more than 5 books",
+            "id": 2869,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Philosopher",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -794,10 +794,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the philosopher that wrote more than 10 book",
-            "correct_NNQT_istance": "Which are the philosopher that wrote more than 10 books",
-            "id": 2798,
-            "istances": {
+            "NNQT_instance": "Which are the philosopher that wrote more than 10 book",
+            "correct_NNQT_instance": "Which are the philosopher that wrote more than 10 books",
+            "id": 2870,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Philosopher",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -879,10 +879,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the philosopher that wrote more than 15 book",
-            "correct_NNQT_istance": "Which are the philosopher that wrote more than 15 books",
-            "id": 2799,
-            "istances": {
+            "NNQT_instance": "Which are the philosopher that wrote more than 15 book",
+            "correct_NNQT_instance": "Which are the philosopher that wrote more than 15 books",
+            "id": 2871,
+            "instances": {
                 "first_constant": "15",
                 "first_type": "http://dbpedia.org/ontology/Philosopher",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -934,10 +934,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the philosopher that wrote more than 20 book",
-            "correct_NNQT_istance": "Which are the philosopher that wrote more than 20 books",
-            "id": 2800,
-            "istances": {
+            "NNQT_instance": "Which are the philosopher that wrote more than 20 book",
+            "correct_NNQT_instance": "Which are the philosopher that wrote more than 20 books",
+            "id": 2872,
+            "instances": {
                 "first_constant": "20",
                 "first_type": "http://dbpedia.org/ontology/Philosopher",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -971,10 +971,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the philosopher that wrote more than 25 book",
-            "correct_NNQT_istance": "Which are the philosopher that wrote more than 25 books",
-            "id": 2801,
-            "istances": {
+            "NNQT_instance": "Which are the philosopher that wrote more than 25 book",
+            "correct_NNQT_instance": "Which are the philosopher that wrote more than 25 books",
+            "id": 2873,
+            "instances": {
                 "first_constant": "25",
                 "first_type": "http://dbpedia.org/ontology/Philosopher",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -1002,15 +1002,15 @@
             }
         },
         {
-            "NNQT_istance": "Which are the office holder that wrote more than 5 book",
-            "correct_NNQT_istance": "Which is the office holder that wrote more than 5 books?",
-            "id": 2802,
-            "istances": {
+            "NNQT_instance": "Which are the politician that wrote more than 5 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 5 books",
+            "id": 2874,
+            "instances": {
                 "first_constant": "5",
-                "first_type": "http://dbpedia.org/ontology/OfficeHolder",
+                "first_type": "http://dbpedia.org/ontology/Politician",
                 "second_type": "http://dbpedia.org/ontology/Book"
             },
-            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/OfficeHolder>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 5) }",
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 5) }",
             "result_set": {
                 "head": {
                     "link": [],
@@ -1023,7 +1023,19 @@
                         {
                             "writer": {
                                 "type": "uri",
+                                "value": "http://dbpedia.org/resource/John_Stuart_Mill"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
                                 "value": "http://dbpedia.org/resource/Newt_Gingrich"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Jeffrey_Archer"
                             }
                         },
                         {
@@ -1047,7 +1059,43 @@
                         {
                             "writer": {
                                 "type": "uri",
+                                "value": "http://dbpedia.org/resource/Walter_Isaacson"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
                                 "value": "http://dbpedia.org/resource/Bill_Clinton"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/David_Adams_Richards"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Ted_Hughes"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Donald_Trump"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Colm_T\u00f3ib\u00edn"
                             }
                         },
                         {
@@ -1065,7 +1113,19 @@
                         {
                             "writer": {
                                 "type": "uri",
+                                "value": "http://dbpedia.org/resource/Lawrence_Lessig"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
                                 "value": "http://dbpedia.org/resource/Shashi_Tharoor"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Bertrand_Russell"
                             }
                         },
                         {
@@ -1081,15 +1141,15 @@
             }
         },
         {
-            "NNQT_istance": "Which are the office holder that wrote more than 10 book",
-            "correct_NNQT_istance": "Which is the office holder that wrote more than 10 books?",
-            "id": 2803,
-            "istances": {
+            "NNQT_instance": "Which are the politician that wrote more than 10 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 10 books",
+            "id": 2875,
+            "instances": {
                 "first_constant": "10",
-                "first_type": "http://dbpedia.org/ontology/OfficeHolder",
+                "first_type": "http://dbpedia.org/ontology/Politician",
                 "second_type": "http://dbpedia.org/ontology/Book"
             },
-            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/OfficeHolder>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 10) }",
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 10) }",
             "result_set": {
                 "head": {
                     "link": [],
@@ -1108,6 +1168,18 @@
                         {
                             "writer": {
                                 "type": "uri",
+                                "value": "http://dbpedia.org/resource/Jeffrey_Archer"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
                                 "value": "http://dbpedia.org/resource/John_Buchan"
                             }
                         },
@@ -1124,10 +1196,177 @@
             }
         },
         {
-            "NNQT_istance": "Which are the religious that wrote more than 5 book",
-            "correct_NNQT_istance": "Which are the religious that wrote more than 5 books",
-            "id": 2804,
-            "istances": {
+            "NNQT_instance": "Which are the politician that wrote more than 15 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 15 books",
+            "id": 2876,
+            "instances": {
+                "first_constant": "15",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 15) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Jeffrey_Archer"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 20 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 20 books",
+            "id": 2877,
+            "instances": {
+                "first_constant": "20",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 20) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Jeffrey_Archer"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 25 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 25 books",
+            "id": 2878,
+            "instances": {
+                "first_constant": "25",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 25) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 30 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 30 books",
+            "id": 2879,
+            "instances": {
+                "first_constant": "30",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 30) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 35 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 35 books",
+            "id": 2880,
+            "instances": {
+                "first_constant": "35",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 35) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the religious that wrote more than 5 book",
+            "correct_NNQT_instance": "Which are the religious that wrote more than 5 books",
+            "id": 2881,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Religious",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -1185,10 +1424,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the religious that wrote more than 10 book",
-            "correct_NNQT_istance": "Which are the religious that wrote more than 10 books",
-            "id": 2805,
-            "istances": {
+            "NNQT_instance": "Which are the religious that wrote more than 10 book",
+            "correct_NNQT_instance": "Which are the religious that wrote more than 10 books",
+            "id": 2882,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Religious",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -1222,10 +1461,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 5 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 5 books?",
-            "id": 2806,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 5 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 5 books?",
+            "id": 2883,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -7973,10 +8212,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 10 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 10 books?",
-            "id": 2807,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 10 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 10 books?",
+            "id": 2884,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -11232,10 +11471,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 15 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 15 books?",
-            "id": 2808,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 15 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 15 books?",
+            "id": 2885,
+            "instances": {
                 "first_constant": "15",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -13111,10 +13350,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 20 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 20 books?",
-            "id": 2809,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 20 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 20 books?",
+            "id": 2886,
+            "instances": {
                 "first_constant": "20",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -14222,10 +14461,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 25 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 25 books?",
-            "id": 2810,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 25 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 25 books?",
+            "id": 2887,
+            "instances": {
                 "first_constant": "25",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -15015,10 +15254,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 30 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 30 books?",
-            "id": 2811,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 30 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 30 books?",
+            "id": 2888,
+            "instances": {
                 "first_constant": "30",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -15562,10 +15801,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 35 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 35 books?",
-            "id": 2812,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 35 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 35 books?",
+            "id": 2889,
+            "instances": {
                 "first_constant": "35",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -15989,10 +16228,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 40 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 40 books?",
-            "id": 2813,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 40 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 40 books?",
+            "id": 2890,
+            "instances": {
                 "first_constant": "40",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -16338,10 +16577,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 45 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 45 books?",
-            "id": 2814,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 45 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 45 books?",
+            "id": 2891,
+            "instances": {
                 "first_constant": "45",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -16609,10 +16848,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 50 book",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 50 books?",
-            "id": 2815,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 50 book",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 50 books?",
+            "id": 2892,
+            "instances": {
                 "first_constant": "50",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -16844,10 +17083,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 5 comic",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 5 comics?",
-            "id": 2816,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 5 comic",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 5 comics?",
+            "id": 2893,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Comic"
@@ -16971,10 +17210,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 10 comic",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 10 comics?",
-            "id": 2817,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 10 comic",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 10 comics?",
+            "id": 2894,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Comic"
@@ -17014,10 +17253,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 15 comic",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 15 comics?",
-            "id": 2818,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 15 comic",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 15 comics?",
+            "id": 2895,
+            "instances": {
                 "first_constant": "15",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Comic"
@@ -17045,10 +17284,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 5 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 5 plays?",
-            "id": 2819,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 5 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 5 plays?",
+            "id": 2896,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17394,10 +17633,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 10 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 10 plays?",
-            "id": 2820,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 10 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 10 plays?",
+            "id": 2897,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17533,10 +17772,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 15 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 15 plays?",
-            "id": 2821,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 15 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 15 plays?",
+            "id": 2898,
+            "instances": {
                 "first_constant": "15",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17606,10 +17845,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 20 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 20 plays?",
-            "id": 2822,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 20 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 20 plays?",
+            "id": 2899,
+            "instances": {
                 "first_constant": "20",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17649,10 +17888,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 25 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 25 plays?",
-            "id": 2823,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 25 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 25 plays?",
+            "id": 2900,
+            "instances": {
                 "first_constant": "25",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17692,10 +17931,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 30 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 30 plays?",
-            "id": 2824,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 30 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 30 plays?",
+            "id": 2901,
+            "instances": {
                 "first_constant": "30",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17735,10 +17974,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 35 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 35 plays?",
-            "id": 2825,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 35 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 35 plays?",
+            "id": 2902,
+            "instances": {
                 "first_constant": "35",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17778,10 +18017,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 40 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 40 plays?",
-            "id": 2826,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 40 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 40 plays?",
+            "id": 2903,
+            "instances": {
                 "first_constant": "40",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17821,10 +18060,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 45 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 45 plays?",
-            "id": 2827,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 45 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 45 plays?",
+            "id": 2904,
+            "instances": {
                 "first_constant": "45",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17864,10 +18103,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the writer that wrote more than 50 play",
-            "correct_NNQT_istance": "Which is the writer that wrote more than 50 plays?",
-            "id": 2828,
-            "istances": {
+            "NNQT_instance": "Which are the writer that wrote more than 50 play",
+            "correct_NNQT_instance": "Which is the writer that wrote more than 50 plays?",
+            "id": 2905,
+            "instances": {
                 "first_constant": "50",
                 "first_type": "http://dbpedia.org/ontology/Writer",
                 "second_type": "http://dbpedia.org/ontology/Play"
@@ -17901,10 +18140,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the artist that wrote more than 5 book",
-            "correct_NNQT_istance": "Which are the artist that wrote more than 5 books",
-            "id": 2829,
-            "istances": {
+            "NNQT_instance": "Which are the artist that wrote more than 5 book",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 5 books",
+            "id": 2906,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Artist",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -18022,10 +18261,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the artist that wrote more than 10 book",
-            "correct_NNQT_istance": "Which are the artist that wrote more than 10 books",
-            "id": 2830,
-            "istances": {
+            "NNQT_instance": "Which are the artist that wrote more than 10 book",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 10 books",
+            "id": 2907,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Artist",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -18059,10 +18298,211 @@
             }
         },
         {
-            "NNQT_istance": "Which are the scientist that wrote more than 5 book",
-            "correct_NNQT_istance": "Which are the scientist that wrote more than 5 books",
-            "id": 2831,
-            "istances": {
+            "NNQT_instance": "Which are the artist that wrote more than 5 comic",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 5 comics",
+            "id": 2908,
+            "instances": {
+                "first_constant": "5",
+                "first_type": "http://dbpedia.org/ontology/Artist",
+                "second_type": "http://dbpedia.org/ontology/Comic"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Artist>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Comic> } GROUP BY ?writer HAVING(COUNT(?book)> 5) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Moto_Hagio"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Akimi_Yoshida"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Yoshihiro_Tatsumi"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Makoto_Tateno"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Ikki_Kajiwara"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Masakazu_Katsura"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Katsuhiro_Otomo"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Fumi_Yoshinaga"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Satoru_Akahori"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Masamune_Shirow"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Yoshihiro_Takahashi"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Mitsuru_Adachi"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Taiy\u014d_Matsumoto"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Kazuo_Koike"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Leiji_Matsumoto"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Inio_Asano"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the artist that wrote more than 10 comic",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 10 comics",
+            "id": 2909,
+            "instances": {
+                "first_constant": "10",
+                "first_type": "http://dbpedia.org/ontology/Artist",
+                "second_type": "http://dbpedia.org/ontology/Comic"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Artist>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Comic> } GROUP BY ?writer HAVING(COUNT(?book)> 10) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Fumi_Yoshinaga"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Satoru_Akahori"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Mitsuru_Adachi"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Leiji_Matsumoto"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the artist that wrote more than 15 comic",
+            "correct_NNQT_instance": "Which are the artist that wrote more than 15 comics",
+            "id": 2910,
+            "instances": {
+                "first_constant": "15",
+                "first_type": "http://dbpedia.org/ontology/Artist",
+                "second_type": "http://dbpedia.org/ontology/Comic"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Artist>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Comic> } GROUP BY ?writer HAVING(COUNT(?book)> 15) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Mitsuru_Adachi"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the scientist that wrote more than 5 book",
+            "correct_NNQT_instance": "Which are the scientist that wrote more than 5 books",
+            "id": 2911,
+            "instances": {
                 "first_constant": "5",
                 "first_type": "http://dbpedia.org/ontology/Scientist",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -18210,10 +18650,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the scientist that wrote more than 10 book",
-            "correct_NNQT_istance": "Which are the scientist that wrote more than 10 books",
-            "id": 2832,
-            "istances": {
+            "NNQT_instance": "Which are the scientist that wrote more than 10 book",
+            "correct_NNQT_instance": "Which are the scientist that wrote more than 10 books",
+            "id": 2912,
+            "instances": {
                 "first_constant": "10",
                 "first_type": "http://dbpedia.org/ontology/Scientist",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -18271,10 +18711,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the scientist that wrote more than 15 book",
-            "correct_NNQT_istance": "Which are the scientist that wrote more than 15 books",
-            "id": 2833,
-            "istances": {
+            "NNQT_instance": "Which are the scientist that wrote more than 15 book",
+            "correct_NNQT_instance": "Which are the scientist that wrote more than 15 books",
+            "id": 2913,
+            "instances": {
                 "first_constant": "15",
                 "first_type": "http://dbpedia.org/ontology/Scientist",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -18308,10 +18748,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the scientist that wrote more than 20 book",
-            "correct_NNQT_istance": "Which are the scientist that wrote more than 20 books",
-            "id": 2834,
-            "istances": {
+            "NNQT_instance": "Which are the scientist that wrote more than 20 book",
+            "correct_NNQT_instance": "Which are the scientist that wrote more than 20 books",
+            "id": 2914,
+            "instances": {
                 "first_constant": "20",
                 "first_type": "http://dbpedia.org/ontology/Scientist",
                 "second_type": "http://dbpedia.org/ontology/Book"
@@ -18339,15 +18779,15 @@
             }
         },
         {
-            "NNQT_istance": "Which are the office holder that wrote more than 5 book",
-            "correct_NNQT_istance": "Which is the office holder that wrote more than 5 books?",
-            "id": 2835,
-            "istances": {
+            "NNQT_instance": "Which are the politician that wrote more than 5 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 5 books",
+            "id": 2915,
+            "instances": {
                 "first_constant": "5",
-                "first_type": "http://dbpedia.org/ontology/OfficeHolder",
+                "first_type": "http://dbpedia.org/ontology/Politician",
                 "second_type": "http://dbpedia.org/ontology/Book"
             },
-            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/OfficeHolder>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 5) }",
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 5) }",
             "result_set": {
                 "head": {
                     "link": [],
@@ -18360,7 +18800,19 @@
                         {
                             "writer": {
                                 "type": "uri",
+                                "value": "http://dbpedia.org/resource/John_Stuart_Mill"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
                                 "value": "http://dbpedia.org/resource/Newt_Gingrich"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Jeffrey_Archer"
                             }
                         },
                         {
@@ -18384,7 +18836,43 @@
                         {
                             "writer": {
                                 "type": "uri",
+                                "value": "http://dbpedia.org/resource/Walter_Isaacson"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
                                 "value": "http://dbpedia.org/resource/Bill_Clinton"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/David_Adams_Richards"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Ted_Hughes"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Donald_Trump"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Colm_T\u00f3ib\u00edn"
                             }
                         },
                         {
@@ -18402,7 +18890,19 @@
                         {
                             "writer": {
                                 "type": "uri",
+                                "value": "http://dbpedia.org/resource/Lawrence_Lessig"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
                                 "value": "http://dbpedia.org/resource/Shashi_Tharoor"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Bertrand_Russell"
                             }
                         },
                         {
@@ -18418,15 +18918,15 @@
             }
         },
         {
-            "NNQT_istance": "Which are the office holder that wrote more than 10 book",
-            "correct_NNQT_istance": "Which is the office holder that wrote more than 10 books?",
-            "id": 2836,
-            "istances": {
+            "NNQT_instance": "Which are the politician that wrote more than 10 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 10 books",
+            "id": 2916,
+            "instances": {
                 "first_constant": "10",
-                "first_type": "http://dbpedia.org/ontology/OfficeHolder",
+                "first_type": "http://dbpedia.org/ontology/Politician",
                 "second_type": "http://dbpedia.org/ontology/Book"
             },
-            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/OfficeHolder>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 10) }",
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 10) }",
             "result_set": {
                 "head": {
                     "link": [],
@@ -18445,6 +18945,18 @@
                         {
                             "writer": {
                                 "type": "uri",
+                                "value": "http://dbpedia.org/resource/Jeffrey_Archer"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
                                 "value": "http://dbpedia.org/resource/John_Buchan"
                             }
                         },
@@ -18452,6 +18964,173 @@
                             "writer": {
                                 "type": "uri",
                                 "value": "http://dbpedia.org/resource/Benjamin_Disraeli"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 15 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 15 books",
+            "id": 2917,
+            "instances": {
+                "first_constant": "15",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 15) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Jeffrey_Archer"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 20 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 20 books",
+            "id": 2918,
+            "instances": {
+                "first_constant": "20",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 20) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Jeffrey_Archer"
+                            }
+                        },
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 25 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 25 books",
+            "id": 2919,
+            "instances": {
+                "first_constant": "25",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 25) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 30 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 30 books",
+            "id": 2920,
+            "instances": {
+                "first_constant": "30",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 30) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the politician that wrote more than 35 book",
+            "correct_NNQT_instance": "Which are the politician that wrote more than 35 books",
+            "id": 2921,
+            "instances": {
+                "first_constant": "35",
+                "first_type": "http://dbpedia.org/ontology/Politician",
+                "second_type": "http://dbpedia.org/ontology/Book"
+            },
+            "query": "SELECT ?writer WHERE { \n\tSELECT ?writer COUNT(?book) as ?numB WHERE { ?writer rdf:type <http://dbpedia.org/ontology/Politician>. ?book dbo:author ?writer; rdf:type <http://dbpedia.org/ontology/Book> } GROUP BY ?writer HAVING(COUNT(?book)> 35) }",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "writer"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "writer": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Alexander_Hamilton"
                             }
                         }
                     ],

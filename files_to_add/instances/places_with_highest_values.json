@@ -1,10 +1,10 @@
 {
     "questions": [
         {
-            "NNQT_istance": "Which are the areas that contain the body of water with the highest maximum depth",
-            "correct_NNQT_istance": "Which are the areas that contain the body of water with the highest maximum depth?",
-            "id": 2219,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the body of water with the highest maximum depth",
+            "correct_NNQT_instance": "Which are the areas that contain the body of water with the highest maximum depth?",
+            "id": 2260,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/maximumDepth",
                 "first_type": "http://dbpedia.org/ontology/BodyOfWater",
                 "second_relation": "http://dbpedia.org/ontology/location"
@@ -32,10 +32,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the body of water with the highest average depth",
-            "correct_NNQT_istance": "Which are the areas that contain the body of water with the highest average depth?",
-            "id": 2220,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the body of water with the highest average depth",
+            "correct_NNQT_instance": "Which are the areas that contain the body of water with the highest average depth?",
+            "id": 2261,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/averageDepth",
                 "first_type": "http://dbpedia.org/ontology/BodyOfWater",
                 "second_relation": "http://dbpedia.org/ontology/location"
@@ -63,10 +63,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the body of water with the highest area total",
-            "correct_NNQT_istance": "Which are the areas that contain the body of water with the highest area total?",
-            "id": 2221,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the body of water with the highest area total",
+            "correct_NNQT_instance": "Which are the areas that contain the body of water with the highest area total?",
+            "id": 2262,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/areaTotal",
                 "first_type": "http://dbpedia.org/ontology/BodyOfWater",
                 "second_relation": "http://dbpedia.org/ontology/location"
@@ -94,10 +94,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the body of water with the highest length",
-            "correct_NNQT_istance": "Which are the areas that contain the body of water with the highest length?",
-            "id": 2222,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the body of water with the highest length",
+            "correct_NNQT_instance": "Which are the areas that contain the body of water with the highest length?",
+            "id": 2263,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/length",
                 "first_type": "http://dbpedia.org/ontology/BodyOfWater",
                 "second_relation": "http://dbpedia.org/ontology/location"
@@ -125,10 +125,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the body of water with the highest width",
-            "correct_NNQT_istance": "Which are the areas that contain the body of water with the highest width?",
-            "id": 2223,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the body of water with the highest width",
+            "correct_NNQT_instance": "Which are the areas that contain the body of water with the highest width?",
+            "id": 2264,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/width",
                 "first_type": "http://dbpedia.org/ontology/BodyOfWater",
                 "second_relation": "http://dbpedia.org/ontology/location"
@@ -156,10 +156,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the body of water with the highest area of catchment",
-            "correct_NNQT_istance": "Which are the areas that contain the body of water with the highest area of catchment?",
-            "id": 2224,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the body of water with the highest area of catchment",
+            "correct_NNQT_instance": "Which are the areas that contain the body of water with the highest area of catchment?",
+            "id": 2265,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/areaOfCatchment",
                 "first_type": "http://dbpedia.org/ontology/BodyOfWater",
                 "second_relation": "http://dbpedia.org/ontology/location"
@@ -187,10 +187,10 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the crater with the highest diameter",
-            "correct_NNQT_istance": "Which are the areas that contain the crater with the highest diameter?",
-            "id": 2225,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the crater with the highest diameter",
+            "correct_NNQT_instance": "Which are the areas that contain the crater with the highest diameter?",
+            "id": 2266,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/diameter",
                 "first_type": "http://dbpedia.org/ontology/Crater",
                 "second_relation": "http://dbpedia.org/ontology/location"
@@ -218,46 +218,15 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the volcano with the highest prominence",
-            "correct_NNQT_istance": "Which are the areas that contain the volcano with the highest prominence?",
-            "id": 2226,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the mountain with the highest prominence",
+            "correct_NNQT_instance": "Which are the areas that contain the mountain with the highest prominence?",
+            "id": 2267,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/prominence",
-                "first_type": "http://dbpedia.org/ontology/Volcano",
+                "first_type": "http://dbpedia.org/ontology/Mountain",
                 "second_relation": "http://dbpedia.org/ontology/locatedInArea"
             },
-            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Volcano>; <http://dbpedia.org/ontology/prominence> ?rel.  ?uri <http://dbpedia.org/ontology/locatedInArea> ?area } ORDER BY DESC(?rel) LIMIT 1",
-            "result_set": {
-                "head": {
-                    "link": [],
-                    "vars": [
-                        "area"
-                    ]
-                },
-                "results": {
-                    "bindings": [
-                        {
-                            "area": {
-                                "type": "uri",
-                                "value": "http://dbpedia.org/resource/Kilimanjaro_Region"
-                            }
-                        }
-                    ],
-                    "distinct": false,
-                    "ordered": true
-                }
-            }
-        },
-        {
-            "NNQT_istance": "Which are the areas that contain the volcano with the highest elevation",
-            "correct_NNQT_istance": "Which are the areas that contain the volcano with the highest elevation?",
-            "id": 2227,
-            "istances": {
-                "first_relation": "http://dbpedia.org/ontology/elevation",
-                "first_type": "http://dbpedia.org/ontology/Volcano",
-                "second_relation": "http://dbpedia.org/ontology/locatedInArea"
-            },
-            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Volcano>; <http://dbpedia.org/ontology/elevation> ?rel.  ?uri <http://dbpedia.org/ontology/locatedInArea> ?area } ORDER BY DESC(?rel) LIMIT 1",
+            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/prominence> ?rel.  ?uri <http://dbpedia.org/ontology/locatedInArea> ?area } ORDER BY DESC(?rel) LIMIT 1",
             "result_set": {
                 "head": {
                     "link": [],
@@ -280,15 +249,46 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the mountain range with the highest area",
-            "correct_NNQT_istance": "Which are the areas that contain the mountain range with the highest area?",
-            "id": 2228,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the mountain with the highest elevation",
+            "correct_NNQT_instance": "Which are the areas that contain the mountain with the highest elevation?",
+            "id": 2268,
+            "instances": {
+                "first_relation": "http://dbpedia.org/ontology/elevation",
+                "first_type": "http://dbpedia.org/ontology/Mountain",
+                "second_relation": "http://dbpedia.org/ontology/locatedInArea"
+            },
+            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/elevation> ?rel.  ?uri <http://dbpedia.org/ontology/locatedInArea> ?area } ORDER BY DESC(?rel) LIMIT 1",
+            "result_set": {
+                "head": {
+                    "link": [],
+                    "vars": [
+                        "area"
+                    ]
+                },
+                "results": {
+                    "bindings": [
+                        {
+                            "area": {
+                                "type": "uri",
+                                "value": "http://dbpedia.org/resource/Ancash_Region"
+                            }
+                        }
+                    ],
+                    "distinct": false,
+                    "ordered": true
+                }
+            }
+        },
+        {
+            "NNQT_instance": "Which are the areas that contain the mountain with the highest area",
+            "correct_NNQT_instance": "Which are the areas that contain the mountain with the highest area?",
+            "id": 2269,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/area",
-                "first_type": "http://dbpedia.org/ontology/MountainRange",
+                "first_type": "http://dbpedia.org/ontology/Mountain",
                 "second_relation": "http://dbpedia.org/ontology/country"
             },
-            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/MountainRange>; <http://dbpedia.org/ontology/area> ?rel.  ?uri <http://dbpedia.org/ontology/country> ?area } ORDER BY DESC(?rel) LIMIT 1",
+            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/area> ?rel.  ?uri <http://dbpedia.org/ontology/country> ?area } ORDER BY DESC(?rel) LIMIT 1",
             "result_set": {
                 "head": {
                     "link": [],
@@ -311,15 +311,15 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the mountain range with the highest area",
-            "correct_NNQT_istance": "Which are the areas that contain the mountain range with the highest area?",
-            "id": 2229,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the mountain with the highest area",
+            "correct_NNQT_instance": "Which are the areas that contain the mountain with the highest area?",
+            "id": 2270,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/area",
-                "first_type": "http://dbpedia.org/ontology/MountainRange",
+                "first_type": "http://dbpedia.org/ontology/Mountain",
                 "second_relation": "http://dbpedia.org/ontology/state"
             },
-            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/MountainRange>; <http://dbpedia.org/ontology/area> ?rel.  ?uri <http://dbpedia.org/ontology/state> ?area } ORDER BY DESC(?rel) LIMIT 1",
+            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/area> ?rel.  ?uri <http://dbpedia.org/ontology/state> ?area } ORDER BY DESC(?rel) LIMIT 1",
             "result_set": {
                 "head": {
                     "link": [],
@@ -332,7 +332,7 @@
                         {
                             "area": {
                                 "type": "uri",
-                                "value": "http://dbpedia.org/resource/Gujarat"
+                                "value": "http://dbpedia.org/resource/Maharashtra"
                             }
                         }
                     ],
@@ -342,15 +342,15 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the mountain range with the highest length",
-            "correct_NNQT_istance": "Which are the areas that contain the mountain range with the highest length?",
-            "id": 2230,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the mountain with the highest length",
+            "correct_NNQT_instance": "Which are the areas that contain the mountain with the highest length?",
+            "id": 2271,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/length",
-                "first_type": "http://dbpedia.org/ontology/MountainRange",
+                "first_type": "http://dbpedia.org/ontology/Mountain",
                 "second_relation": "http://dbpedia.org/ontology/country"
             },
-            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/MountainRange>; <http://dbpedia.org/ontology/length> ?rel.  ?uri <http://dbpedia.org/ontology/country> ?area } ORDER BY DESC(?rel) LIMIT 1",
+            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/length> ?rel.  ?uri <http://dbpedia.org/ontology/country> ?area } ORDER BY DESC(?rel) LIMIT 1",
             "result_set": {
                 "head": {
                     "link": [],
@@ -373,15 +373,15 @@
             }
         },
         {
-            "NNQT_istance": "Which are the areas that contain the mountain range with the highest length",
-            "correct_NNQT_istance": "Which are the areas that contain the mountain range with the highest length?",
-            "id": 2231,
-            "istances": {
+            "NNQT_instance": "Which are the areas that contain the mountain with the highest length",
+            "correct_NNQT_instance": "Which are the areas that contain the mountain with the highest length?",
+            "id": 2272,
+            "instances": {
                 "first_relation": "http://dbpedia.org/ontology/length",
-                "first_type": "http://dbpedia.org/ontology/MountainRange",
+                "first_type": "http://dbpedia.org/ontology/Mountain",
                 "second_relation": "http://dbpedia.org/ontology/state"
             },
-            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/MountainRange>; <http://dbpedia.org/ontology/length> ?rel.  ?uri <http://dbpedia.org/ontology/state> ?area } ORDER BY DESC(?rel) LIMIT 1",
+            "query": "SELECT ?area \n\tWHERE { \n\t?uri a <http://dbpedia.org/ontology/Mountain>; <http://dbpedia.org/ontology/length> ?rel.  ?uri <http://dbpedia.org/ontology/state> ?area } ORDER BY DESC(?rel) LIMIT 1",
             "result_set": {
                 "head": {
                     "link": [],

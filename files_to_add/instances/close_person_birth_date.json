@@ -1,10 +1,10 @@
 {
     "questions": [
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1960-01-01 and when were they born?",
-            "id": 240,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1960-01-01 and when were are they born?",
+            "id": 266,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -49,10 +49,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1961-01-01 and when were they born?",
-            "id": 241,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1961-01-01 and when were are they born?",
+            "id": 267,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -97,10 +97,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1962-01-01 and when were they born?",
-            "id": 242,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1962-01-01 and when were are they born?",
+            "id": 268,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -145,10 +145,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1963-01-01 and when were they born?",
-            "id": 243,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1963-01-01 and when were are they born?",
+            "id": 269,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -193,10 +193,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1964-01-01 and when were they born?",
-            "id": 244,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1964-01-01 and when were are they born?",
+            "id": 270,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -230,10 +230,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1965-01-01 and when were they born?",
-            "id": 245,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1965-01-01 and when were are they born?",
+            "id": 271,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -267,10 +267,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1966-01-01 and when were they born?",
-            "id": 246,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1966-01-01 and when were are they born?",
+            "id": 272,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -304,10 +304,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1967-01-01 and when were they born?",
-            "id": 247,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1967-01-01 and when were are they born?",
+            "id": 273,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -341,10 +341,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1968-01-01 and when were they born?",
-            "id": 248,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1968-01-01 and when were are they born?",
+            "id": 274,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -378,10 +378,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of ambassador born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of ambassador born after 1969-01-01 and when were they born?",
-            "id": 249,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of ambassador born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of ambassador born after 1969-01-01 and when were are they born?",
+            "id": 275,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Ambassador"
@@ -415,10 +415,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1960-01-01 and when were they born?",
-            "id": 250,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1960-01-01 and when were are they born?",
+            "id": 276,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -1277,10 +1277,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1961-01-01 and when were they born?",
-            "id": 251,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1961-01-01 and when were are they born?",
+            "id": 277,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -2084,10 +2084,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1962-01-01 and when were they born?",
-            "id": 252,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1962-01-01 and when were are they born?",
+            "id": 278,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -2847,10 +2847,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1963-01-01 and when were they born?",
-            "id": 253,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1963-01-01 and when were are they born?",
+            "id": 279,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -3566,10 +3566,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1964-01-01 and when were they born?",
-            "id": 254,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1964-01-01 and when were are they born?",
+            "id": 280,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -4197,10 +4197,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1965-01-01 and when were they born?",
-            "id": 255,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1965-01-01 and when were are they born?",
+            "id": 281,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -4740,10 +4740,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1966-01-01 and when were they born?",
-            "id": 256,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1966-01-01 and when were are they born?",
+            "id": 282,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -5228,10 +5228,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1967-01-01 and when were they born?",
-            "id": 257,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1967-01-01 and when were are they born?",
+            "id": 283,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -5650,10 +5650,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1968-01-01 and when were they born?",
-            "id": 258,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1968-01-01 and when were are they born?",
+            "id": 284,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -5984,10 +5984,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1969-01-01 and when were they born?",
-            "id": 259,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1969-01-01 and when were are they born?",
+            "id": 285,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -6263,10 +6263,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of governor born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of governor born after 1970-01-01 and when were they born?",
-            "id": 260,
-            "istances": {
+            "NNQT_instance": "Who are the successor of governor born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of governor born after 1970-01-01 and when were are they born?",
+            "id": 286,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Governor"
@@ -6487,10 +6487,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1960-01-01 and when were they born?",
-            "id": 261,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1960-01-01 and when were are they born?",
+            "id": 287,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6546,10 +6546,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1961-01-01 and when were they born?",
-            "id": 262,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1961-01-01 and when were are they born?",
+            "id": 288,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6605,10 +6605,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1962-01-01 and when were they born?",
-            "id": 263,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1962-01-01 and when were are they born?",
+            "id": 289,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6664,10 +6664,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1963-01-01 and when were they born?",
-            "id": 264,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1963-01-01 and when were are they born?",
+            "id": 290,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6723,10 +6723,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1964-01-01 and when were they born?",
-            "id": 265,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1964-01-01 and when were are they born?",
+            "id": 291,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6771,10 +6771,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1965-01-01 and when were they born?",
-            "id": 266,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1965-01-01 and when were are they born?",
+            "id": 292,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6808,10 +6808,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1966-01-01 and when were they born?",
-            "id": 267,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1966-01-01 and when were are they born?",
+            "id": 293,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6845,10 +6845,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1967-01-01 and when were they born?",
-            "id": 268,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1967-01-01 and when were are they born?",
+            "id": 294,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6882,10 +6882,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1968-01-01 and when were they born?",
-            "id": 269,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1968-01-01 and when were are they born?",
+            "id": 295,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6919,10 +6919,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1969-01-01 and when were they born?",
-            "id": 270,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1969-01-01 and when were are they born?",
+            "id": 296,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6956,10 +6956,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of mayor born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of mayor born after 1970-01-01 and when were they born?",
-            "id": 271,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of mayor born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of mayor born after 1970-01-01 and when were are they born?",
+            "id": 297,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -6993,10 +6993,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1960-01-01 and when were they born?",
-            "id": 272,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1960-01-01 and when were are they born?",
+            "id": 298,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -7723,10 +7723,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1961-01-01 and when were they born?",
-            "id": 273,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1961-01-01 and when were are they born?",
+            "id": 299,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -8365,10 +8365,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1962-01-01 and when were they born?",
-            "id": 274,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1962-01-01 and when were are they born?",
+            "id": 300,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -8963,10 +8963,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1963-01-01 and when were they born?",
-            "id": 275,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1963-01-01 and when were are they born?",
+            "id": 301,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -9539,10 +9539,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1964-01-01 and when were they born?",
-            "id": 276,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1964-01-01 and when were are they born?",
+            "id": 302,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -10060,10 +10060,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1965-01-01 and when were they born?",
-            "id": 277,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1965-01-01 and when were are they born?",
+            "id": 303,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -10548,10 +10548,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1966-01-01 and when were they born?",
-            "id": 278,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1966-01-01 and when were are they born?",
+            "id": 304,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -10981,10 +10981,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1967-01-01 and when were they born?",
-            "id": 279,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1967-01-01 and when were are they born?",
+            "id": 305,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -11392,10 +11392,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1968-01-01 and when were they born?",
-            "id": 280,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1968-01-01 and when were are they born?",
+            "id": 306,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -11781,10 +11781,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1969-01-01 and when were they born?",
-            "id": 281,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1969-01-01 and when were are they born?",
+            "id": 307,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -12148,10 +12148,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of mayor born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of mayor born after 1970-01-01 and when were they born?",
-            "id": 282,
-            "istances": {
+            "NNQT_instance": "Who are the successor of mayor born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of mayor born after 1970-01-01 and when were are they born?",
+            "id": 308,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Mayor"
@@ -12471,10 +12471,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1960-01-01 and when were they born?",
-            "id": 283,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1960-01-01 and when were are they born?",
+            "id": 309,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -12772,10 +12772,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1961-01-01 and when were they born?",
-            "id": 284,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1961-01-01 and when were are they born?",
+            "id": 310,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -13073,10 +13073,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1962-01-01 and when were they born?",
-            "id": 285,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1962-01-01 and when were are they born?",
+            "id": 311,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -13374,10 +13374,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1963-01-01 and when were they born?",
-            "id": 286,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1963-01-01 and when were are they born?",
+            "id": 312,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -13675,10 +13675,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1964-01-01 and when were they born?",
-            "id": 287,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1964-01-01 and when were are they born?",
+            "id": 313,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -13976,10 +13976,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1965-01-01 and when were they born?",
-            "id": 288,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1965-01-01 and when were are they born?",
+            "id": 314,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -14277,10 +14277,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1966-01-01 and when were they born?",
-            "id": 289,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1966-01-01 and when were are they born?",
+            "id": 315,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -14578,10 +14578,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1967-01-01 and when were they born?",
-            "id": 290,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1967-01-01 and when were are they born?",
+            "id": 316,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -14879,10 +14879,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1968-01-01 and when were they born?",
-            "id": 291,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1968-01-01 and when were are they born?",
+            "id": 317,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -15180,10 +15180,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1969-01-01 and when were they born?",
-            "id": 292,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1969-01-01 and when were are they born?",
+            "id": 318,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -15481,10 +15481,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of member of parliament born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of member of parliament born after 1970-01-01 and when were they born?",
-            "id": 293,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of member of parliament born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of member of parliament born after 1970-01-01 and when were are they born?",
+            "id": 319,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/MemberOfParliament"
@@ -15782,10 +15782,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1960-01-01 and when were they born?",
-            "id": 294,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1960-01-01 and when were are they born?",
+            "id": 320,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -15995,10 +15995,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1961-01-01 and when were they born?",
-            "id": 295,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1961-01-01 and when were are they born?",
+            "id": 321,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -16197,10 +16197,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1962-01-01 and when were they born?",
-            "id": 296,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1962-01-01 and when were are they born?",
+            "id": 322,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -16388,10 +16388,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1963-01-01 and when were they born?",
-            "id": 297,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1963-01-01 and when were are they born?",
+            "id": 323,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -16557,10 +16557,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1964-01-01 and when were they born?",
-            "id": 298,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1964-01-01 and when were are they born?",
+            "id": 324,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -16726,10 +16726,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1965-01-01 and when were they born?",
-            "id": 299,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1965-01-01 and when were are they born?",
+            "id": 325,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -16895,10 +16895,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1966-01-01 and when were they born?",
-            "id": 300,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1966-01-01 and when were are they born?",
+            "id": 326,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -17064,10 +17064,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1967-01-01 and when were they born?",
-            "id": 301,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1967-01-01 and when were are they born?",
+            "id": 327,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -17233,10 +17233,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1968-01-01 and when were they born?",
-            "id": 302,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1968-01-01 and when were are they born?",
+            "id": 328,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -17391,10 +17391,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1969-01-01 and when were they born?",
-            "id": 303,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1969-01-01 and when were are they born?",
+            "id": 329,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -17549,10 +17549,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the child of president born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the child of president born after 1970-01-01 and when were they born?",
-            "id": 304,
-            "istances": {
+            "NNQT_instance": "Who are the child of president born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the child of president born after 1970-01-01 and when were are they born?",
+            "id": 330,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/child",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -17696,10 +17696,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1960-01-01 and when were they born?",
-            "id": 305,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1960-01-01 and when were are they born?",
+            "id": 331,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -18008,10 +18008,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1961-01-01 and when were they born?",
-            "id": 306,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1961-01-01 and when were are they born?",
+            "id": 332,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -18265,10 +18265,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1962-01-01 and when were they born?",
-            "id": 307,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1962-01-01 and when were are they born?",
+            "id": 333,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -18511,10 +18511,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1963-01-01 and when were they born?",
-            "id": 308,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1963-01-01 and when were are they born?",
+            "id": 334,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -18735,10 +18735,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1964-01-01 and when were they born?",
-            "id": 309,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1964-01-01 and when were are they born?",
+            "id": 335,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -18915,10 +18915,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1965-01-01 and when were they born?",
-            "id": 310,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1965-01-01 and when were are they born?",
+            "id": 336,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19073,10 +19073,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1966-01-01 and when were they born?",
-            "id": 311,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1966-01-01 and when were are they born?",
+            "id": 337,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19209,10 +19209,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1967-01-01 and when were they born?",
-            "id": 312,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1967-01-01 and when were are they born?",
+            "id": 338,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19323,10 +19323,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1968-01-01 and when were they born?",
-            "id": 313,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1968-01-01 and when were are they born?",
+            "id": 339,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19415,10 +19415,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1969-01-01 and when were they born?",
-            "id": 314,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1969-01-01 and when were are they born?",
+            "id": 340,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19485,10 +19485,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the prime minister of president born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the prime minister of president born after 1970-01-01 and when were they born?",
-            "id": 315,
-            "istances": {
+            "NNQT_instance": "Who are the prime minister of president born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the prime minister of president born after 1970-01-01 and when were are they born?",
+            "id": 341,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/primeMinister",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19544,10 +19544,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1960-01-01 and when were they born?",
-            "id": 316,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1960-01-01 and when were are they born?",
+            "id": 342,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19669,10 +19669,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1961-01-01 and when were they born?",
-            "id": 317,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1961-01-01 and when were are they born?",
+            "id": 343,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19794,10 +19794,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1962-01-01 and when were they born?",
-            "id": 318,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1962-01-01 and when were are they born?",
+            "id": 344,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -19908,10 +19908,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1963-01-01 and when were they born?",
-            "id": 319,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1963-01-01 and when were are they born?",
+            "id": 345,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -20022,10 +20022,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1964-01-01 and when were they born?",
-            "id": 320,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1964-01-01 and when were are they born?",
+            "id": 346,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -20114,10 +20114,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1965-01-01 and when were they born?",
-            "id": 321,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1965-01-01 and when were are they born?",
+            "id": 347,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -20195,10 +20195,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1966-01-01 and when were they born?",
-            "id": 322,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1966-01-01 and when were are they born?",
+            "id": 348,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -20276,10 +20276,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1967-01-01 and when were they born?",
-            "id": 323,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1967-01-01 and when were are they born?",
+            "id": 349,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -20346,10 +20346,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1968-01-01 and when were they born?",
-            "id": 324,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1968-01-01 and when were are they born?",
+            "id": 350,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -20416,10 +20416,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1969-01-01 and when were they born?",
-            "id": 325,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1969-01-01 and when were are they born?",
+            "id": 351,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -20486,10 +20486,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the spouse of president born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the spouse of president born after 1970-01-01 and when were they born?",
-            "id": 326,
-            "istances": {
+            "NNQT_instance": "Who are the spouse of president born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the spouse of president born after 1970-01-01 and when were are they born?",
+            "id": 352,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/spouse",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -20556,10 +20556,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1960-01-01 and when were they born?",
-            "id": 327,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1960-01-01 and when were are they born?",
+            "id": 353,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -21660,10 +21660,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1961-01-01 and when were they born?",
-            "id": 328,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1961-01-01 and when were are they born?",
+            "id": 354,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -22643,10 +22643,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1962-01-01 and when were they born?",
-            "id": 329,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1962-01-01 and when were are they born?",
+            "id": 355,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -23571,10 +23571,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1963-01-01 and when were they born?",
-            "id": 330,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1963-01-01 and when were are they born?",
+            "id": 356,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -24411,10 +24411,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1964-01-01 and when were they born?",
-            "id": 331,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1964-01-01 and when were are they born?",
+            "id": 357,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -25152,10 +25152,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1965-01-01 and when were they born?",
-            "id": 332,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1965-01-01 and when were are they born?",
+            "id": 358,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -25794,10 +25794,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1966-01-01 and when were they born?",
-            "id": 333,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1966-01-01 and when were are they born?",
+            "id": 359,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -26359,10 +26359,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1967-01-01 and when were they born?",
-            "id": 334,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1967-01-01 and when were are they born?",
+            "id": 360,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -26913,10 +26913,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1968-01-01 and when were they born?",
-            "id": 335,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1968-01-01 and when were are they born?",
+            "id": 361,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -27412,10 +27412,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1969-01-01 and when were they born?",
-            "id": 336,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1969-01-01 and when were are they born?",
+            "id": 362,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -27867,10 +27867,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of president born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of president born after 1970-01-01 and when were they born?",
-            "id": 337,
-            "istances": {
+            "NNQT_instance": "Who are the successor of president born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of president born after 1970-01-01 and when were are they born?",
+            "id": 363,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28256,10 +28256,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1960-01-01 and when were they born?",
-            "id": 338,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1960-01-01 and when were are they born?",
+            "id": 364,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28359,10 +28359,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1961-01-01 and when were they born?",
-            "id": 339,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1961-01-01 and when were are they born?",
+            "id": 365,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28451,10 +28451,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1962-01-01 and when were they born?",
-            "id": 340,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1962-01-01 and when were are they born?",
+            "id": 366,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28532,10 +28532,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1963-01-01 and when were they born?",
-            "id": 341,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1963-01-01 and when were are they born?",
+            "id": 367,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28602,10 +28602,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1964-01-01 and when were they born?",
-            "id": 342,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1964-01-01 and when were are they born?",
+            "id": 368,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28672,10 +28672,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1965-01-01 and when were they born?",
-            "id": 343,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1965-01-01 and when were are they born?",
+            "id": 369,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28720,10 +28720,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1966-01-01 and when were they born?",
-            "id": 344,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1966-01-01 and when were are they born?",
+            "id": 370,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28757,10 +28757,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1967-01-01 and when were they born?",
-            "id": 345,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1967-01-01 and when were are they born?",
+            "id": 371,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28794,10 +28794,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1968-01-01 and when were they born?",
-            "id": 346,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1968-01-01 and when were are they born?",
+            "id": 372,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28831,10 +28831,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1969-01-01 and when were they born?",
-            "id": 347,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1969-01-01 and when were are they born?",
+            "id": 373,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28868,10 +28868,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the vice president of president born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the vice president of president born after 1970-01-01 and when were they born?",
-            "id": 348,
-            "istances": {
+            "NNQT_instance": "Who are the vice president of president born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the vice president of president born after 1970-01-01 and when were are they born?",
+            "id": 374,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/vicePresident",
                 "first_type": "http://dbpedia.org/ontology/President"
@@ -28905,10 +28905,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1960-01-01 and when were they born?",
-            "id": 349,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1960-01-01 and when were are they born?",
+            "id": 375,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -29679,10 +29679,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1961-01-01 and when were they born?",
-            "id": 350,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1961-01-01 and when were are they born?",
+            "id": 376,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -30343,10 +30343,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1962-01-01 and when were they born?",
-            "id": 351,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1962-01-01 and when were are they born?",
+            "id": 377,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -30930,10 +30930,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1963-01-01 and when were they born?",
-            "id": 352,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1963-01-01 and when were are they born?",
+            "id": 378,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -31473,10 +31473,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1964-01-01 and when were they born?",
-            "id": 353,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1964-01-01 and when were are they born?",
+            "id": 379,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -31994,10 +31994,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1965-01-01 and when were they born?",
-            "id": 354,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1965-01-01 and when were are they born?",
+            "id": 380,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -32493,10 +32493,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1966-01-01 and when were they born?",
-            "id": 355,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1966-01-01 and when were are they born?",
+            "id": 381,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -32926,10 +32926,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1967-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1967-01-01 and when were they born?",
-            "id": 356,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1967-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1967-01-01 and when were are they born?",
+            "id": 382,
+            "instances": {
                 "first_date": "\"1967-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -33282,10 +33282,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1968-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1968-01-01 and when were they born?",
-            "id": 357,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1968-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1968-01-01 and when were are they born?",
+            "id": 383,
+            "instances": {
                 "first_date": "\"1968-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -33605,10 +33605,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1969-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1969-01-01 and when were they born?",
-            "id": 358,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1969-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1969-01-01 and when were are they born?",
+            "id": 384,
+            "instances": {
                 "first_date": "\"1969-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -33873,10 +33873,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of prime minister born after 1970-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the successor of prime minister born after 1970-01-01 and when were they born?",
-            "id": 359,
-            "istances": {
+            "NNQT_instance": "Who are the successor of prime minister born after 1970-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the successor of prime minister born after 1970-01-01 and when were are they born?",
+            "id": 385,
+            "instances": {
                 "first_date": "\"1970-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -34119,10 +34119,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the associate of prime minister born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the associate of prime minister born after 1960-01-01 and when were they born?",
-            "id": 360,
-            "istances": {
+            "NNQT_instance": "Who are the associate of prime minister born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the associate of prime minister born after 1960-01-01 and when were are they born?",
+            "id": 386,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/associate",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -34167,10 +34167,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the associate of prime minister born after 1961-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the associate of prime minister born after 1961-01-01 and when were they born?",
-            "id": 361,
-            "istances": {
+            "NNQT_instance": "Who are the associate of prime minister born after 1961-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the associate of prime minister born after 1961-01-01 and when were are they born?",
+            "id": 387,
+            "instances": {
                 "first_date": "\"1961-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/associate",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -34215,10 +34215,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the associate of prime minister born after 1962-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the associate of prime minister born after 1962-01-01 and when were they born?",
-            "id": 362,
-            "istances": {
+            "NNQT_instance": "Who are the associate of prime minister born after 1962-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the associate of prime minister born after 1962-01-01 and when were are they born?",
+            "id": 388,
+            "instances": {
                 "first_date": "\"1962-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/associate",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -34263,10 +34263,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the associate of prime minister born after 1963-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the associate of prime minister born after 1963-01-01 and when were they born?",
-            "id": 363,
-            "istances": {
+            "NNQT_instance": "Who are the associate of prime minister born after 1963-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the associate of prime minister born after 1963-01-01 and when were are they born?",
+            "id": 389,
+            "instances": {
                 "first_date": "\"1963-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/associate",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -34311,10 +34311,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the associate of prime minister born after 1964-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the associate of prime minister born after 1964-01-01 and when were they born?",
-            "id": 364,
-            "istances": {
+            "NNQT_instance": "Who are the associate of prime minister born after 1964-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the associate of prime minister born after 1964-01-01 and when were are they born?",
+            "id": 390,
+            "instances": {
                 "first_date": "\"1964-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/associate",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -34359,10 +34359,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the associate of prime minister born after 1965-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the associate of prime minister born after 1965-01-01 and when were they born?",
-            "id": 365,
-            "istances": {
+            "NNQT_instance": "Who are the associate of prime minister born after 1965-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the associate of prime minister born after 1965-01-01 and when were are they born?",
+            "id": 391,
+            "instances": {
                 "first_date": "\"1965-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/associate",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -34407,10 +34407,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the associate of prime minister born after 1966-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who are the associate of prime minister born after 1966-01-01 and when were they born?",
-            "id": 366,
-            "istances": {
+            "NNQT_instance": "Who are the associate of prime minister born after 1966-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who are the associate of prime minister born after 1966-01-01 and when were are they born?",
+            "id": 392,
+            "instances": {
                 "first_date": "\"1966-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/associate",
                 "first_type": "http://dbpedia.org/ontology/PrimeMinister"
@@ -34455,10 +34455,10 @@
             }
         },
         {
-            "NNQT_istance": "Who are the successor of chancellor born after 1960-01-01 and when were they born?",
-            "correct_NNQT_istance": "Who is the successor of chancellor born after 1960-01-01 and when were they born?",
-            "id": 367,
-            "istances": {
+            "NNQT_instance": "Who are the successor of chancellor born after 1960-01-01 and when were are they born?",
+            "correct_NNQT_instance": "Who is the successor of chancellor born after 1960-01-01 and when were are they born?",
+            "id": 393,
+            "instances": {
                 "first_date": "\"1960-01-01\"^^xsd:date",
                 "first_relation": "http://dbpedia.org/ontology/successor",
                 "first_type": "http://dbpedia.org/ontology/Chancellor"
